@@ -1,0 +1,8 @@
+/* 
+  Validaciones:
+  - Todos los campos son requeridos
+  - Si el campo name está vacio mostrar el siguiente mensaje: Name is required
+  - Si el campo email está vacio mostrar el siguiente mensaje: Email is required
+  - Si el campo email es invalido mostrar el siguiente mensaje: Sorry, invalid format here
+  - Si el campo message está vacio mostrar el siguiente mensaje: Message is required
+*/
