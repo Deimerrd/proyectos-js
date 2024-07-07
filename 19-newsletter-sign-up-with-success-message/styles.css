@@ -1,0 +1,7 @@
+/*
+  Validaciones:
+  - Si el campo esta vacio mostrar: The field is left empty
+  - Si el email es invalido: Valid email required
+  - Si el email es correcto: Ocultar el contenido principal y mostrar el modal dando las gracias
+  - Si el usuario hace click en el botón "Dismiss Message": Ocultar el modal y mostrar el contenido principal
+*/
