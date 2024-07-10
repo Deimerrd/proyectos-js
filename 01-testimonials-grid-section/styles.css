@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  background: #ecf2f8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 71px 24px;
+  gap: 24px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+  padding: 0px 32px 32px 32px;
+}
+
+.card1 {
+  background: #733fc8;
+  color: white;
+}
+.card2 {
+  background: #48556a;
+  color: white;
+}
+.card3 {
+  background-color: #fff;
+  color: #48556a;
+}
+.card4 {
+  background: #19202d;
+  color: white;
+}
+.card5 {
+  background: #fff;
+  color: #48556a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.quo {
+  transform: translateX(8px);
+}
+
+figure {
+  display: flex;
+  align-items: start;
+  padding-top: 26px;
+  gap: 17px;
+  font-size: 13px;
+  line-height: 13px;
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+  }
+  .av {
+    border: 2px solid #a775f1;
+  }
+
+  span {
+    opacity: 0.5;
+    font-size: 11px;
+    line-height: 11px;
+  }
+}
+
+header .titulos {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .titulo1 {
+  transform: translateY(-1.5em);
+}
+header .titulo2 {
+  padding-top: 28px;
+}
+
+header .titulo3 {
+  color: #48556a;
+  padding-top: 18px;
+}
+header .titulo4 {
+  color: #ecf2f8;
+  padding-top: 18px;
+}
+
+header .titulo5 {
+  color: #48556a;
+  padding-top: 18px;
+}
+
+.paragraph {
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.7;
+}
+.txt {
+  padding-top: 16px;
+}
+
+.txt1 {
+  color: #cfcfcf;
+  padding-right: 16px;
+}
+
+.t {
+  color: #48556a;
+}
+
+@media (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1210px) {
+  main {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    row-gap: 24px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas:
+      "card1 card1 card2 card5"
+      "card3 card4 card4 card5";
+
+    height: auto;
+  }
+
+  .quo {
+    transform: translateX(-48px);
+  }
+
+  .card {
+    height: fit-content;
+  }
+
+  .card1 {
+    grid-area: card1;
+    height: 282px;
+  }
+  .card2 {
+    grid-area: card2;
+    height: 282px;
+  }
+  .card3 {
+    grid-area: card3;
+    height: 263px;
+  }
+  .card4 {
+    grid-area: card4;
+    height: 263px;
+  }
+  .card5 {
+    grid-area: card5;
+    height: 572px;
+  }
+}
