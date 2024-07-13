@@ -10,16 +10,74 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Fylo data storage component</title>
   </head>
   <body>
-    You’ve used 815 GB of your storage <br />
+    <div class="contenedor">
+      <main class="component">
+        <section class="session1">
+          <img class="logo" src="images/logo.svg" alt="" />
+          <ol>
+            <li>
+              <a href="#"
+                ><img src="images/icon-document.svg" alt="" srcset=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-folder.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-upload.svg" alt="" /></a>
+            </li>
+          </ol>
+        </section>
 
-    185 GB Left <br />
+        <section class="session2">
+          <div class="slider">
+            <label class="label" for="price"
+              >You’ve used <strong> 815 GB</strong> of your storage
+            </label>
+            <input
+              type="range"
+              name="price"
+              id="price"
+              class="price"
+              min="0"
+              max="1000"
+              step="1"
+              value="0"
+            />
 
-    0 GB <br />
-    1000 GB <br />
+            <div class="output">
+              <output class="price-output" for="price"></output>
+              <p class="samp">GB LEFT</p>
+              <div class="triangulo"></div>
+            </div>
+          </div>
+          <div class="nivel">
+            <p class="minimo">0 GB</p>
+            <p class="maximo">1000 GB</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
