@@ -14,11 +14,12 @@ body {
   font-style: normal;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
 }
 .contenedor {
-  margin: 127px auto;
+  margin: auto;
   max-width: 1440px;
   width: 90%;
 }
@@ -48,9 +49,9 @@ main {
 ol {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   width: 176.542px;
-  gap: 1rem;
+  gap: 0.5rem;
   list-style-type: none;
   padding-top: 33px;
 }
@@ -58,8 +59,12 @@ ol li {
   border-radius: 10px;
   background: #0c122c;
   padding: 14px;
-  flex-shrink: 0;
   flex: 1;
+  width: 48px;
+  height: 48px;
+}
+.li1 {
+  padding-left: 18px;
 }
 
 .label {
