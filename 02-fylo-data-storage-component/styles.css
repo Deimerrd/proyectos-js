@@ -169,6 +169,13 @@ input[type="range"]::-moz-range-progress {
   height: 20px;
 }
 
+input[type="range"]::-ms-fill-lower {
+  background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+}
+input[type="range"]::-ms-fill-upper {
+  background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+}
+
 @media (min-width: 768px) {
   body {
     min-width: 100vh;
