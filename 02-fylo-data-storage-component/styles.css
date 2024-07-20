@@ -180,6 +180,9 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {
   background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
 }
+input[type="range"]::-ms-thumb {
+  background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+}
 
 @media (min-width: 768px) {
   body {
