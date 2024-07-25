@@ -116,7 +116,7 @@ header h1 {
 .caja1::before {
   content: "";
   background-image: url("./images/img.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -132,7 +132,7 @@ header h1 {
 .caja3::before {
   content: "";
   background-image: url("./images/your-user.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -349,6 +349,24 @@ svg.color path:hover {
   border: 0;
 }
 
+@media (min-width: 380px) {
+  .caja1::before {
+    content: "";
+    background-image: url("./images/togeter.svg");
+    background-size: cover;
+    height: 841.156px;
+    right: auto;
+  }
+
+  .caja3::before {
+    content: "";
+    background-image: url("./images/user.svg");
+    background-size: cover;
+    height: 802.768px;
+    right: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .txt-email {
     margin-right: auto;
@@ -398,22 +416,6 @@ svg.color path:hover {
 
   .paragraph {
     line-height: 30px; /* 150% */
-  }
-
-  .caja1::before {
-    content: "";
-    background-image: url("./images/togeter.svg");
-    background-size: cover;
-    height: 841.156px;
-    right: auto;
-  }
-
-  .caja3::before {
-    content: "";
-    background-image: url("./images/user.svg");
-    background-size: cover;
-    height: 802.768px;
-    right: auto;
   }
 
   h4 {
