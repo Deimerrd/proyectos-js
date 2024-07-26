@@ -19,24 +19,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 1440px;
   padding-bottom: 116px;
-  margin: auto;
 }
 .logo {
   max-width: 96px;
 }
 .btn-logo {
-  border-radius: 11.765px;
-  box-shadow: 0px 0px 5px 0px rgba(255, 82, 193, 0.22);
-  text-align: center;
-  text-decoration: none;
-  color: #ff8ed7;
+  padding: 5.24px 18.24px;
+  color: #ff52c1;
   font-size: 9.412px;
   font-weight: 400;
-  padding: 5.24px 18.24px;
+  text-decoration: none;
+  border-radius: 11.765px;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(255, 82, 193, 0.22);
   border-radius: 11.765px;
   border: 0.588px solid #ff52c1;
-  background: #fff;
+}
+
+.btn-logo:hover {
+  border: 0.588px solid #ff8ed7;
 }
 
 .center {
@@ -63,20 +66,22 @@ header h1 {
   line-height: 21px;
   max-width: 296px;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 .btn-button {
-  padding: 11px 40px;
+  padding: 11px 0px;
   display: inline;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
   color: #fff;
   font-size: 12px;
+  min-width: 200px;
   font-weight: 700;
   line-height: 18px;
   border: none;
-  margin-top: 48px;
+  margin: auto;
   background-color: #ff52c1;
 }
 
@@ -155,7 +160,7 @@ article {
   text-align: left;
 }
 
-.email {
+.e {
   max-width: 35.556px;
 }
 h2 {
@@ -312,10 +317,14 @@ samp {
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
-}
-.btn-email {
+
   margin-right: 0;
   transform: translateY(2em);
+  max-height: 48px;
+}
+
+.txt-email {
+  padding-left: 16px;
 }
 form {
   display: flex;
@@ -349,36 +358,84 @@ svg.color path:hover {
   border: 0;
 }
 
+.btn-button {
+  max-width: 200px;
+}
+h4 {
+  padding-bottom: 40px;
+}
+
+.contactos {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
 @media (min-width: 380px) {
   .caja1::before {
     content: "";
     background-image: url("./images/togeter.svg");
     background-size: cover;
+    background-position: inherit;
     height: 841.156px;
     right: auto;
+  }
+
+  footer {
+    background-image: url("./images/footer-mobile.svg");
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
   }
 
   .caja3::before {
     content: "";
     background-image: url("./images/user.svg");
     background-size: cover;
+    background-position: inherit;
     height: 802.768px;
     right: auto;
+  }
+
+  .email-eror {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 @media (min-width: 768px) {
+  .bx2 {
+    transform: translateY(10em);
+  }
+  .bx4 {
+    transform: translateY(10em);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
   .txt-email {
     margin-right: auto;
   }
 
+  h4 {
+    padding-bottom: 42px;
+  }
   .btn-email {
     margin-right: auto;
     transform: translateX(2em);
   }
   .contain {
-    padding-top: 103px;
-    max-width: 1568px;
+    padding-top: 79px;
+    max-width: 100%;
     margin: auto;
   }
   form {
@@ -388,8 +445,9 @@ svg.color path:hover {
   footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 340px;
     padding-top: 5em;
   }
   main {
@@ -397,7 +455,7 @@ svg.color path:hover {
     margin: auto;
   }
   footer {
-    max-width: 1568px;
+    width: 100%;
     margin: auto;
   }
 
@@ -415,7 +473,7 @@ svg.color path:hover {
   }
 
   .paragraph {
-    line-height: 30px; /* 150% */
+    line-height: 30px;
   }
 
   h4 {
@@ -467,10 +525,19 @@ svg.color path:hover {
   .btn-logo {
     min-width: 136px;
     padding: 9px 30px;
-    border-radius: 20px;
-    border: 1px solid #ff8ed7;
     font-size: 16px;
-    border: none;
+    border-radius: 20px;
+    border: 1px solid #ff52c1;
+    background: #fff;
+    box-shadow: 0px 0px 9px 0px rgba(255, 82, 193, 0.22);
+  }
+
+  .btn-button {
+    min-width: 400px;
+  }
+
+  .btn-logo:hover {
+    border: 1px solid #ff8ed7;
   }
   header h1 {
     font-size: 48px;
@@ -483,7 +550,7 @@ svg.color path:hover {
     min-width: 600px;
   }
   .btn-button {
-    padding: 25px 100px;
+    padding: 25px 0px;
     border-radius: 45px;
     font-size: 20px;
   }
@@ -495,18 +562,17 @@ svg.color path:hover {
 
   .box {
     padding-top: 120px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 90px;
+    display: flex;
+    gap: 341px;
+    margin: auto;
   }
   h2 {
     font-size: 96px;
     line-height: 144px;
   }
 
-  .email {
+  .e {
     min-width: 56px;
   }
   em {
@@ -517,9 +583,17 @@ svg.color path:hover {
   .footer1 {
     display: flex;
     flex-direction: column;
+    transform: translateY(1em);
   }
+  .footer2 {
+    transform: translateY(4.5em);
+  }
+
   samp {
     max-width: 344px;
+  }
+  .redes {
+    font-size: 16px;
   }
 }
 
