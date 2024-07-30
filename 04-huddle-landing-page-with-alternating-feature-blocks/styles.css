@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  padding-top: 31px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-color: #edfbff;
+  height: 721px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-header {
+  width: 100%;
+}
+
+.logo {
+  max-width: 104px;
+}
+
+.link-logo {
+  text-decoration: none;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  width: 96px;
+  height: 24px;
+  color: #00252e;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-logo:hover {
+  color: #808e9a;
+}
+
+.text {
+  width: 85%;
+  margin: auto;
+  padding-top: 84px;
+}
+
+.txt-header {
+  text-align: center;
+  color: #00252e;
+}
+h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  padding-bottom: 24px;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 32px;
+}
+.btn {
+  border-radius: 20px;
+  background: #ff52c1;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
+  padding: 10px 59px 14px 60px;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff9adb;
+}
+
+.img-headers {
+  padding-top: 56px;
+}
+@media (min-width: 768px) {
+  header {
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+  .contain {
+    max-width: 1440px;
+  }
+
+  .logo {
+    min-width: 200px;
+  }
+  .link-logo {
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    padding-top: 71px;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .txt-header {
+    text-align: left;
+    max-width: 536px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .paragraph {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .btn {
+    border-radius: 28px;
+    padding: 17px 69px 20px 70px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+}
