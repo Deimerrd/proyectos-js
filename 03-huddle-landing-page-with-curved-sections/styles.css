@@ -370,7 +370,7 @@ h4 {
   height: 24px;
   display: block;
 }
-@media (min-width: 380px) {
+@media (min-width: 1440px) {
   .caja1::before {
     content: "";
     background-image: url("./images/togeter.svg");
@@ -408,9 +408,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
   }
-}
 
-@media (min-width: 768px) {
   .bx2 {
     transform: translateY(10em);
   }
@@ -595,9 +593,6 @@ h4 {
   .redes {
     font-size: 16px;
   }
-}
-
-@media (min-width: 1094px) {
   .mockups {
     width: 1017px;
     border: none;
