@@ -20,7 +20,6 @@ header {
   width: 100%;
   background-image: url("./images/bg-hero-mobile.svg");
   background-color: #edfbff;
-  height: 721px;
   flex-shrink: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,6 +56,7 @@ header {
   width: 85%;
   margin: auto;
   padding-top: 84px;
+  padding-bottom: 37px;
 }
 
 .txt-header {
@@ -94,6 +94,48 @@ h1 {
 
 .img-headers {
   padding-top: 56px;
+}
+
+samp {
+  color: #808e9a;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  padding-top: 59px;
+}
+.card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+  padding: 56px 49px 33px 49px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.img-main {
+  width: 100%;
+  padding-bottom: 54px;
+}
+
+h2 {
+  color: #00252e;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 16px;
 }
 @media (min-width: 768px) {
   header {
@@ -141,5 +183,5 @@ h1 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1232px) {
 }
