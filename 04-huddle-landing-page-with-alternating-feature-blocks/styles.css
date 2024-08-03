@@ -273,15 +273,6 @@ footer {
   align-items: center;
   gap: 1.5rem;
 }
-
-img.color {
-  display: none;
-}
-
-svg.color path:hover {
-  fill: #00c7fa !important;
-}
-
 @media (min-width: 768px) {
   header {
     background-image: url("./images/bg-hero-desktop.svg");
