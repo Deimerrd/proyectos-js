@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 
 .contain {
@@ -119,8 +119,8 @@ header h1 {
 }
 
 .caja1::before {
-  content: "";
-  background-image: url("./images/img.svg");
+  content: '';
+  background-image: url('./images/img.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -135,8 +135,8 @@ header h1 {
 }
 
 .caja3::before {
-  content: "";
-  background-image: url("./images/your-user.svg");
+  content: '';
+  background-image: url('./images/your-user.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,7 +223,7 @@ h4 {
   line-height: 36px;
 }
 footer {
-  background-image: url("./images/footer-mobile.svg");
+  background-image: url('./images/footer-mobile.svg');
   width: 100%;
   background-size: cover;
   color: #fff;
@@ -370,10 +370,10 @@ h4 {
   height: 24px;
   display: block;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1110px) {
   .caja1::before {
-    content: "";
-    background-image: url("./images/togeter.svg");
+    content: '';
+    background-image: url('./images/togeter.svg');
     background-size: cover;
     background-position: inherit;
     height: 841.156px;
@@ -381,7 +381,7 @@ h4 {
   }
 
   footer {
-    background-image: url("./images/footer-mobile.svg");
+    background-image: url('./images/footer-mobile.svg');
     width: 100%;
     background-size: cover;
     color: #fff;
@@ -395,8 +395,8 @@ h4 {
   }
 
   .caja3::before {
-    content: "";
-    background-image: url("./images/user.svg");
+    content: '';
+    background-image: url('./images/user.svg');
     background-size: cover;
     background-position: inherit;
     height: 802.768px;
