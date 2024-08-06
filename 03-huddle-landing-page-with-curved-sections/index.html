@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,6 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,49 +22,165 @@
     <title>Huddle landing page with curved sections</title>
   </head>
   <body>
-    Try it free <br />
+    <div class="contain center">
+      <nav class="center">
+        <img class="logo" src="images/logo.svg" alt="" />
+        <a class="btn-logo" href="#">Try it free</a>
+      </nav>
 
-    Build The Community Your Fans Will Love <br />
+      <header class="center">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p class="paragraph center">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
 
-    Huddle re-imagines the way we build communities. You have a voice, but so
-    does your audience. Create connections with your users as you engage in
-    genuine discussion. <br />
+        <button class="btn-button">Get Started For Free</button>
+        <img class="mockups center" src="images/screen-mockups.svg" alt="" />
 
-    Get Started For Free <br />
+        <section class="section box center">
+          <article>
+            <img class="e" src="images/icon-communities.svg" alt="" />
+            <div class="titulo">
+              <h2>1.4k+</h2>
+              <em>Communities Formed</em>
+            </div>
+          </article>
 
-    1.4k+ <br />
-    Communities Formed <br />
+          <article>
+            <img class="e" src="images/icon-messages.svg" alt="" />
+            <div class="titulo">
+              <h2>2.7m+</h2>
+              <em>Messages Sent</em>
+            </div>
+          </article>
+        </section>
+      </header>
+      <main>
+        <section class="caja1">
+          <div class="section contain box2 bx2">
+            <div class="box-text">
+              <h3 class="h3 h3-grow">Grow Together</h3>
+              <p class="paragraph text center">
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+            <img
+              class="Together"
+              src="images/illustration-grow-together.svg"
+              alt=""
+            />
+          </div>
+        </section>
 
-    2.7m+ <br />
-    Messages Sent <br />
+        <section>
+          <div class="section contain box2 box3 bx3">
+            <div class="box-text">
+              <h3 class="h3 h3-flowing">Flowing Conversations</h3>
+              <p class="paragraph text center">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+            <img
+              class="Together"
+              src="images/illustration-flowing-conversation.svg"
+              alt=""
+            />
+          </div>
+        </section>
 
-    Grow Together <br />
-    Generate meaningful discussions with your audience and build a strong, loyal
-    community. Think of the insightful conversations you miss out on with a
-    feedback form. <br />
+        <section class="caja3">
+          <div class="section contain box3 box2 box4 bx4">
+            <div class="box-text">
+              <h3 class="h3">Your Users</h3>
+              <p class="paragraph text center">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+            <img
+              class="Together"
+              src="images/illustration-your-users.svg"
+              alt=""
+            />
+          </div>
+        </section>
 
-    Flowing Conversations <br />
-    You wouldn't paginate a conversation in real life, so why do it online? Our
-    threads have just-in-time loading for a more natural flow. <br />
+        <section>
+          <div class="box5 bx5 center">
+            <h4>Ready To Build Your Community?</h4>
 
-    Your Users <br />
-    It takes no time at all to integrate Huddle with your app's authentication
-    solution. This means, once signed in to your app, your users can start
-    chatting immediately. <br />
+            <button class="btn-button btn">Get Started For Free</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
-    Ready To Build Your Community? <br />
-    Get Started For Free <br />
+    <footer>
+      <section class="footer1">
+        <div class="article">
+          <h5>NEWSLETTER</h5>
+          <samp
+            >To recieve tips on how to grow your community, sign up to our
+            weekly newsletter. We’ll never send you spam or pass on your email
+            address</samp
+          >
+          <form class="form" action="">
+            <div class="email-eror">
+              <input type="email" id="email" class="txt-email" required />
+              <span class="error" id="error"></span>
+            </div>
+            <button onclick="validarformulario()" class="btn-email">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam,
-    hendrerit lacinia vestibulum a, ultrices quis sem. <br />
+      <section class="footer2">
+        <div class="footer">
+          <img class="logo-footer" src="images/logo-footer.svg" alt="" />
+          <samp
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</samp
+          >
+        </div>
+        <article class="contact">
+          <a class="redes phone" href="tel:+154312345672"
+            ><img class="contactos" src="images/icon-phone.svg" alt="" />Phone:
+            +1-543-123-45672</a
+          >
+          <a href="mailto:deimerblandonmc@gmail.com" class="redes email"
+            ><img
+              class="contactos"
+              src="images/icon-email.svg"
+              alt=""
+            />example@huddle.com</a
+          >
+        </article>
 
-    Phone: +1-543-123-4567 <br />
-    example@huddle.com <br />
+        <div class="social">
+          <a class="red" href="#"
+            ><img class="icon color" ; src="images/facebook.svg" alt=""
+          /></a>
 
-    Newsletter <br />
-    To recieve tips on how to grow your community, sign up to our weekly
-    newsletter. We’ll never send you spam or pass on your email address <br />
+          <a class="red" href="#"
+            ><img class="icon color" src="images/instagratt.svg" alt=""
+          /></a>
 
-    Subscribe <br />
+          <a class="red" href="#"
+            ><img class="icon color" src="images/twiter.svg" alt=""
+          /></a>
+        </div>
+      </section>
+    </footer>
+    <script src="validar-formulario.js"></script>
+    <script src="java.js"></script>
   </body>
 </html>
