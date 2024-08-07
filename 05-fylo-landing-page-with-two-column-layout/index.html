@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,23 +10,61 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Fylo landing page with two column layout</title>
   </head>
   <body>
-    Features <br />
-    Team <br />
-    Sign In <br />
+    <div class="contain">
+      <header>
+        <nav class="nav content">
+          <img class="logo" src="images/logo.svg" alt="" />
+          <ul class="ul-nav">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+        <section class="txt-header content">
+          <div class="img-header">
+            <img
+              class="illustration-1"
+              src="images/illustration-1.svg"
+              alt=""
+            />
+          </div>
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p class="paragraph">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
 
-    All your files in one secure location, accessible anywhere. <br />
-
-    Fylo stores your most important files in one secure location. <br />
-    Access them wherever you need, share and collaborate with friends, family,
-    and co-workers. <br />
-
-    Get Started <br />
-
+          <form class="form" action="">
+            <div class="email">
+              <input
+                class="email"
+                type="email"
+                id="email"
+                pattern=".+@example\.com"
+                size="30"
+                required
+                placeholder="Enter your email…"
+              />
+              <em></em>
+            </div>
+            <button class="btn" type="button">Get Started</button>
+          </form>
+        </section>
+      </header>
+    </div>
+    <!-- <br />
     Stay productive, wherever you are <br />
 
     Never let location be an issue when accessing your files. Fylo has you
@@ -63,5 +101,6 @@
     Contact Us <br />
     Terms <br />
     Privacy <br />
+    -->
   </body>
 </html>
