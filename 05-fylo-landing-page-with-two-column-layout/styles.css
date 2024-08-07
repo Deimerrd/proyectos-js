@@ -73,8 +73,6 @@ h1 {
   font-weight: 400;
   line-height: 1.313rem;
   padding-bottom: 2rem;
-
-  margin: auto;
 }
 .form {
   display: flex;
@@ -95,10 +93,23 @@ input::placeholder {
   padding-left: 1.313rem;
 }
 
+.error {
+  color: #ef4877;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+.email-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.313rem;
+}
+
 .btn {
   max-width: 304px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  height: 40px;
   color: #fff;
   font-family: var(--font2);
   font-size: 14px;
@@ -107,6 +118,11 @@ input::placeholder {
   box-shadow: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
   border-radius: 0.3rem;
   border: none;
+}
+
+.txt-header {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -125,5 +141,37 @@ input::placeholder {
   }
   .ul-nav li a {
     font-size: 16px;
+  }
+
+  .txt-header {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .paragraph {
+    font-size: 17px;
+    letter-spacing: 0.531px;
+    line-height: 24px;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+  .btn {
+    min-width: 200px;
+    min-height: 45px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    padding-right: 7rem;
+  }
+  .paragraph {
+    padding-right: 7rem;
   }
 }

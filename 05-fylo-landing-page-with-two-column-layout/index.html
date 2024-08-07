@@ -39,28 +39,33 @@
               alt=""
             />
           </div>
-          <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p class="paragraph">
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
 
-          <form class="form" action="">
-            <div class="email">
-              <input
-                class="email"
-                type="email"
-                id="email"
-                pattern=".+@example\.com"
-                size="30"
-                required
-                placeholder="Enter your email…"
-              />
-              <em></em>
-            </div>
-            <button class="btn" type="button">Get Started</button>
-          </form>
+          <div class="txt">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p class="paragraph">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+
+            <form class="form" action="">
+              <div class="email-error">
+                <input
+                  class="email"
+                  type="email"
+                  id="email"
+                  pattern=".+@example\.com"
+                  size="30"
+                  required
+                  placeholder="Enter your email…"
+                />
+                <span class="error" id="error"></span>
+              </div>
+              <button onclick="validaremail()" class="btn" type="button">
+                Get Started
+              </button>
+            </form>
+          </div>
         </section>
       </header>
     </div>
@@ -102,5 +107,6 @@
     Terms <br />
     Privacy <br />
     -->
+    <script src="validarformulario.js"></script>
   </body>
 </html>
