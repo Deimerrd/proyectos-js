@@ -45,11 +45,6 @@ body {
   color: #07043b;
 }
 
-.img-header {
-  width: 80%;
-  margin: auto;
-}
-
 .ul-nav li {
   list-style-type: none;
 }
@@ -69,10 +64,12 @@ h1 {
   font-weight: 700;
   line-height: 36px;
   padding-top: 2.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.938rem;
 }
 .pr1 {
-  padding-bottom: 2rem;
+  max-width: 296px;
+  margin: auto;
+  padding-bottom: 25px;
 }
 .paragraph {
   line-height: 1.313rem;
@@ -135,6 +132,7 @@ input::placeholder {
 
 .illustration-2 {
   width: 100%;
+  max-width: 542px;
 }
 
 main {
@@ -255,6 +253,8 @@ tex-card {
   background-image: url("images/resctan.svg");
   width: 100%;
   text-align: center;
+
+  padding-bottom: 4.438rem;
 }
 h3 {
   color: #fff;
@@ -287,15 +287,38 @@ h3 {
   cursor: pointer;
 }
 
+footer {
+  background: #07043b;
+  color: white;
+}
+
 @media (min-width: 768px) {
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    width: 738px;
+  }
   .fr {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-
+  .pr1 {
+    text-align: center;
+    margin: auto;
+  }
   .section-fo {
     min-width: 533px;
   }
   .contain {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 4.063rem;
     padding-top: 65px;
     padding-left: 80px;
     padding-right: 80px;
@@ -304,27 +327,17 @@ h3 {
     padding-left: 22px;
     padding-right: 22px;
   }
-  .txt-card {
-    font-size: 13px;
-  }
+
   .href {
-    align-items: start;
+    margin: auto;
   }
   .tx {
-    padding-right: 7.438rem;
+    text-align: center;
+    padding-bottom: 1.3rem;
   }
 
   .link {
     justify-content: start;
-  }
-
-  .href {
-    text-align: left;
-  }
-  .contain {
-    max-width: 1440px;
-    margin: auto;
-    padding-top: 4.063rem;
   }
 
   figcaption {
@@ -334,8 +347,11 @@ h3 {
     font-size: 8px;
   }
 
+  h1 {
+    width: 627px;
+  }
   .email {
-    min-width: 480px;
+    width: 320px;
     height: 45px;
   }
   .logo {
@@ -345,33 +361,17 @@ h3 {
     font-size: 16px;
   }
 
-  h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .paragraph {
-    font-size: 17px;
-    letter-spacing: 0.531px;
-    line-height: 24px;
-  }
-
   .form {
     flex-direction: row;
     align-items: start;
-    transform: translateY(2.5rem);
   }
-  .illustration-2 {
-    display: flex;
-    margin: auto;
-  }
+
   main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .tx {
-    text-align: left;
+    background-image: url("images/desk.svg");
+    width: 100%;
   }
 
   .tex-card {
@@ -383,23 +383,21 @@ h3 {
     flex-direction: column;
     text-align: left;
   }
-  .pr1 {
-    width: 585px;
-    margin: auto;
-  }
+
   .txt-header {
     padding-bottom: 10.25rem;
+  }
+  .txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .main-content {
     margin: auto;
   }
-  h2 {
-    font-size: 40px;
-    line-height: normal;
-    text-align: left;
-    width: 738px;
-  }
+
   .card {
     width: 50%;
   }
@@ -409,26 +407,71 @@ h3 {
 
   h3 {
     text-align: left;
-    font-size: 32px;
-    line-height: 48px;
   }
   .pf {
     text-align: left;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
   }
 
   .error-f {
     text-align: left;
   }
-
-  .fr {
-    display: flex;
-    flex-direction: column;
-  }
 }
+
 @media (min-width: 1110px) {
+  .paragraph {
+    letter-spacing: 0.531px;
+    line-height: 24px;
+    font-size: 17px;
+  }
+  .email-f {
+    width: 480px;
+  }
+  .tx {
+    text-align: left;
+    width: 589px;
+  }
+  h2 {
+    text-align: left;
+  }
+  .href {
+    margin: initial;
+    align-items: start;
+  }
+  .txt {
+    align-items: start;
+  }
+
+  .pr1 {
+    min-width: 585px;
+    margin: initial;
+    text-align: left;
+  }
+  h1 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 40px;
+    padding-bottom: 38px;
+  }
+  .pf {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .txt-card {
+    font-size: 13px;
+  }
+  .txt {
+    padding-right: 42px;
+  }
   .btn-f {
     width: 200px;
   }
@@ -448,6 +491,7 @@ h3 {
   .fr {
     display: flex;
     flex-direction: column;
+    transform: translateY(1.5rem);
   }
   .box {
     display: flex;
@@ -459,13 +503,16 @@ h3 {
     display: flex;
     flex-direction: row-reverse;
     text-align: left;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0rem);
   }
 
   .main-text {
     display: flex;
     flex-direction: row-reverse;
-    gap: 5.625rem;
     justify-content: space-between;
+    align-items: center;
   }
   .card {
     margin: 0;
@@ -478,12 +525,45 @@ h3 {
     font-size: 13px;
   }
 
+  .illustration-1 {
+    width: 350px;
+    height: 384px;
+    flex-shrink: 0;
+    transform: translateY(2rem);
+  }
+  .illustration-2 {
+    width: 290px;
+    height: 309px;
+
+    flex-shrink: 0;
+  }
+
   .box {
     gap: 2rem;
   }
+  .pr1 {
+    width: 585px;
+  }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
   .box {
     gap: 14.188rem;
+  }
+
+  .txt-header {
+    transform: translateX(1rem);
+  }
+
+  .illustration-1 {
+    width: 640px;
+    height: 474px;
+    flex-shrink: 0;
+    transform: translateY(3rem);
+  }
+  .illustration-2 {
+    width: 542px;
+    height: 409px;
+
+    flex-shrink: 0;
   }
 }
