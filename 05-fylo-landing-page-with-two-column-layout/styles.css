@@ -291,6 +291,43 @@ footer {
   background: #07043b;
   color: white;
 }
+.contacto {
+  cursor: pointer;
+}
+
+.icon-ubicacion {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+li .list {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.txt-footer {
+  padding-bottom: 16px;
+}
+.contacto {
+  padding-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+.email-li {
+  display: flex;
+  gap: 16px;
+}
+.li1 {
+  padding-bottom: 32px;
+}
+.li2 {
+  padding-bottom: 32px;
+}
 
 @media (min-width: 768px) {
   .main-text {
