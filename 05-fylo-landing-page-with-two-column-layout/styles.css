@@ -290,6 +290,7 @@ h3 {
 footer {
   background: #07043b;
   color: white;
+  padding-bottom: 42px;
 }
 .contacto {
   cursor: pointer;
@@ -321,12 +322,55 @@ li .list {
 .email-li {
   display: flex;
   gap: 16px;
-}
-.li1 {
   padding-bottom: 32px;
 }
-.li2 {
+
+.li {
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.img-red {
+  position: absolute;
+  left: 0.4rem;
+  top: -0.8rem;
+  width: 20px;
+}
+.red {
+  border-color: #fff;
+  position: relative;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.img-red {
+  border: none;
+}
+.red {
+  text-decoration: none;
+}
+
+.circle {
+  height: 32px;
+  width: 32px;
+}
+.red:hover {
+  .circle path {
+    stroke: #ff52c1;
+  }
+  .img-red path {
+    fill: #ff52c1;
+    stroke: #ff52c1;
+  }
+  .img-red .rd {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
