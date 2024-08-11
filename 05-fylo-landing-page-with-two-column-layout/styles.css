@@ -67,7 +67,7 @@ h1 {
   padding-bottom: 0.938rem;
 }
 .pr1 {
-  max-width: 296px;
+  width: 90%;
   margin: auto;
   padding-bottom: 25px;
 }
@@ -291,6 +291,7 @@ footer {
   background: #07043b;
   color: white;
   padding-bottom: 42px;
+  padding-top: 65px;
 }
 .contacto {
   cursor: pointer;
@@ -310,6 +311,9 @@ li .list {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+li .list:hover {
+  color: #6c9bff;
 }
 .txt-footer {
   padding-bottom: 16px;
@@ -362,11 +366,11 @@ li .list {
 }
 .red:hover {
   .circle path {
-    stroke: #ff52c1;
+    stroke: #6c9bff;
   }
   .img-red path {
-    fill: #ff52c1;
-    stroke: #ff52c1;
+    fill: #6c9bff;
+    stroke: #6c9bff;
   }
   .img-red .rd {
     text-align: center;
@@ -413,8 +417,9 @@ li .list {
     margin: auto;
   }
   .tx {
-    text-align: center;
+    text-align: left;
     padding-bottom: 1.3rem;
+    width: 78%;
   }
 
   .link {
@@ -452,6 +457,9 @@ li .list {
     justify-content: space-between;
     align-items: center;
     background-image: url("images/desk.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
   }
 
@@ -496,9 +504,51 @@ li .list {
   .error-f {
     text-align: left;
   }
+
+  .box1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-footer {
+    max-width: 135px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .url {
+    display: flex;
+    gap: 5.5rem;
+    align-self: flex-end;
+    transform: translateY(3.4rem);
+  }
+
+  footer {
+    padding-bottom: 5.375rem;
+  }
 }
 
 @media (min-width: 1110px) {
+  .contacto {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  footer {
+    padding-bottom: 5.375rem;
+  }
+  .url {
+    display: flex;
+    gap: 12.5rem;
+    align-self: flex-end;
+    transform: translateY(3.4rem);
+  }
   .paragraph {
     letter-spacing: 0.531px;
     line-height: 24px;
@@ -574,11 +624,6 @@ li .list {
     flex-direction: column;
     transform: translateY(1.5rem);
   }
-  .box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
   .txt-header {
     display: flex;
@@ -615,7 +660,6 @@ li .list {
   .illustration-2 {
     width: 290px;
     height: 309px;
-
     flex-shrink: 0;
   }
 
@@ -627,10 +671,6 @@ li .list {
   }
 }
 @media (min-width: 1440px) {
-  .box {
-    gap: 14.188rem;
-  }
-
   .txt-header {
     transform: translateX(1rem);
   }
@@ -644,7 +684,6 @@ li .list {
   .illustration-2 {
     width: 542px;
     height: 409px;
-
     flex-shrink: 0;
   }
 }
