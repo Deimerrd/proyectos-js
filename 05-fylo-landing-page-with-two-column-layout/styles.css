@@ -118,6 +118,11 @@ input::placeholder {
   border: none;
   cursor: pointer;
 }
+
+.btn:hover {
+  background-color: #6c9bff;
+}
+
 .error-f {
   color: #fff;
   font-size: 12px;
@@ -287,6 +292,10 @@ h3 {
   cursor: pointer;
 }
 
+.btn-f:hover {
+  background-color: #6c9bff;
+}
+
 footer {
   background: #07043b;
   color: white;
@@ -338,7 +347,7 @@ li .list:hover {
 
 .img-red {
   position: absolute;
-  left: 0.4rem;
+  left: 0.7rem;
   top: -0.8rem;
   width: 20px;
 }
@@ -363,6 +372,7 @@ li .list:hover {
 .circle {
   height: 32px;
   width: 32px;
+  margin-left: 0.3rem;
 }
 .red:hover {
   .circle path {
@@ -383,6 +393,10 @@ li .list:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  em {
+    font-size: 16px;
+    font-style: normal;
   }
   h2 {
     text-align: center;
@@ -523,9 +537,10 @@ li .list:hover {
     justify-content: space-between;
     align-items: center;
   }
+
   .url {
     display: flex;
-    gap: 5.5rem;
+    gap: 3.5rem;
     align-self: flex-end;
     transform: translateY(3.4rem);
   }
@@ -540,14 +555,25 @@ li .list:hover {
     padding-top: 2rem;
     padding-bottom: 0;
   }
+
+  .url {
+    gap: 5.5rem;
+  }
+  .box__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
   footer {
     padding-bottom: 5.375rem;
   }
+
   .url {
     display: flex;
     gap: 12.5rem;
     align-self: flex-end;
-    transform: translateY(3.4rem);
+    transform: translateX(-3.4rem);
+    margin-top: 8rem;
   }
   .paragraph {
     letter-spacing: 0.531px;
@@ -670,7 +696,13 @@ li .list:hover {
     width: 585px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1340px) {
+  .box__footer {
+    gap: 14.25rem;
+  }
+  .redes {
+    transform: translateX(-8rem);
+  }
   .txt-header {
     transform: translateX(1rem);
   }

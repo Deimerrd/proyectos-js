@@ -112,37 +112,39 @@
 
     <section class="section-footer">
       <div class="box contain">
-        <div class="section-fo">
-          <h3>Get early access today</h3>
-          <p class="paragraph pf">
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-        </div>
-
-        <form class="form fr" action="">
-          <div class="email-error">
-            <input
-              class="email email-f"
-              type="email"
-              id="email-f"
-              pattern=".+@example\.com"
-              size="30"
-              required
-              placeholder="email@example.com"
-            />
-            <span class="error-f" id="error-f"></span>
+        <div class="box box__footer">
+          <div class="section-fo">
+            <h3>Get early access today</h3>
+            <p class="paragraph pf">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
           </div>
-          <button
-            onclick="validaremailfooter()"
-            class="btn-f"
-            id="btn-f"
-            type="button"
-          >
-            Get Started For Free
-          </button>
-        </form>
+
+          <form class="form fr" action="">
+            <div class="email-error">
+              <input
+                class="email email-f"
+                type="email"
+                id="email-f"
+                pattern=".+@example\.com"
+                size="30"
+                required
+                placeholder="email@example.com"
+              />
+              <span class="error-f" id="error-f"></span>
+            </div>
+            <button
+              onclick="validaremailfooter()"
+              class="btn-f"
+              id="btn-f"
+              type="button"
+            >
+              Get Started For Free
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -269,21 +271,6 @@
       </div>
     </footer>
 
-    <!-- 
-    Get Started For Free <br />
-
-    Phone: +1-543-123-4567 <br />
-    example@fylo.com <br />
-
-    About Us <br />
-    
-    <br />
-    <br />
-
-    Contact Us <br />
-    Terms <br />
-    Privacy <br />
-    -->
     <script src="validarformulario.js"></script>
   </body>
 </html>

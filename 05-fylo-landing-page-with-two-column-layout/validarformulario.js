@@ -1,7 +1,7 @@
 function validaremail() {
   var email = document.getElementById("email").value;
   var error = document.getElementById("error");
-  var expresion =
+  let expresion =
     /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
 
   if (email.match(expresion)) {
