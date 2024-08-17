@@ -341,6 +341,9 @@ body {
   }
 
   /*footer*/
+  .footer {
+    text-align: left;
+  }
 
   .footer__container {
     display: flex;
