@@ -361,9 +361,11 @@ body {
     gap: 1em;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 5rem;
   }
   .footer__link {
     width: 28%;
+    text-align: start;
   }
   .footer__social {
     margin-left: auto;
