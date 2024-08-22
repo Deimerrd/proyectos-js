@@ -205,16 +205,19 @@
           </p>
         </div>
         <form class="card__form" action="">
-          <input
-            class="email__form"
-            id="emailAddress"
-            type="email"
-            placeholder="email@example.com"
-            list="defaultEmails"
-            size="64"
-            maxlength="256"
-            multiple
-          />
+          <div class="validacion__form">
+            <input
+              class="email__form"
+              id="emailAddress"
+              type="email"
+              placeholder="email@example.com"
+              list="defaultEmails"
+              size="64"
+              maxlength="256"
+              multiple
+            />
+            <span class="error" id="error"></span>
+          </div>
           <button class="btn__form" type="button">Get Started For Free</button>
         </form>
       </div>
