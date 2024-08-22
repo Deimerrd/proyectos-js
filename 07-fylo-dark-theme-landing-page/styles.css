@@ -443,6 +443,15 @@ body {
   .paragraph__form {
     max-width: 673px;
   }
+
+  /*form*/
+  .card__form{
+    display: flex;
+    flex-direction: row;
+  }
+  .btn__form{
+    max-width: 200px;
+  }
 }
 
 @media (min-width: 1110px) {
