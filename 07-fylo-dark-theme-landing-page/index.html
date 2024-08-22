@@ -195,15 +195,27 @@
         </article>
       </section>
 
-      <div class="card__form">
-        <h2 class="titulo__article">Get early access today</h2>
-        <p class="paragraph paragraph__form">
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </p>
-        <form action="">
-          <input type="email" />
+      <div class="form">
+        <div class="text__form">
+          <h2 class="titulo__article">Get early access today</h2>
+          <p class="paragraph paragraph__form">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="card__form" action="">
+          <input
+            class="email__form"
+            id="emailAddress"
+            type="email"
+            placeholder="email@example.com"
+            list="defaultEmails"
+            size="64"
+            maxlength="256"
+            multiple
+          />
+          <button class="btn__form" type="button">Get Started For Free</button>
         </form>
       </div>
     </main>
@@ -215,7 +227,7 @@
 
     <br />
 
-    Get Started For Free <br />
+     <br />
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua <br />

@@ -252,9 +252,65 @@ body {
   position: relative;
 }
 
-.card__form {
-  padding: 0 20px;
+/*form*/
+
+.form {
   text-align: center;
+  border-radius: 9px;
+  background: #1b2330;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  margin: auto;
+  padding: 40px 28px;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.email__form {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  box-shadow: drop-shadow(1px 1px 3px rgba(7, 4, 59, 0.16));
+  border-radius: 28px;
+  border: none;
+  padding-left: 2rem;
+}
+
+.paragraph__form {
+  margin: 0 auto;
+}
+
+::placeholder {
+  color: #c0c0c0;
+}
+
+.btn__form {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 28px;
+  border: none;
+  height: 48px;
+  color: white;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 14px;
+  background: linear-gradient(132deg, #63e1d9 -31.85%, #34a0cd 100%);
+  box-shadow: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+  cursor: pointer;
+}
+
+.paragraph__form {
+  margin-top: 1rem;
+  line-height: 21px; /* 150% */
+  font-style: normal;
 }
 
 @media (min-width: 768px) {
@@ -380,6 +436,13 @@ body {
     transform: translateY(-4.9rem);
     left: -0.5rem;
   }
+  .form {
+    max-width: 863px;
+  }
+
+  .paragraph__form {
+    max-width: 673px;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -409,4 +472,10 @@ body {
   .card__text {
     min-width: 360px;
   }
+
+  
+.email__form {
+  display: block;
+  width: 100%;
+  max-width: 480px;
 }
