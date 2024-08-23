@@ -258,7 +258,7 @@ body {
   text-align: center;
   border-radius: 9px;
   background: #1b2330;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.25);
   width: 90%;
   margin: auto;
   transform: translateY(11rem);
@@ -358,14 +358,14 @@ body {
 }
 .location__footer {
   flex-shrink: 0;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
   width: 24px;
   height: 24px;
 }
 .textlogo__footer {
   display: flex;
   flex-direction: column;
-  gap: 2.188rem;
+  gap: 1.188rem;
 }
 
 .menu__footer {
@@ -399,14 +399,10 @@ body {
 .lista__icon {
   display: flex;
   margin-top: 55px;
-  gap: 4.72px;
+  gap: 10px;
+  justify-content: center;
 }
-.icon {
-  width: 70%;
-  position: absolute;
-  left: 0.3rem;
-  top: 0.2rem;
-}
+
 .link__icon {
   width: 27.061px;
   height: 27px;
@@ -416,6 +412,42 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: white;
+}
+
+.redes__footer {
+  display: flex;
+  gap: 18px;
+}
+
+.text__footer--phoemail {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.icon {
+  width: 75%;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2rem;
+  display: block;
+  z-index: 1;
+}
+.icon__hover {
+  width: 75%;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2rem;
+  display: none;
+}
+
+.link__icon:hover {
+  border-color: #62e0d9;
+  .icon__hover {
+    z-index: 1;
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -559,6 +591,34 @@ body {
   .btn__form {
     max-width: 200px;
   }
+
+  /*footer*/
+
+  .content__footer {
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .menu__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .textlogo__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phoemai__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .paragraph__footer {
+    max-width: 339px;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -593,5 +653,19 @@ body {
     display: block;
     width: 100%;
     max-width: 480px;
+  }
+
+  /*footer*/
+  .content__footer {
+    max-width: 1230px;
+    gap: 5rem;
+  }
+  .menu__footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phoemai__footer {
+    margin-top: 2.5rem;
   }
 }
