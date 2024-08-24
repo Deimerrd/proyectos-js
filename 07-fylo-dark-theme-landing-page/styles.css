@@ -644,6 +644,9 @@ body {
   .paragraph__footer {
     max-width: 339px;
   }
+  .link__dirigir {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1110px) {
