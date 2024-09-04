@@ -1,47 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
-
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Suite landing page</title>
   </head>
   <body>
-    Request Beta Access <br />
+    <div class="container">
+      <header class="header">
+        <nav class="nav__header">
+          <img class="nav__log" src="assets/logo.svg" alt="logo" />
+          <a href="#" class="btn nav__btn-request">Request Beta Access</a>
+        </nav>
+        <section class="section__header">
+          <div class="texto__solution">
+            <div class="text__section">
+              <div class="titulo">
+                <img class="path" src="assets/path.svg" alt="path" />
+                <h1 class="titulo__header">
+                  A <strong> super solution</strong> for your
+                  <strong>business.</strong>
+                </h1>
+              </div>
+              <p class="paragraph">
+                Our marketing and sales automations help you scale your outreach
+                to get more leads for your company.
+              </p>
+              <a href="#" class="btn section-btn-header">Request Beta Access</a>
+            </div>
 
-    A super solution for your business. <br />
+            <article class="article__header">
+              <picture>
+                <source
+                  srcset="assets/image-hero-landscape.png"
+                  media="(max-width:700px )"
+                />
+                <source
+                  srcset="assets/image-hero-portrait.png"
+                  media="(max-width:900px )"
+                />
+                <source
+                  srcset="assets/image-hero-portrait.webp"
+                  media="(min-width:1110px )"
+                />
+                <img
+                  class="img article__img-tablet"
+                  src="assets/image-hero-portrait.webp"
+                  alt=""
+                />
+              </picture>
+            </article>
+          </div>
 
-    Our marketing and sales automations help you scale your outreach to get more
-    leads for your company. <br />
+          <div class="text__article">
+            <figure class="box__article">
+              <figcaption><b>2K+</b></figcaption>
+              <blockquote>COMPANIES</blockquote>
+            </figure>
+            <figure class="box__article">
+              <figcaption><b>8</b></figcaption>
+              <blockquote>LANGUAGES</blockquote>
+            </figure>
+            <figure class="box__article">
+              <figcaption><b>1.2M</b></figcaption>
+              <blockquote>Leads</blockquote>
+            </figure>
+          </div>
+        </section>
+      </header>
+    </div>
+    <div class="main__footer">
+      <main class="main container">
+        <picture class="picture__footer">
+          <source
+            class="jeremy__main"
+            srcset="assets/image-jeremy-small.png"
+            media="(max-width:700px )"
+          />
+          <source
+            class="jeremy__main"
+            srcset="assets/image-jeremy-large.png"
+            media="(max-width:900px )"
+          />
+          <source
+            class="jeremy__main"
+            srcset="assets/image-jeremy-large@2x.png"
+            media="(min-width:1110px)"
+          />
 
-    Request Beta Access <br />
+          <img class="jeremy" src="assets/image-jeremy-large@2x.png" alt="" />
+        </picture>
 
-    2K+ <br />
-    Companies <br />
+        <section class="text__main">
+          <img
+            class="curva__main"
+            src="assets/pattern-curved-line-2.svg"
+            alt=""
+          />
+          <div class="txtone__main">
+            <h2 class="titulo__main">It just <strong>works.</strong></h2>
 
-    8 <br />
-    Languages <br />
+            <div class="tex__paragraph-main">
+              <p class="paragraph__main">
+                “I really like how it is an all-in-one solution that handle many
+                of the tasks that you would normally need separate tools to do
+                the same job. This thing is a miracle worker.”
+              </p>
+            </div>
 
-    1.2M <br />
-    Leads <br />
+            <div class="txttwo__main">
+              <h3 class="titulotwo__main">JEREMY ROBINSON</h3>
+              <p class="paragraph__main txt">CMO, FYLO</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__suite container">
+        <img class="logo__footer" src="assets/logo.svg" alt="" />
+        <em>Copyright - Suite</em>
 
-    It just works. <br />
+        <div class="link__footer">
+          <a class="li" href="#"
+            ><img
+              class="icon"
+              src="assets/icon-facebook.svg"
+              alt="icon-facebook"
+          /></a>
 
-    “I really like how it is an all-in-one solution that handle many of the
-    tasks that you would normally need separate tools to do the same job. This
-    thing is a miracle worker.” <br />
+          <a class="li" href="#"
+            ><img class="icon" src="assets/icon-twitter.svg" alt="icon-twitter"
+          /></a>
 
-    Jeremy Robinson <br />
-    CMO, Fylo <br />
-
-    Copyright - Suite <br />
+          <a class="li" href="#"
+            ><img
+              class="icon"
+              src="assets/icon-instagram.svg"
+              alt="icon-instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
