@@ -1,30 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Typemaster pre-launch landing page</title>
   </head>
   <body>
-    Pre-order now <br />
+    <header class="header contain">
+      <nav class="nadvar__header">
+        <img class="logo__nadvar" src="assets/logo.svg" alt="logo" />
+        <a class="btn btn__nadvar" href="#">Pre-order now</a>
+      </nav>
+      <section class="section__header">
+        <article class="article__section--header">
+          <h1 class="titulo titulo__header">Typemaster keyboard</h1>
+          <p class="paragraph paragraph__section">
+            Improve your productivity and gaming without breaking the bank.
+            Upgrade to a high quality mechanical typing experience.
+          </p>
+          <div class="release__header">
+            <a class="btn btn__release" href="#">Pre-order now</a>
+            <p class="paragrah paragrah--release">Release on 5/27</p>
+          </div>
+        </article>
+        <article class="picture">
+          <picture class="picture__header">
+            <source
+              srcset="assets/mobile/image-keyboard.jpg"
+              media="(max-width: 600px)"
+            />
 
-    Typemaster keyboard <br />
+            <source
+              srcset="assets/tablet/image-keyboard.jpg"
+              media="(max-width: 900px)"
+            />
 
-    Improve your productivity and gaming without breaking the bank. Upgrade to a
-    high quality mechanical typing experience. <br />
+            <source
+              srcset="assets/desktop/image-keyboard.jpg"
+              media="(min-width: 1110px)"
+            />
+            <img
+              class="img img__key"
+              src="assets/mobile/image-keyboard.jpg"
+              alt="MDN"
+            />
+          </picture>
+        </article>
+      </section>
+    </header>
+    <main class="main">
+      <section class="section__main">
+        <article class="article article__main">
+          <img
+            class="img phone__img"
+            src="assets/mobile/image-phone-and-keyboard.jpg"
+            alt=""
+          />
 
-    Pre-order now <br />
-    Release on 5/27 <br />
+          <img
+            src="assets/mobile/image-glass-and-keyboard.jpg"
+            class="img img__glass"
+            alt=""
+          />
+        </article>
+        <article class="article article__main-two"></article>
+      </section>
+    </main>
 
+    <!--
+    <br />
     Mechanical wireless keyboard <br />
     The Typemaster keyboard boasts top-notch build and practical design. It
     offers a wide variety of switches and keycaps, along with reliable wireless
@@ -49,6 +106,6 @@
     Each key glows intensely in the dark and helps you type in low light
     conditions. <br />
 
-    Typemaster 2021 | All Rights Reserved <br />
+    Typemaster 2021 | All Rights Reserved <br />-->
   </body>
 </html>
