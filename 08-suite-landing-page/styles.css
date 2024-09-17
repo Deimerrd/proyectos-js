@@ -12,6 +12,9 @@
   box-sizing: border-box;
 }
 
+.contenido {
+  overflow-x: hidden;
+}
 body {
   font-family: Epilogue;
   font-size: 16px;
@@ -381,6 +384,10 @@ em {
     padding-top: 36.5em;
     margin-top: 0;
   }
+  .link__footer {
+    position: relative;
+    top: 0.1rem;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -418,6 +425,13 @@ em {
     flex-direction: column;
     position: relative;
     right: 12rem;
+    margin-top: 0;
+    align-items: start;
+    bottom: 1.2rem;
+  }
+  .box__article {
+    text-align: left;
+    margin-top: 3.938rem;
   }
   .path {
     left: 4.3rem;
@@ -441,9 +455,6 @@ em {
     z-index: -1;
   }
 
-  .box__article {
-    margin-top: 4rem;
-  }
   .nav__btn-request {
     width: 219px;
     font-size: 16px;
@@ -496,7 +507,8 @@ em {
   .paragraph__main {
     text-align: left;
     max-width: 350px;
-    line-height: 35px; /* 175% */
+    line-height: 35px;
+    font-size: 20px;
     letter-spacing: 0.1px;
   }
   .titulo__main {
