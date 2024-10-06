@@ -529,7 +529,7 @@
   .paragraph__our {
     width: 540px;
     font-size: 22px;
-    line-height: 32px; /* 145.455% */
+    line-height: 32px;
   }
   .footer__modern {
     max-width: 1110px;
