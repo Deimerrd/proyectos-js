@@ -234,6 +234,10 @@
   display: block;
 }
 
+.link__footer:hover path {
+  fill: #fff;
+}
+
 @media (min-width: 768px) {
   /*header*/
 
