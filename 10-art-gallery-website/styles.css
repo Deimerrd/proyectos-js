@@ -289,6 +289,10 @@
   fill: #d5966c;
 }
 
+.back__header {
+  left: 3.3rem;
+}
+
 /*active*/
 
 .back__header:hover {
