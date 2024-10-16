@@ -58,14 +58,14 @@
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 3.636px;
-  width: 336px;
+  width: 204px;
+  height: 72px;
   background: var(--Almost-Black);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   position: relative;
-  padding-left: 5rem;
 }
 
 .img__row {
@@ -102,6 +102,16 @@
 }
 .paragraph__inspired {
   color: var(--White);
+}
+
+.our__location:hover {
+  .link__our {
+    background: var(--Gold);
+  }
+
+  .Right rect {
+    fill: #151515;
+  }
 }
 
 .come__inspired {
@@ -151,6 +161,13 @@
   margin-top: 38px;
 }
 
+.icon__footer path {
+  fill: #fff;
+}
+
+.icon__footer:hover path {
+  fill: #d5966c;
+}
 /*segunda pagina*/
 
 .header__map {
@@ -170,17 +187,30 @@
 
 .img__location {
   position: absolute;
-  left: 0;
-  right: 0px;
+}
+
+.lef {
+  left: -8rem;
+}
+
+.right {
+  right: 0;
 }
 
 .container {
   width: 100%;
 }
 .link__back {
-  width: 336px;
   height: 72px;
   font-family: "Big Shoulders Display";
+}
+
+.back__header {
+  display: flex;
+}
+
+.lef {
+  width: 206px;
 }
 
 .card__our {
@@ -249,6 +279,30 @@
 
 .link__footer:hover path {
   fill: #fff;
+}
+
+.img__location rect {
+  fill: #d5966c;
+}
+
+.img__row-one {
+  fill: #d5966c;
+}
+
+/*active*/
+
+.back__header:hover {
+  .link__back {
+    background: var(--Gold);
+  }
+  .img__location rect {
+    fill: #151515;
+  }
+}
+
+.our__location {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (min-width: 768px) {
@@ -374,7 +428,7 @@
     justify-content: space-between;
   }
   .back__header {
-    left: 2.5rem;
+    left: 7rem;
   }
 
   .paragraph__our {
@@ -434,7 +488,6 @@
   }
 
   .section__header {
-    margin: auto;
     padding-left: 5rem;
     max-width: 1110px;
   }
@@ -559,6 +612,9 @@
     width: 430px;
     font-size: 18px;
   }
+  .paragraph__header {
+    width: 350px;
+  }
 }
 
 @media (min-width: 1130px) {
@@ -568,10 +624,17 @@
     flex-direction: row;
     position: relative;
     bottom: 5.4rem;
-    gap: 246px;
-    transform: translateX(-32rem);
   }
   .back__header {
     left: 9.75rem;
+  }
+  .img__header {
+    left: 70%;
+  }
+  .title__header {
+    right: 16.5rem;
+  }
+  .txt__header {
+    transform: translateX(-5.7rem);
   }
 }
