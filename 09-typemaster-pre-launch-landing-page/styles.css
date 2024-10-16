@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  overflow-x: hidden;
+}
+
+.contain {
+  width: 90%;
+  margin: auto;
+  max-width: 1110px;
+}
+
+/*header nav*/
+
+.header {
+  margin-top: 23px;
+}
+.nadvar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 175px;
+  padding: 11px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn__nadvar {
+  color: #162542;
+  background: #e8eff2;
+}
+.btn__nadvar:hover {
+  background: #162542;
+  color: #ffffff;
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article__section--header {
+  margin-top: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.titulo {
+  color: #162542;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.titulo__header {
+  font-size: 48px;
+  line-height: 48px;
+}
+.paragraph {
+  color: #7b8bad;
+  font-weight: 500;
+  line-height: 26px;
+}
+.paragrahp__section {
+  font-size: 16px;
+}
+
+.btn__release {
+  background: #f16718;
+  color: #fff;
+}
+.btn__release:hover {
+  background: #ff9b62;
+}
+
+.paragraph--release {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7b8bad;
+}
+.release__header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.img {
+  border-radius: 12px;
+  display: block;
+}
+.img__key {
+  max-width: 400px;
+  position: relative;
+}
+
+/*main*/
+.main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.section__main {
+  display: flex;
+}
+
+.article__main {
+  display: flex;
+}
+.phone__img {
+  width: 100%;
+  display: block;
+  opacity: 0.7486;
+  transform: translateX(-2rem);
+}
+.img__glass {
+  width: 100%;
+  position: relative;
+  right: 0.3rem;
+}
+
+.picture__main {
+  position: relative;
+  border-radius: 12px;
+}
+.phone::before {
+  content: "";
+  border-radius: 12px;
+  transform: translateX(-2rem);
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: #f16718;
+  z-index: 5000;
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  opacity: 2;
+}
+
+.text__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.titulo__main {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  width: 225px;
+  margin: auto;
+}
+
+.paragraph__main {
+  text-align: center;
+}
+
+/*articulos*/
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+.art__articulos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.titulo__art {
+  text-align: center;
+
+  font-size: 24px;
+}
+.icon__articulos {
+  display: block;
+  margin: auto;
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+}
+
+.paragraph__art {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+/*footer*/
+
+footer {
+  padding-bottom: 3.125rem;
+  margin-top: 4rem;
+}
+.paragraph__footer {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  /*header nad*/
+  .btn {
+    padding: 16px 0;
+  }
+  .article__section--header {
+    gap: 34px;
+  }
+  .release__header {
+    gap: 37px;
+    margin-top: 5px;
+    width: 339px;
+  }
+
+  .section__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2.8rem;
+    gap: 3rem;
+  }
+  .img__key {
+    max-width: 506px;
+    position: relative;
+    left: 0em;
+    top: 1rem;
+  }
+
+  .main {
+    margin-top: 4rem;
+    padding-left: 1.9rem;
+  }
+  .text__main {
+    flex-direction: row;
+    align-items: center;
+    gap: 4.2rem;
+  }
+
+  .titulo__main {
+    text-align: start;
+    position: relative;
+    right: 2rem;
+  }
+  .paragraph__main {
+    text-align: start;
+  }
+  /*articulo*/
+  .articulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+      "art1  art2"
+      "art3  art4 ";
+
+    justify-items: center;
+    gap: 2.5em;
+  }
+  .icon__articulos {
+    margin: 0;
+  }
+  .titulo__art {
+    text-align: left;
+  }
+  .paragraph__art {
+    text-align: left;
+    width: 281px;
+    line-height: 26px;
+  }
+
+  /*footer*/
+
+  footer {
+    padding-bottom: 2.688rem;
+    margin-top: 8.875rem;
+  }
+}
+
+@media (min-width: 1110px) {
+  .header__before {
+    position: relative;
+  }
+
+  .header__before::before {
+    content: "";
+    position: absolute;
+    right: -7rem;
+    top: 7.5rem;
+    width: 255px;
+    height: 240px;
+    background-image: url("assets/muro-derecho.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .main__before {
+    position: relative;
+  }
+
+  .main__before::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14.7rem;
+    width: 255px;
+    height: 240px;
+    background-image: url("assets/shared/lef.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .titulo__header {
+    font-size: 56px;
+    line-height: 48px;
+  }
+  .section__header {
+    justify-content: space-between;
+  }
+  .article__section--header {
+    width: 445px;
+  }
+
+  .main {
+    flex-direction: row;
+    gap: 7rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  .section__main {
+    gap: 0.5rem;
+  }
+  .paragraph__section {
+    font-size: 18px;
+  }
+  .img {
+    border-radius: 18px;
+  }
+  .xl {
+    height: 480px;
+  }
+
+  .titulo__main {
+    margin-left: 0;
+    right: 0;
+  }
+  .text__main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .paragraph__main {
+    width: 255px;
+  }
+
+  /*articulos*/
+  .articulos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "art1 art2 art3 art4";
+    gap: 1.9rem;
+  }
+  .paragraph__art {
+    width: 255px;
+  }
+  /*footer*/
+
+  footer {
+    padding-bottom: 2.438rem;
+    margin-top: 8rem;
+  }
+}
