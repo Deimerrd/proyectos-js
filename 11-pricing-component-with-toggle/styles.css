@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  color: #6e728e;
+  text-align: center;
+  font-size: 32px;
+}
+
+.wrap-toggle {
+  text-align: center;
+}
+
+.content {
+  padding: 64px 0px 71px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  background-color: #a2a7f0;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: white;
+  top: 3px;
+  left: 5px;
+  transition: all 0.45s;
+}
+
+input[type="checkbox"]:checked + .switch::after {
+  transform: translateX(22px);
+}
+.offscreen {
+  position: absolute;
+  left: -999999px;
+}
