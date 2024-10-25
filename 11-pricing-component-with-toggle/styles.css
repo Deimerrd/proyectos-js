@@ -48,7 +48,3 @@ h1 {
 input[type="checkbox"]:checked + .switch::after {
   transform: translateX(22px);
 }
-.offscreen {
-  position: absolute;
-  left: -999999px;
-}
