@@ -14,6 +14,7 @@ body {
   font-style: normal;
   background: #f7f7fe;
   position: relative;
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -44,7 +45,7 @@ h2 {
   display: inline-block;
   width: 56px;
   height: 32px;
-  background-color: #a2a7f0;
+  background: linear-gradient(#a2a7f0, #696edd);
   border-radius: 40px;
   cursor: pointer;
 }
@@ -63,7 +64,12 @@ h2 {
 
 input[type="checkbox"]:checked + .switch::after {
   transform: translateX(22px);
+  background: white;
 }
+input[type="checkbox"]:checked + .switch {
+  background: #a2a7f0;
+}
+
 .offscreen {
   position: absolute;
   left: -999999px;
@@ -190,7 +196,64 @@ ul li {
 .white {
   color: #ffffff;
 }
+.btn:hover {
+  border: 1px solid #6d72de;
+  background: #fff;
+  color: #6d72de;
+}
 .btn2 {
   color: #6d72de;
   background: #ffffff;
+}
+.btn2:hover {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #a2a7f0 0.05%, #696edd 100.05%);
+  box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.5);
+  color: #fff;
+  border: 1px solid #fff;
+}
+@media (min-width: 1110px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    margin-top: 66.5px;
+  }
+  .card {
+    margin: 0;
+  }
+  .card2 {
+    height: 500px;
+    position: relative;
+    top: -1.5rem;
+  }
+
+  body::before {
+    content: "";
+    background-image: url("./images/bg-top.svg");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    left: 72%;
+    top: -3rem;
+    z-index: -9999;
+    width: 471.663px;
+    height: 757.201px;
+    flex-shrink: 0;
+  }
+
+  body::after {
+    content: "";
+    background-image: url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 471.663px;
+    height: 370px;
+    bottom: -3.5rem;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: -9999;
+  }
 }
