@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,37 +10,88 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Pricing Component</title>
   </head>
   <body>
-    Our Pricing <br />
-    Annually <br />
-    Monthly <br />
 
-    Basic <br />
-    &dollar;19.99 <br />
-    &dollar;199.99 <br />
-    500 GB Storage <br />
-    2 Users Allowed <br />
-    Send up to 3 GB <br />
-    Learn More <br />
+    <div class="content">
+    <h2>Our Pricing</h2>
+    <div class="wrap-toggle">
+      <input type="checkbox" id="toggle" class="offscreen"  />
+      <label for="toggle" class="switch"></label>
+      <label class="eleccion__text">Monthly</label>
+    </div>
 
-    Professional <br />
-    &dollar;24.99 <br />
-    &dollar;249.99 <br />
-    1 TB Storage <br />
-    5 Users Allowed <br />
-    Send up to 10 GB <br />
-    Learn More <br />
+    
+      
+        <main class="main">
+          <article class="card card1">
+            <h2 class="titulo">Basic</h2>
+            <p class="price-1">
+              <span class="dollar-sign ">&dollar;</span><span id="v1">199.99</span>
+            </p>
+            <ul>
+              <hr />
+              <li class="list--beneficios">500 GB Storage</li>
+              <hr />
+              <li class="list--beneficios">2 Users Allowed</li>
+              <hr />
+              <li class="list--beneficios">Send up to 3 GB</li>
+              <hr />
+            </ul>
+            <button class="btn__more btn">LEARN MORE</button>
+          </article>
 
-    Master <br />
-    &dollar;39.99 <br />
-    &dollar;399.99 <br />
-    2 TB Storage <br />
-    10 Users Allowed <br />
-    Send up to 20 GB <br />
-    Learn More <br />
+          <article class="card card2">
+            <h2 class="white titulo">Professional</h2>
+            <p class="white price-1">
+              <span class="white dollar-sign" >&dollar;</span><span id="v2">249.99</span>
+            </p>
+            <ul>
+              <hr />
+              <li class="white list--beneficios">1 TB Storage</li>
+              <hr />
+              <li class="white list--beneficios">5 Users Allowed </li>
+              <hr />
+              <li class="white list--beneficios">Send up to 10 GB</li>
+              <hr />
+            </ul>
+            <button class="btn__more btn2">LEARN MORE</button>
+
+
+          </article>
+
+          <article class="card card3">
+
+            <h2 class="titulo">Master </h2>
+            <p class="price-1">
+              <span class="dollar-sign" >&dollar;</span><span id="v3">399.99</span>
+            </p>
+            <ul>
+              <hr />
+              <li class="list--beneficios">2 TB Storage</li>
+              <hr />
+              <li class="list--beneficios">10 Users Allowed </li>
+              <hr />
+              <li class="list--beneficios">Send up to 20 GB </li>
+              <hr />
+            </ul>
+            <button class="btn__more btn">LEARN MORE</button>
+          </article>
+        </main>
+      </div>
+    </div>
+    
+
+    <script src="main.js"></script>
   </body>
 </html>
