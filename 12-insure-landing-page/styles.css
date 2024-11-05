@@ -71,7 +71,6 @@ body {
   position: absolute;
   left: 0;
   top: 60%;
-  overflow-y: hidden;
 }
 
 .list__link {
@@ -373,6 +372,10 @@ body {
     clip-path: unset;
   }
   .nav__links:target ~ .nav__hamburguer--last {
+    display: none;
+  }
+
+  .nav__links::after {
     display: none;
   }
   .nav__links {
