@@ -1,0 +1,156 @@
+:root {
+  --font1: "Josefin Sans", sans-serif;
+  --font2: "Alata", sans-serif;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 64px 0px 43px 0;
+}
+
+.hero {
+  background-image: url("images/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 650px;
+}
+
+/*nav menu hamburguesa*/
+
+.nav__logo {
+  width: 144px;
+  height: 24px;
+  z-index: 1;
+}
+
+.nav {
+  --close: none;
+  --hamburguer: block;
+  --transform: translate(-100%);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "logo active";
+  justify-content: space-between;
+  padding: 45px 0 0;
+}
+
+.nav:target {
+  --close: block;
+  --hamburguer: none;
+  --transform: translate(0);
+}
+
+.nav__hamburguer,
+.nav__close {
+  grid-area: active;
+  place-self: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav__hamburguer {
+  display: var(--hamburguer);
+}
+
+.nav__close {
+  display: var(--close);
+}
+
+.nav__img {
+  display: block;
+}
+
+.nav__links {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 500px;
+  padding: 0;
+  background-color: var(--black);
+  display: grid;
+  place-content: center start;
+  gap: 2em;
+  padding-left: 5%;
+  transform: var(--transform);
+  transition: transform 0.4s;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: var(--font1);
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("./images/desktop/image-hero.jpg");
+  }
+
+  .nav {
+    --hamburguer: none;
+  }
+
+  .nav:target {
+    --close: none;
+    --hamburguer: none;
+  }
+
+  .nav__links {
+    transform: unset;
+    position: unset;
+    min-height: unset;
+    padding: 0;
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center start;
+    gap: 1em;
+    transform: unset;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    font-family: unset;
+    text-transform: none;
+  }
+  .span {
+    display: none;
+    width: 24px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+
+  .nav__list:hover {
+    .span {
+      display: block;
+    }
+  }
+  .container {
+    width: 80%;
+  }
+}
