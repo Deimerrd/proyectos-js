@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
 
     <link
       rel="icon"
@@ -10,35 +19,37 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
     <header class="hero">
       <nav class="nav container" id="nav">
-        <img src="images/logo.svg" class="nav__logo" alt="" />
+        <img src="images/logo.svg" class="nav__logo" />
+
         <ul class="nav__links">
           <li class="nav__list">
-            <a href="#" class="nav__link">About</a><span class="span"></span>
+            <a href="#" class="nav__link">About </a
+            ><a class="linea" href=""></a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">Careers</a
+            ><a class="linea" href=""></a>
           </li>
 
           <li class="nav__list">
-            <a href="#" class="nav__link">Careers</a><span class="span"></span>
+            <a href="#" class="nav__link">Events</a
+            ><a class="linea" href=""></a>
           </li>
+
           <li class="nav__list">
-            <a href="#" class="nav__link">Events</a><span class="span"></span>
+            <a href="#" class="nav__link">Products</a
+            ><a class="linea" href=""></a>
           </li>
+
           <li class="nav__list">
-            <a href="#" class="nav__link">Products</a><span class="span"></span>
-          </li>
-          <li class="nav__list">
-            <a href="#" class="nav__link">Support</a><span class="span"></span>
+            <a href="#" class="nav__link">Support</a
+            ><a class="linea" href=""></a>
           </li>
         </ul>
 
@@ -51,21 +62,28 @@
         </a>
       </nav>
 
-      <div class="card container">
-        <h1 class="title">Immersive experiences that deliver</h1>
+      <div class="hero__text container">
+        <h1 class="hero__title">Immersive experiences that deliver</h1>
       </div>
     </header>
 
-    <main class="main container">
-      <section class="main__interactive">
-        <img
-          src="images/mobile/image-interactive.jpg"
-          class="interactive__img"
-          alt=""
-        />
-        <div class="text__interactive">
-          <h2 class="title__interactive title">The leader in interactive VR</h2>
-          <p class="paragraph__interactive">
+    <main class="main">
+      <section class="leader container">
+        <picture class="leader__picture">
+          <source
+            srcset="./images/desktop/image-interactive.jpg"
+            class="leader__img"
+            media="(min-width:768px)"
+          />
+          <img
+            src="./images/mobile/image-interactive.jpg"
+            class="leader__img"
+          />
+        </picture>
+
+        <div class="leader__texts">
+          <h2 class="subtitle">The leader in interactive VR</h2>
+          <p class="leader__paragraph">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -73,101 +91,177 @@
           </p>
         </div>
       </section>
-      <section class="creations__main">
-        <h2 class="title__interactive title">OUR CREATIONS</h2>
-        <a href="#" class="btn__all">SEE ALL</a>
-        <div class="creations__gallery">
-          <picture>
+
+      <section class="gallery container">
+        <h2 class="subtitle subtitle--gallery">Our creations</h2>
+        <a href="#" class="gallery__cta">See all</a>
+        <div class="gallery__container">
+          <picture class="gallery__picture" data-message="Deep earth">
             <source
-              srcset="images/desktop/image-deep-earth.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-deep-earth.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-deep-earth.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
 
-          <picture>
+          <picture class="gallery__picture" data-message="Night arcade">
             <source
-              srcset="images/desktop/image-night-arcade.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-night-arcade.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-night-arcade.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="Soccer team VR">
             <source
-              srcset="images/desktop/image-soccer-team.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-soccer-team.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-soccer-team.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="The grid">
             <source
-              srcset="images/desktop/image-grid.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-grid.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-grid.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="From up above VR">
             <source
-              srcset="images/desktop/image-from-above.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-from-above.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-from-above.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="Pocket borealis">
             <source
-              srcset="images/desktop/image-pocket-borealis.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-pocket-borealis.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-pocket-borealis.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="The curiosity">
             <source
-              srcset="images/desktop/image-curiosity.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-curiosity.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-curiosity.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
-          <picture>
+
+          <picture class="gallery__picture" data-message="Make it fisheye">
             <source
-              srcset="images/desktop/image-fisheye.jpg"
-              media="(min-width: 768px)"
+              srcset="./images/desktop/image-fisheye.jpg"
+              class="gallery__img"
+              media="(min-width:768px)"
             />
             <img
-              class="gallery__img gallery__img--deeb"
               src="images/mobile/image-fisheye.jpg"
-              alt="ded-earth"
+              alt=""
+              class="gallery__img"
             />
           </picture>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <section class="footer__container container">
+        <img src="images/logo.svg" class="footer__logo" />
+
+        <ul class="footer__links">
+          <li class="footer__list">
+            <a href="#" class="footer__link">About</a
+            ><a href="#" class="linea"></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#" class="footer__link">Careers</a
+            ><a href="#" class="linea"></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#" class="footer__link">Events</a
+            ><a href="#" class="linea"></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#" class="footer__link">Products</a
+            ><a href="#" class="linea"></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#" class="footer__link">Support</a
+            ><a href="#" class="linea"></a>
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <a href="#" class="footer__social">
+            <img src="./images/icon-facebook.svg" class="footer__icon" /><span
+              class="linea"
+            ></span>
+          </a>
+
+          <a href="#" class="footer__social">
+            <img src="./images/icon-twitter.svg" class="footer__icon" /><span
+              class="linea"
+            ></span>
+          </a>
+
+          <a href="#" class="footer__social">
+            <img src="./images/icon-pinterest.svg" class="footer__icon" /><span
+              class="linea"
+            ></span>
+          </a>
+
+          <a href="#" class="footer__social">
+            <img src="./images/icon-instagram.svg" class="footer__icon" /><span
+              class="linea"
+            ></span>
+          </a>
+        </nav>
+
+        <p class="footer__copy">© 2021 Loopstudios. All rights reserved.</p>
+      </section>
+    </footer>
   </body>
 </html>
