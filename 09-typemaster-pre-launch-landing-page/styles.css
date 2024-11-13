@@ -223,6 +223,9 @@ footer {
   font-size: 16px;
   text-align: center;
 }
+.footer__icon:hover svg {
+  fill: red;
+}
 
 @media (min-width: 700px) {
   /*header nad*/
