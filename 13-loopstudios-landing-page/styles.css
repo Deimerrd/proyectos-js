@@ -207,7 +207,7 @@ body {
   place-self: end start;
   content: attr(data-message) " ";
   text-transform: uppercase;
-  color: #fff;
+  color: var(--White);
   font-family: var(--font2);
   font-size: 24px;
   width: 0%;
