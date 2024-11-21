@@ -75,6 +75,7 @@ nav ul li:last-child {
 .showcase {
   display: flex;
   flex-direction: column-reverse;
+  padding: 4rem 0;
 }
 
 .showcase h2 {
@@ -101,6 +102,28 @@ nav ul li:last-child {
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+  text-transform: uppercase;
+}
+
+.showcase .cta button {
+  background: #ff5e5e;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.933px;
+  text-transform: uppercase;
+  font-family: var(--font1);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.showcase .cta span {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.5;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  margin-left: 1.25rem;
 }
 
 h1,
@@ -123,4 +146,14 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  height: calc(50vh - 10px);
+  width: calc(50vw - 10px);
+  border-bottom-left-radius: 3rem;
 }
