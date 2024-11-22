@@ -60,6 +60,7 @@ nav ul {
 nav ul li a {
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  font-weight: 700;
 }
 
 nav ul li:nth-child(4) {
