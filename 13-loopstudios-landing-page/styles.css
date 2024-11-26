@@ -3,8 +3,8 @@
   --Black: hsl(0, 0%, 0%);
   --Dark-Gray: hsl(0, 0%, 55%);
   --Very-Dark-Gray: hsl(0, 0%, 41%);
-  --font1: 'Alata', sans-serif;
-  --font2: 'Josefin Sans', sans-serif;
+  --font1: "Alata", sans-serif;
+  --font2: "Josefin Sans", sans-serif;
 }
 * {
   margin: 0;
@@ -116,92 +116,10 @@ body {
 
 .hero {
   min-height: 500px;
-  background-image: url('./images/desktop/image-hero.jpg');
+  background-image: url("./images/desktop/image-hero.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 64px;
-}
-
-.nav {
-  --close: none;
-  --hamburguer: block;
-  --transform: translate(-100%);
-
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-template-areas: 'logo active';
-  justify-content: space-between;
-  padding: 45px 0 0;
-}
-
-.nav:target {
-  --close: block;
-  --hamburguer: none;
-  --transform: translate(0);
-}
-.nav__logo {
-  z-index: 1;
-}
-
-.nav__hamburguer,
-.nav__close {
-  grid-area: active;
-  place-self: center;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.nav__hamburguer {
-  display: var(--hamburguer);
-}
-
-.nav__close {
-  display: var(--close);
-}
-
-.nav__img {
-  display: block;
-}
-
-.nav__list:hover {
-  .linea {
-    display: block;
-  }
-}
-
-.linea {
-  width: 24px;
-  height: 2px;
-  background: var(--White);
-  display: none;
-}
-
-.nav__links {
-  position: absolute;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-height: 500px;
-  padding: 0;
-  background-color: var(--Black);
-  display: grid;
-  place-content: center start;
-  gap: 2em;
-  padding-left: 5%;
-  transform: var(--transform);
-  transition: transform 0.4s;
-}
-.nav__list {
-  list-style: none;
-}
-.nav__link {
-  color: var(--White);
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-family: var(--font1);
-  text-transform: uppercase;
 }
 
 .hero__text {
@@ -284,7 +202,7 @@ body {
 }
 
 .gallery__picture::before {
-  content: '';
+  content: "";
   z-index: 10;
   grid-area: show;
   background-image: linear-gradient(
@@ -298,7 +216,7 @@ body {
   z-index: 10;
   grid-area: show;
   place-self: end start;
-  content: attr(data-message) ' ';
+  content: attr(data-message) " ";
   text-transform: uppercase;
   color: var(--White);
   font-family: var(--font2);
@@ -367,16 +285,16 @@ body {
   align-items: center;
 }
 
-.footer__list:hover {
-  .linea {
-    display: block;
-  }
+.footer__link:hover + .line {
+  background-color: #fff;
 }
 
-.footer__social:hover {
-  .linea {
-    display: block;
-  }
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social:hover + .line {
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -391,65 +309,16 @@ body {
   }
 
   .hero {
-    background-image: url('./images/desktop/image-hero.jpg');
+    background-image: url("./images/desktop/image-hero.jpg");
   }
   .hero__title {
     color: var(--White);
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-size: 72px;
     font-style: normal;
     font-weight: 300;
     line-height: 70px;
     text-transform: uppercase;
-  }
-  .nav {
-    --hamburguer: none;
-  }
-
-  .nav:target {
-    --close: none;
-    --hamburguer: none;
-  }
-
-  .nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav__list:hover {
-    .linea {
-      display: block;
-    }
-  }
-
-  .linea {
-    width: 24px;
-    height: 2px;
-    background: var(--White);
-    display: none;
-  }
-
-  .nav__links {
-    transform: unset;
-    position: unset;
-
-    min-height: unset;
-    padding: 0;
-    background-color: transparent;
-
-    display: grid;
-    grid-auto-flow: column;
-    place-content: center start;
-    gap: 1em;
-
-    transform: unset;
-  }
-
-  .nav__link {
-    font-size: 1rem;
-    font-family: unset;
-    text-transform: none;
   }
 
   /*leader*/
@@ -509,7 +378,7 @@ body {
 
   .footer__container {
     grid-template-columns: repeat(2, max-content);
-    grid-template-areas: 'logo social' 'links copy';
+    grid-template-areas: "logo social" "links copy";
     row-gap: 3em;
     justify-content: space-between;
     align-items: center;
