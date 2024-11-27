@@ -66,8 +66,10 @@ body {
 .mobile-nav-item {
   font-size: 24px;
   font-style: normal;
-  line-height: 25px; /* 104.167% */
+  line-height: 25px;
   text-transform: uppercase;
+  font-family: var(--font2);
+  font-weight: 300;
 }
 
 .open-menu,
@@ -130,7 +132,7 @@ body {
   max-width: 650px;
   color: var(--White);
   border: 2px solid;
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-size: 40px;
   padding: 2.3rem;
   font-weight: 300;
@@ -216,13 +218,6 @@ body {
   z-index: 10;
   grid-area: show;
   place-self: end start;
-  content: attr(data-message) " ";
-  text-transform: uppercase;
-  color: var(--White);
-  font-family: var(--font2);
-  font-size: 24px;
-  width: 0%;
-  padding: 1rem;
 }
 
 .gallery__img {
@@ -247,7 +242,6 @@ body {
 .footer__container {
   display: grid;
   grid-template-columns: max-content;
-
   justify-content: center;
   justify-items: center;
 }
@@ -297,6 +291,42 @@ body {
   background-color: #fff;
 }
 
+.gallery__picture {
+  position: relative;
+}
+
+.gallery__picture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.gallery__picture:hover::before {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--font2);
+}
+
+.product-card:hover h3 {
+  color: #000;
+  z-index: 10;
+}
 @media (min-width: 768px) {
   .mobile-menu,
   .header {
@@ -313,9 +343,8 @@ body {
   }
   .hero__title {
     color: var(--White);
-    font-family: "Josefin Sans";
+    font-family: var(--font2);
     font-size: 72px;
-    font-style: normal;
     font-weight: 300;
     line-height: 70px;
     text-transform: uppercase;
@@ -328,6 +357,7 @@ body {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 0;
+    margin-top: 120px;
   }
 
   .leader__picture {
@@ -337,6 +367,8 @@ body {
   .leader__img {
     height: 100%;
     object-fit: cover;
+    max-width: 889px;
+    margin-left: 1rem;
   }
 
   .leader__texts {
@@ -344,7 +376,12 @@ body {
     background-color: var(--White);
     grid-column: 4/8;
     grid-row: 3/6;
-    padding: 2.5em;
+    padding: 3.5em;
+    margin-left: 3rem;
+    padding-right: 0;
+  }
+  .container {
+    width: 100%;
   }
 
   .subtitle {
@@ -372,6 +409,10 @@ body {
   .gallery__picture::after {
     width: 65%;
     font-size: 32px;
+  }
+  .product-card h3 {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   /*footer*/
