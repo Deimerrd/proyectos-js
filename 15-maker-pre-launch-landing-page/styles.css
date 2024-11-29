@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080c20;
+  position: relative;
+}
+body::before {
+  content: "";
+  background-image: url("./assets/illustration-hero-left.svg");
+  background-size: contain;
+  width: 204px;
+  height: 231px;
+  position: absolute;
+  left: 0;
+  top: 142px;
+}
+body::after {
+  content: "";
+  background-image: url("./assets/illustration-hero-right.svg");
+  background-size: contain;
+  width: 207px;
+  height: 231px;
+  position: absolute;
+  right: -30px;
+  top: 142px;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 40px;
+}
+.icon {
+  text-align: center;
+}
+h1 {
+  margin-top: 23.625rem;
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
 /* 
   Cuando se envíe el formulario se debe hacer lo siguiente:
   1) Si el campo está vacio se debe mostrar el siguiente mensaje: Oops! Please add your email
