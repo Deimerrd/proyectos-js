@@ -181,7 +181,7 @@ button {
   right: 0;
   background: #edf2f6;
   height: calc(68vh - 10px);
-  width: calc(50vw - 10px);
+  width: calc(55vw - 10px);
   border-bottom-left-radius: 3rem;
   z-index: -1;
 }
