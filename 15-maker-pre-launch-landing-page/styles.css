@@ -24,7 +24,7 @@ body::after {
   width: 207px;
   height: 231px;
   position: absolute;
-  right: -30px;
+  right: -36px;
   top: 142px;
 }
 .container {
@@ -32,7 +32,7 @@ body::after {
   max-width: 1440px;
   margin-top: 40px;
 }
-.icon {
+.logo {
   text-align: center;
 }
 h1 {
@@ -43,6 +43,57 @@ h1 {
   font-size: 32px;
   font-weight: 800;
   line-height: 40px;
+  min-width: 327px;
+  padding: 0 4rem;
+}
+
+h1 span {
+  color: #3ee9e5;
+}
+@media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  body::before {
+    top: 120px;
+    background-size: cover;
+    left: -11.9rem;
+    width: 46vw;
+    height: 62vh;
+  }
+
+  body::after {
+    top: 128px;
+    background-size: cover;
+    right: 0;
+    width: 21vw;
+    height: 62vh;
+    max-width: 160px;
+  }
+  .container {
+    padding: 0 2.438rem;
+  }
+  header {
+    max-width: 457px;
+    margin: auto;
+  }
+  header h1 {
+    font-size: 32px;
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 1110px) {
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 48px;
+  }
 }
 
 /* 
