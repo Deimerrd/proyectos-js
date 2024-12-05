@@ -157,6 +157,10 @@ h2 {
   margin-top: 19px;
 }
 
+.texto__card {
+  color: #080c20;
+}
+
 @media (min-width: 768px) {
   .logo {
     text-align: left;
