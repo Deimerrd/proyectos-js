@@ -115,9 +115,9 @@ h2 {
 }
 .card__free {
   background: #093f68;
-
   padding-top: 24px;
   position: relative;
+  padding-bottom: 32px;
 }
 
 .card__free::before {
@@ -133,6 +133,7 @@ h2 {
 .card__dive {
   background: #3ee9e5;
   padding-top: 61px;
+  padding-bottom: 32px;
   position: relative;
 }
 
@@ -159,6 +160,53 @@ h2 {
 
 .texto__card {
   color: #080c20;
+}
+h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+h3 span {
+  font-size: 15px;
+  opacity: 0.6;
+  line-height: 25px;
+  position: relative;
+  bottom: 0.5rem;
+}
+.title__precio-free {
+  color: #fff;
+  margin-top: 26px;
+}
+
+.title__precio-dive {
+  margin-top: 26px;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 19px;
+}
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 15px;
+}
+.li__div {
+  color: #080c20;
+}
+
+.lista__dive {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 19px;
 }
 
 @media (min-width: 768px) {
