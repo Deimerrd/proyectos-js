@@ -192,14 +192,30 @@
       <footer>
         <h2 class="title__footer">Get notified when
           we launch</h2>
-          <div class="form" id="form">
-            <input  class="txt__email" id="txt__email"   type="email" placeholder="Email address">
-            <small id="error" class="error txt-error">Oops! That doesn’t look like an email address</small>
-            <button type="submit" class="btn" id="btn">Get notified</button>
-          </div>
+          <form class="card__form" action="">
+            <div class="validacion__form">
+              <input
+                class="email__form"
+                id="txt__email"
+                type="email"
+                placeholder=""
+                list="defaultEmails"
+                size="64"
+                maxlength="256"
+                multiple
+                required
+              /> <br>
+              <span class="error" id="error"></span>
+            </div>
+            <button onclick="validaremail()" class="btn__form" type="button">
+              Get Started For Free
+            </button>
+          </form>
+        
       </footer>
     </div>
   </body>
   
   <script src="index.js"></script>
 </html>
+</form>
