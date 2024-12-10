@@ -255,6 +255,7 @@ li {
 }
 .error {
   position: absolute;
+  left: 3rem;
 }
 .card__form {
   display: flex;
