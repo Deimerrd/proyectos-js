@@ -25,7 +25,7 @@
     <title>Maker pre-launch landing page</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <figure class="logo">
         <img src="assets/logo.svg" />
       </figure>
@@ -55,61 +55,70 @@
 
       <main>
         <div class="main__card">
-          <article>
+          <article class="session__main session__main-left">
             <figure>
-              <img class="img" src="assets/illustration-passions.svg" />
+              <img class="img" src="assets/passion.svg" />
             </figure>
-            <h2>Indulge your passions</h2>
+            <div class="text__main">
+            <h2 class="h2">Indulge your passions</h2>
             <p class="paragraph pa">
               Your passions shouldn't be just for the weekend. Earn a living
               doing what you love.
             </p>
+          </div>
           </article>
 
-          <article>
-            <figure>
+          <article class="session__main">
+            <div class="figure">
               <img
                 class="img"
-                src="assets/illustration-financial-freedom.svg"
+                src="assets/financial.svg"
                 alt=""
               />
-            </figure>
-            <h2>Indulge your passions</h2>
+            </div>
+            
+            <div class="text__main">
+            <h2 class="h2">Gain financial freedom</h2>
             <p class="paragraph pa">
               Start making money work for you. There’s nothing quite like
               earning while you sleep.
             </p>
+          </div>
           </article>
 
-          <article>
+          <article class="session__main session__main-left">
             <figure>
-              <img class="img" src="assets/illustration-lifestyle.svg"  />
+              <img class="img" src="assets/lifes.svg"  />
             </figure>
-            <h2>Indulge your passions</h2>
+            <div class="text__main">
+            <h2 class="h2">Choose your lifestyle</h2>
             <p class="paragraph pa">
               Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
               your week.
             </p>
+          </div>
           </article>
 
-          <article>
+          <article class="session__main">
             <figure>
               <img
                 class="img"
-                src="assets/illustration-work-anywhere.svg"
+                src="assets/worl.svg"
                 alt=""
               />
             </figure>
-            <h2>Indulge your passions</h2>
+            <div class="text__main">
+            <h2 class="h2">Work from anywhere</h2>
             <p class="paragraph pa">
               Selling online means not being pinned down. Want to work AND
               travel? Go for it!
             </p>
+          </div>
           </article>
         </div>
 
         <article class="plans">
-          <h2>Our pricing plans</h2>
+          <h2 class="h2">Our pricing plans</h2>
           <p class="paragraph pc">
             We only make money when our creators make money. Our plans are
             always affordable, and it’s completely free to get started.
@@ -160,7 +169,7 @@
             </p>
             <h3 class="title__precio-dive">$25.00 <span>/ month</span></h3>
             <section class="lista__dive"> 
-  
+
             <div class="list">
               <figure>
                 <img src="assets/icon-check.svg" />
@@ -198,7 +207,7 @@
                 class="email__form"
                 id="txt__email"
                 type="email"
-                placeholder=""
+                placeholder="Email address"
                 list="defaultEmails"
                 size="64"
                 maxlength="256"

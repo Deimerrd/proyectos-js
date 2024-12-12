@@ -44,6 +44,9 @@ body::after {
 .article {
   text-align: center;
 }
+picture {
+  z-index: -1;
+}
 picture img {
   display: none;
 }
@@ -133,7 +136,7 @@ h2 {
 
 .card__dive {
   background: #3ee9e5;
-  padding-top: 61px;
+  padding-top: 42px;
   padding-bottom: 32px;
   position: relative;
 }
@@ -145,7 +148,7 @@ h2 {
   height: 65px;
   position: absolute;
   top: 0;
-  transform: translateY(-1.5rem);
+  transform: translateY(-2rem);
 }
 .title__card-drive {
   color: #080c20;
@@ -157,6 +160,9 @@ h2 {
   opacity: 0.5973;
   text-align: left;
   margin-top: 19px;
+  font-size: 15px;
+  line-height: 25px;
+  padding-right: 8px;
 }
 
 .texto__card {
@@ -174,6 +180,7 @@ h3 span {
   line-height: 25px;
   position: relative;
   bottom: 0.5rem;
+  font-weight: 400;
 }
 .title__precio-free {
   color: #fff;
@@ -268,6 +275,8 @@ li {
 /*footer*/
 footer {
   position: relative;
+  top: 145px;
+  padding-bottom: 164px;
 }
 footer::before {
   content: "";
@@ -326,7 +335,7 @@ footer::before {
   }
 
   .article .paragraph {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
     width: 455px;
   }
   .pah {
@@ -335,15 +344,57 @@ footer::before {
 
   /*main*/
 
+  .container {
+    padding: 0 97px;
+  }
   main {
     max-width: 768px;
   }
+  .img {
+    display: block;
+  }
+  figure {
+    display: block;
+    align-items: flex-end;
+  }
+  .h2 {
+    margin-top: 0;
+  }
 
+  .session__main {
+    display: flex;
+    gap: 55px;
+    align-items: stretch;
+  }
+
+  .session__main-left {
+    transform: translateX(3.625rem);
+  }
+  .text__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 340px;
+  }
+  .main__card {
+    align-items: center;
+  }
+  .paragraph {
+    padding: 0;
+  }
   .formulario__grupo-correcto {
     color: blue;
   }
   .formulario__grupo-incorrecto .formulario__lavel {
     color: red;
+  }
+  .card__form {
+    flex-direction: row;
+  }
+
+  footer::before {
+    width: 100vw;
   }
 }
 
