@@ -247,32 +247,6 @@ li {
   opacity: 0.4;
 }
 
-.btn__form {
-  display: inline-block;
-  width: 327px;
-  height: 48px;
-  border-radius: 24px;
-  border: none;
-  color: #093f68;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 25px;
-  background: #3ee9e5;
-}
-.error {
-  position: absolute;
-  left: 1rem;
-  display: none;
-}
-.card__form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  margin-top: 31px;
-}
-
 /*footer*/
 footer {
   position: relative;
@@ -289,6 +263,39 @@ footer::before {
 }
 .validacion__form {
   position: relative;
+}
+
+.btn__form {
+  display: inline-block;
+  width: 327px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  color: #093f68;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 25px;
+  background: #3ee9e5;
+  cursor: pointer;
+}
+.btn__form:hover {
+  border-radius: 24px;
+  border: 2px solid #3ee9e5;
+  background: #080c20;
+  color: white;
+}
+.error {
+  position: absolute;
+  left: 1rem;
+  display: none;
+}
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-top: 31px;
 }
 
 @media (min-width: 768px) {
@@ -308,7 +315,7 @@ footer::before {
     right: -19px;
     width: 40vw;
     height: 54vh;
-    max-width: 160px;
+    width: 160px;
     background-size: cover;
   }
   .container {
@@ -426,10 +433,20 @@ footer::before {
 @media (min-width: 1110px) {
   body {
     overflow-x: hidden;
+    width: 100%;
   }
   body::before {
-    left: -3rem;
+    left: -3.5rem;
     width: 100vw;
+    background-size: auto;
+    height: 100vh;
+  }
+  body::after {
+    background-size: auto;
+    right: -1rem;
+    height: 100vh;
+    width: 350px;
+    background-repeat: no-repeat;
   }
   .container {
     width: 100%;
@@ -437,13 +454,35 @@ footer::before {
     margin: auto;
     padding-top: 48px;
   }
+  picture {
+    top: 5.8rem;
+  }
   .pa {
     width: 250px;
     margin-top: 23px;
   }
+  .article .paragraph {
+    width: 540px;
+  }
 
   main {
     margin: auto;
+    margin-top: 400px;
+  }
+  .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .card__free {
+    height: 425px;
+  }
+  .card__dive {
+    height: 449px;
   }
   .text__main {
     width: 255px;
@@ -465,6 +504,19 @@ footer::before {
   }
   .session__main-left {
     transform: translatey(-3rem);
+  }
+
+  .pc {
+    width: 540px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .title__footer {
+    font-size: 32px;
+  }
+  footer::before {
+    width: 100vw;
+    height: 230px;
   }
 }
 
