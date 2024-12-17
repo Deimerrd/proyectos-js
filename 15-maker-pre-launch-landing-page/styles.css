@@ -516,7 +516,19 @@ footer::before {
   }
   footer::before {
     width: 100vw;
-    height: 230px;
+    height: 238px;
+    left: -8%;
+    background-image: url("./assets/linea-desk.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer::before {
+    background-position: center;
+    background-size: cover;
+    left: -11%;
   }
 }
 
