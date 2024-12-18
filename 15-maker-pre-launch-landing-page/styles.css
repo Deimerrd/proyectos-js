@@ -541,10 +541,3 @@ footer::before {
     left: 0;
   }
 }
-
-/* 
-  Cuando se envíe el formulario se debe hacer lo siguiente:
-  1) Si el campo está vacio se debe mostrar el siguiente mensaje: Oops! Please add your email
-  2) Si el email es invalido se debe mostrar el siguiente mensaje: Oops! That doesn’t look like an email address
-  3) Si el enail es valido se debe limpiar el campo 
-*/
