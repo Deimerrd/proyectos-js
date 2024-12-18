@@ -419,9 +419,10 @@ footer::before {
   }
 
   footer::before {
-    left: -5.9rem;
+    left: 0rem;
     top: -0.9rem;
-    width: 768px;
+
+    width: 100vw;
     height: 140px;
   }
 
