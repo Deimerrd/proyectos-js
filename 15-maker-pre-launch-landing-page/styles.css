@@ -7,6 +7,7 @@ body {
   background-color: #080c20;
   position: relative;
   font-family: Manrope;
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -230,6 +231,10 @@ li {
   background: #093f68;
   border: none;
   padding-left: 1.5rem;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 25px;
 }
 .error {
   color: #ff2965;
@@ -356,9 +361,7 @@ footer::before {
   .container {
     padding: 0 97px;
   }
-  main {
-    max-width: 768px;
-  }
+
   .img {
     display: block;
   }
@@ -449,9 +452,8 @@ footer::before {
     background-repeat: no-repeat;
   }
   .container {
-    width: 100%;
-    max-width: 1440px;
     margin: auto;
+    padding: 0;
     padding-top: 48px;
   }
   picture {
@@ -468,6 +470,7 @@ footer::before {
   main {
     margin: auto;
     margin-top: 400px;
+    width: 1440px;
   }
   .article {
     display: flex;
@@ -477,14 +480,18 @@ footer::before {
   }
   .cards {
     flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 1440px;
+  }
+  .card {
+    width: 445px;
   }
   .card__free {
     height: 425px;
-    width: 445px;
   }
   .card__dive {
     height: 449px;
-    width: 445px;
   }
   .text__main {
     width: 255px;
@@ -530,7 +537,7 @@ footer::before {
   footer::before {
     background-position: center;
     background-size: cover;
-    left: -11%;
+    left: 0;
   }
 }
 
