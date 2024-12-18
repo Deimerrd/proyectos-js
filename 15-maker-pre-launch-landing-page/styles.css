@@ -480,9 +480,11 @@ footer::before {
   }
   .card__free {
     height: 425px;
+    width: 445px;
   }
   .card__dive {
     height: 449px;
+    width: 445px;
   }
   .text__main {
     width: 255px;
