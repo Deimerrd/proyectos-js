@@ -34,7 +34,6 @@ body::after {
 .container {
   width: 100%;
   margin-top: 40px;
-  padding-bottom: 164px;
 }
 .logo {
   text-align: center;
@@ -111,6 +110,7 @@ h2 {
   flex-direction: column;
   gap: 65px;
   align-items: center;
+  padding-bottom: 145px;
 }
 .card {
   width: 327px;
@@ -255,7 +255,7 @@ li {
 /*footer*/
 footer {
   position: relative;
-  top: 145px;
+
   padding-bottom: 164px;
 }
 footer::before {
@@ -418,6 +418,9 @@ footer::before {
     justify-content: center;
   }
 
+  footer {
+    top: 119px;
+  }
   footer::before {
     left: 0rem;
     top: -0.9rem;
@@ -451,6 +454,9 @@ footer::before {
     height: 100vh;
     width: 350px;
     background-repeat: no-repeat;
+  }
+  .logo {
+    padding-left: 165px;
   }
   .container {
     margin: auto;
@@ -515,7 +521,9 @@ footer::before {
   .session__main-left {
     transform: translatey(-3rem);
   }
-
+  footer {
+    top: 163px;
+  }
   .pc {
     width: 540px;
     margin: auto;
