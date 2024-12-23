@@ -54,8 +54,6 @@ nav .nav__item li {
 .li__product:active {
   .ul__active {
     display: flex;
-    transition: transform 20s;
-    animation-duration: 1000ms;
   }
 }
 .ul__active {
@@ -70,6 +68,7 @@ nav .nav__item li {
   margin-top: 2rem;
   left: -1rem;
   display: none;
+  animation-duration: 1000ms;
 }
 .li__product .ul__active li {
   color: #2d2e40;
