@@ -1,3 +1,7 @@
+:root {
+  --fon1: "Ubuntu";
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -23,40 +27,57 @@ header {
 }
 
 .header__nav {
-  margin-top: 63px;
+  display: flex;
+  gap: 64px;
 }
 .rectangle1 {
   top: -1350px;
   position: absolute;
   right: -80rem;
 }
-nav {
+.nav {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-nav .nav__item {
+.nav .nav__item {
   display: flex;
   gap: 32px;
 }
 
-nav .nav__item li {
+.img__logo {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav .nav__item li a {
   color: #fff;
-  font-family: Ubuntu;
+  font-family: var(--fon1);
   font-size: 16px;
   font-weight: 700;
-  list-style-type: none;
   cursor: pointer;
+  text-decoration: none;
 }
-.li__product {
+.items__icon-row-close {
+  position: relative;
+  left: 0.2rem;
+}
+
+.nav .nav__item li a:hover {
+  text-decoration: underline;
+}
+.list {
   position: relative;
 }
-.li__product:active {
-  .ul__active {
+.list:active {
+  .ul__list {
     display: flex;
   }
 }
-.ul__active {
+.ul__list {
   position: absolute;
   border-radius: 5px;
   background: #fff;
@@ -70,11 +91,154 @@ nav .nav__item li {
   display: none;
   animation-duration: 1000ms;
 }
-.li__product .ul__active li {
+
+.list .ul__list li {
   color: #2d2e40;
   font-weight: 400;
   cursor: pointer;
 }
-.li__product .ul__active li:hover {
+.list .ul__list li:hover {
   font-weight: 700;
+}
+
+.menu {
+  background-color: transparent;
+  border: transparent;
+  display: none;
+}
+.nadvar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+
+.login {
+  font-family: var(--fon1);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.tx__login {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.link_login {
+  text-decoration: none;
+}
+.btn__login {
+  color: #ff505c;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 28px;
+  background: #fff;
+  width: 137px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1084px) {
+  .picture__header {
+    z-index: 3;
+    right: 0;
+    left: 0;
+  }
+  .header__nav {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .nav {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+  .open {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+  }
+  .nav .nav__item {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .close {
+    display: none;
+  }
+  .img__logo {
+    z-index: 2;
+    height: 32px;
+  }
+  .list a {
+    color: red;
+    z-index: 9999;
+  }
+  .nav.open {
+    top: 10rem;
+    display: block;
+    color: #ff3e55;
+  }
+  .nav {
+    left: 0;
+    width: 324px;
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
+    height: 511px;
+  }
+  .nav__item .list {
+    color: #1f3e5a;
+    text-align: center;
+    font-family: "Overpass SemiBold";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .rectangle1 {
+    left: -95%;
+    width: 360%;
+    top: -255px;
+    right: 0;
+  }
+
+  .logo {
+    height: 32px;
+  }
+  .menu {
+    position: relative;
+  }
+  .open {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+  }
+  .close {
+    display: none;
+  }
+  .nav {
+    transition: 0.3s;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
+  }
 }
