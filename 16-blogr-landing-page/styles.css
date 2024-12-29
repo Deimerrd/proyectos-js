@@ -17,13 +17,19 @@ body {
 figure {
   z-index: -1;
 }
+
 header {
+  background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  overflow: hidden;
+  border-radius: 0px 0px 0px 100px;
+}
+.header {
   position: relative;
   width: 100vw;
-  border-radius: 0px 0px 0px 100px;
-  background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
   height: 600px;
-  overflow: hidden;
+  max-width: 1440px;
+  margin: auto;
+  top: 72px;
 }
 
 .header__nav {
@@ -31,51 +37,83 @@ header {
   gap: 64px;
 }
 .rectangle1 {
-  top: -1350px;
+  top: -1400px;
   position: absolute;
-  right: -80rem;
+  right: -81rem;
 }
 .nav {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
+
+.nav-link__logo {
+  display: flex;
+  gap: 4rem;
+}
 .nav .nav__item {
   display: flex;
-  gap: 32px;
+  gap: 24px;
 }
 
 .img__logo {
   display: block;
+  width: 101px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 li {
   list-style-type: none;
 }
 
-.nav .nav__item li a {
-  color: #fff;
+.list__show {
+  color: white;
+  opacity: 0.75;
   font-family: var(--fon1);
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
-.items__icon-row-close {
+
+.list__show:hover {
+  text-decoration: underline;
+  opacity: 100;
+}
+.icon-row {
   position: relative;
   left: 0.2rem;
 }
-
-.nav .nav__item li a:hover {
-  text-decoration: underline;
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
 }
+a {
+  text-decoration: none;
+}
+
 .list {
   position: relative;
 }
-.list:active {
+/*.list:active {
   .ul__list {
     display: flex;
   }
+}*/
+
+.show {
+  display: block;
+}
+
+.list__show--productos {
+  color: white;
+}
+.btn__row {
+  background-color: transparent;
+  border: none;
 }
 .ul__list {
   position: absolute;
@@ -88,7 +126,6 @@ li {
   gap: 1rem;
   margin-top: 2rem;
   left: -1rem;
-  display: none;
   animation-duration: 1000ms;
 }
 
@@ -126,6 +163,7 @@ li {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  opacity: 0.75;
 }
 .link_login {
   text-decoration: none;
@@ -142,6 +180,27 @@ li {
   cursor: pointer;
 }
 
+.btn__login:hover {
+  border-radius: 28px;
+  background: #ff7b86;
+  color: #fff;
+}
+
+.nadvar {
+  margin: auto;
+}
+
+.show {
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
 @media (max-width: 1084px) {
   .picture__header {
     z-index: 3;
@@ -210,6 +269,9 @@ li {
     font-weight: 600;
     line-height: 28px;
     z-index: 2;
+  }
+  .nav .nav__item li a {
+    color: #1f3e5a;
   }
 }
 

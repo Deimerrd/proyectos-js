@@ -24,89 +24,83 @@
   </head>
   <body>
     <header>
-      <picture class="picture__header">
-        <source
-          srcset="images/bg-pattern-intro-mobile.svg"
-          media="(max-width: 600px)"
-        />
+      <div class="header">
+        <picture class="picture__header">
+          <source
+            srcset="images/bg-pattern-intro-mobile.svg"
+            media="(max-width: 600px)"
+          />
 
-        <source
-          srcset="images/bg-pattern-intro-desktop.svg"
-          media="(min-width: 1110px)"
-        />
+          <source
+            srcset="images/bg-pattern-intro-desktop.svg"
+            media="(min-width: 1110px)"
+          />
 
-        <img
-          class="rectangle1"
-          src="images/bg-pattern-intro-mobile.svg"
-          alt=""
-        />
-      </picture>
-      <div class="nadvar container">
-        <img class="img__logo" src="images/logo.svg" alt="" />
+          <img
+            class="rectangle1"
+            src="images/bg-pattern-intro-mobile.svg"
+            alt=""
+          />
+        </picture>
+        <div class="nadvar container">
+          <div class="nav-link__logo">
+            <img class="img__logo" src="images/logo.svg" alt="" />
+            <div class="header__nav">
+              <nav class="nav" id="nav">
+                <ul class="nav__item">
+                  <li class="list">
+                    <div class="list__show list__show--click">
+                      <a href="#" class="list__show--productos">Product</a>
+                      <img class="icon-row" src="images/flecha.svg" />
+                    </div>
 
-        <div class="header__nav">
-          <nav class="nav" id="nav">
-            <ul class="nav__item">
-              <li class="list">
-                <a href="#">
-                  Product
-                  <ul class="ul__list">
-                    <li>Overview</li>
-                    <li>Pricing</li>
-                    <li>Marketplace</li>
-                    <li>Features</li>
-                    <li>Integrations</li>
-                  </ul></a
-                ><img
-                  class="items__icon-row-close"
-                  src="images/flecha.svg"
-                  alt=""
-                />
-              </li>
-              <li class="list">
-                <a href="#">
-                  Company
-                  <ul class="ul__list">
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                  </ul> </a
-                ><img
-                  class="items__icon-row-close"
-                  src="images/flecha.svg"
-                  alt=""
-                />
-              </li>
-              <li class="list">
-                <a class="list__show" href="#">
-                  Connect
+                    <ul class="ul__list">
+                      <li><a href="" class="list__product">Overview</a></li>
+                      <li><a href="" class="list__product">Pricing</a></li>
+                      <li><a href="" class="list__product">Marketplace</a></li>
+                      <li><a href="" class="list__product">Features</a></li>
+                      <li><a href="" class="list__product">Integrations</a></li>
+                    </ul>
+                  </li>
+                  <li class="list">
+                    <div class="list__show list__show--click">
+                      <a href="#" class="list__show--productos">Company</a>
 
-                  <ul class="ul__list">
-                    <li>Contact</li>
-                    <li>Newsletter</li>
-                    <li>LinkedIn</li>
-                  </ul>
-                  <img
-                    class="items__icon-row-close"
-                    src="images/flecha.svg"
-                    alt=""
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
+                      <img class="icon-row" src="images/flecha.svg" alt="" />
+                    </div>
+                    <ul class="ul__list">
+                      <li><a href="" class="list__product">About</a></li>
+                      <li><a href="" class="list__product">Team</a></li>
+                      <li><a href="" class="list__product">Blog</a></li>
+                      <li><a href="" class="list__product">Careers</a></li>
+                    </ul>
+                  </li>
+                  <li class="list">
+                    <div class="list__show list__show--click">
+                      Connect
+                      <img class="icon-row" src="images/flecha.svg" alt="" />
+                    </div>
+                    <ul class="ul__list">
+                      <li><a href="" class="list__product">Contact</a></li>
+                      <li><a href="" class="list__product">Newsletter</a></li>
+                      <li><a href="" class="list__product">LinkedIn</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="login">
+            <a class="link_login" href="#"><p class="tx__login">login</p></a>
+            <button class="btn__login">Sign Up</button>
+          </div>
+
+          <button class="menu" id="menu__button">
+            <img src="images/icon-hamburger.svg" class="open op" />
+            <img src="images/icon-close.svg" class="close op" />
+          </button>
         </div>
-
-        <div class="login">
-          <a class="link_login" href="#"><p class="tx__login">login</p></a>
-          <button class="btn__login">Sign Up</button>
-        </div>
-
-        <button class="menu" id="menu__button">
-          <img src="images/icon-hamburger.svg" class="open op" />
-          <img src="images/icon-close.svg" class="close op" />
-        </button>
       </div>
     </header>
 
