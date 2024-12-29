@@ -5,6 +5,7 @@ const openMenu = document.querySelector(".open");
 const openlist = document.getElementById("list-show");
 const list = document.querySelectorAll("ul__list");
 const toggleArrow = document.getElementById("arrow");
+let listelements = document.querySelectorAll(".list__show");
 
 menuButton.addEventListener("click", () => {
   if (navbar.classList.contains("open")) {
@@ -18,12 +19,15 @@ menuButton.addEventListener("click", () => {
   }
 });
 
-const toggleDropdown = function () {
-  list.classList.toggle("show");
-  toggleArrow.classList.toggle("arrow");
-};
-
-openlist.addEventListener("click", function (e) {
-  e.stopPropagation();
-  toggleDropdown();
+listelements.forEach((listelement) => {
+  listelement.addEventListener("click", () => {
+    listelement.classList.toggle("arrow");
+    let height = 0;
+    let menu = listelement.nextElementSibling;
+    console.log(menu.scrollHeight);
+    if (menu.clientHeight == "0") {
+      height = menu.scrollHeight;
+    }
+    menu.style.height = `${height}px`;
+  });
 });
