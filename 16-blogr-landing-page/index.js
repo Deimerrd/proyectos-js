@@ -29,5 +29,6 @@ listelements.forEach((listelement) => {
       height = menu.scrollHeight;
     }
     menu.style.height = `${height}px`;
+    menu.style.background = "white";
   });
 });

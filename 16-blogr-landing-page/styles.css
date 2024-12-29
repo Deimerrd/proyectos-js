@@ -108,21 +108,26 @@ a {
   flex-direction: column;
   gap: 1rem;
   border-left: 2px;
-  margin-top: 2rem;
+  top: 2rem;
   left: -1rem;
-  animation-duration: 1000ms;
-  transition: heigth 0.4s;
   height: 0px;
-  transition: transform 0.3s;
+  overflow: hidden;
+}
+.tr {
+  padding-bottom: 1.5rem;
+}
+.tl {
+  padding-top: 1.5rem;
 }
 
 .mostrar {
   display: block;
 }
-.list .ul__list li {
+.ul__list li {
   color: #2d2e40;
   font-weight: 400;
   cursor: pointer;
+  flex: auto;
 }
 .list .ul__list li:hover {
   font-weight: 700;
@@ -190,16 +195,24 @@ a {
     justify-content: space-between;
     gap: 0;
   }
+  .list {
+    position: relative;
+  }
+
+  .ul__list {
+    position: absolute;
+    height: 0;
+  }
   .container {
     padding: 0 24px;
   }
   .nav {
     display: none;
   }
-  .login {
-    display: none;
-  }
 
+  .nav-link__logo {
+    display: block;
+  }
   .menu {
     display: block;
     z-index: 2;
@@ -220,15 +233,26 @@ a {
   .img__logo {
     z-index: 2;
     height: 32px;
+    width: 81px;
   }
   .list a {
     color: red;
     z-index: 9999;
   }
+  .login {
+    flex-direction: column;
+    align-items: center;
+  }
   .nav.open {
     top: 10rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ff3e55;
+    padding-bottom: 2rem;
+  }
+  .ul__list .space {
+    padding: 24px;
   }
   .nav {
     left: 0;
@@ -237,7 +261,6 @@ a {
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
-    height: 511px;
   }
   .nav__item .list {
     color: #1f3e5a;
@@ -277,7 +300,6 @@ a {
     display: none;
   }
   .nav {
-    transition: 0.3s;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
