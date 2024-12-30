@@ -144,6 +144,12 @@ a {
   justify-content: space-between;
   margin-top: 63px;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 941px;
+}
 
 .login {
   font-family: var(--fon1);
@@ -206,12 +212,10 @@ a {
   .container {
     padding: 0 24px;
   }
-  .nav {
-    display: none;
-  }
 
   .nav-link__logo {
     display: block;
+    z-index: 1;
   }
   .menu {
     display: block;
@@ -242,6 +246,7 @@ a {
   .login {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
   .nav.open {
     top: 10rem;
@@ -249,7 +254,10 @@ a {
     align-items: center;
     justify-content: center;
     color: #ff3e55;
+
+    padding: 0 1.5rem;
     padding-bottom: 2rem;
+    flex-direction: column;
   }
   .ul__list .space {
     padding: 24px;
@@ -260,6 +268,7 @@ a {
     margin: auto;
     border-radius: 5px;
     background: #fff;
+    display: none;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
   }
   .nav__item .list {
@@ -274,6 +283,25 @@ a {
   }
   .nav .nav__item li a {
     color: #1f3e5a;
+  }
+  .tx__login {
+    color: #1f3e5a;
+  }
+  .btn__login {
+    border-radius: 28px;
+    background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+    color: #fff;
+  }
+  .btn__login:hover {
+    background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  }
+  .list__show {
+    transform: translateX(-0.5rem);
+  }
+  hr {
+    height: 1px;
+    width: 100%;
+    border: 1px solid #e8e4e4;
   }
 }
 
