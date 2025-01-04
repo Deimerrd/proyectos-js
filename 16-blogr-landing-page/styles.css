@@ -16,17 +16,16 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
   overflow: hidden;
-  border-radius: 0px 0px 0px 100px;
-  height: 600px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
 }
 .header {
   position: relative;
-  width: 100%;
   max-width: 1440px;
   margin: auto;
   padding-top: 4.5rem;
+  height: 600px;
 }
 
 .header__nav {
@@ -192,6 +191,11 @@ a {
 }
 
 @media (max-width: 1084px) {
+  .rectangle1 {
+    top: -240px;
+    position: absolute;
+    right: -38rem;
+  }
   .picture__header {
     z-index: 3;
     right: 0;
@@ -206,7 +210,7 @@ a {
   }
 
   .ul__list {
-    position: absolute;
+    position: relative;
     height: 0;
   }
   .container {
@@ -306,13 +310,6 @@ a {
 }
 
 @media (max-width: 700px) {
-  .rectangle1 {
-    left: -95%;
-    width: 360%;
-    top: -255px;
-    right: 0;
-  }
-
   .logo {
     height: 32px;
   }
