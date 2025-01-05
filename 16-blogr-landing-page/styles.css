@@ -290,6 +290,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 49px;
   }
   .nav.open {
     top: 10rem;
