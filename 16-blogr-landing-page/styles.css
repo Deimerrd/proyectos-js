@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: var(--fon1);
+}
 
 .container {
   padding: 0 167px;
@@ -84,7 +87,9 @@ a {
 .list {
   position: relative;
 }
-
+.ul__list li a {
+  color: #2d2e40;
+}
 .show {
   display: block;
 }
@@ -283,7 +288,6 @@ header {
     width: 81px;
   }
   .list a {
-    color: red;
     z-index: 9999;
   }
   .login {
