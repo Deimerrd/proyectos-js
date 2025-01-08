@@ -95,6 +95,13 @@ a {
   color: #2d2e40;
   font-family: "Overpass SemiBold";
 }
+.esconder_rte {
+  display: none;
+}
+
+.mostrar_rte {
+  display: block;
+}
 .nav__item .list a:active {
   opacity: 0.5;
   transition: transform 90s;
@@ -225,6 +232,7 @@ header {
   right: 0;
   left: 0;
 }
+
 @media (max-width: 1084px) {
   .rectangle1 {
     top: -330px;

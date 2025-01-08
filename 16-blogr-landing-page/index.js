@@ -30,6 +30,18 @@ listelements.forEach((listelement) => {
     }
     menu.style.height = `${height}px`;
     menu.style.background = "white";
-    menu.style.opacity = "0.9";
   });
 });
+
+function abreFichaRte(el) {
+  let padre = el.parentNode;
+  let divhijo = padre.querySelector(".cont_img_plt");
+  document.querySelectorAll(".cont_img_plt").forEach(function (x) {
+    if (x != divhijo) {
+      x.classList.remove("mostrar_rte");
+      x.classList.add("esconder_rte");
+    }
+  });
+  divhijo.classList.toggle("mostrar_rte");
+  divhijo.classList.toggle("esconder_rte");
+}
