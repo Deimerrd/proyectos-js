@@ -232,6 +232,10 @@ header {
   right: 0;
   left: 0;
 }
+.menu_uno,
+.menu_dos {
+  display: none;
+}
 
 @media (max-width: 1084px) {
   .rectangle1 {
