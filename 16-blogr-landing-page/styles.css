@@ -236,7 +236,6 @@ header {
 .menu_dos {
   display: none;
 }
-
 @media (max-width: 1084px) {
   .rectangle1 {
     top: -330px;
@@ -281,7 +280,7 @@ header {
   .ul__list {
     position: relative;
     height: 0;
-    left: 5px;
+    left: 4px;
   }
   .container {
     padding: 0 24px;

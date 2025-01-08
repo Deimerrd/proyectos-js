@@ -2,10 +2,11 @@ const menuButton = document.getElementById("menu__button");
 const navbar = document.getElementById("nav");
 const closeMenu = document.querySelector(".close");
 const openMenu = document.querySelector(".open");
-const openlist = document.getElementById("list-show");
-const list = document.querySelectorAll("ul__list");
 const toggleArrow = document.getElementById("arrow");
 let listelements = document.querySelectorAll(".list__show");
+const menu__uno = document.getElementById(menu1);
+const menu__dos = document.getElementById(menu2);
+const menu__tres = document.getElementById(menu3);
 
 menuButton.addEventListener("click", () => {
   if (navbar.classList.contains("open")) {
@@ -25,23 +26,24 @@ listelements.forEach((listelement) => {
     let height = 0;
     let menu = listelement.nextElementSibling;
     console.log(menu.scrollHeight);
+
     if (menu.clientHeight == "0") {
       height = menu.scrollHeight;
     }
     menu.style.height = `${height}px`;
     menu.style.background = "white";
-  });
-});
 
-function abreFichaRte(el) {
-  let padre = el.parentNode;
-  let divhijo = padre.querySelector(".cont_img_plt");
-  document.querySelectorAll(".cont_img_plt").forEach(function (x) {
-    if (x != divhijo) {
-      x.classList.remove("mostrar_rte");
-      x.classList.add("esconder_rte");
+    if ($("#menu1").css("display") == "none") {
+      $("#menu2").css("visibility") == "hidden";
+      $("#menu3").css("visibility") == "hidden";
+    }
+
+    if ($("#menu2").css("display") == "none") {
+      $("#menu1").css("visibility") == "hidden";
+      $("#menu3").css("visibility") == "hidden";
+    } else if ($("#menu3").css("display") == "none") {
+      $("#menu1").css("visibility") == "hidden";
+      $("#menu2").css("visibility") == "hidden";
     }
   });
-  divhijo.classList.toggle("mostrar_rte");
-  divhijo.classList.toggle("esconder_rte");
-}
+});
