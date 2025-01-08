@@ -5,6 +5,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 body {
   font-family: var(--fon1);
@@ -48,6 +49,7 @@ header {
 .nav .nav__item {
   display: flex;
   gap: 2rem;
+  margin-left: 64px;
 }
 
 .img__logo {
@@ -71,14 +73,16 @@ li {
   border: none;
 }
 
-.list__show:hover {
+.list__show:active {
   text-decoration: underline;
   opacity: 100;
 }
+
 .arrow .icon-row {
   position: relative;
   left: 0.5px;
   transform: rotate(180deg);
+  transition: transform 0.3s;
 }
 a {
   text-decoration: none;
@@ -89,6 +93,11 @@ a {
 }
 .ul__list li a {
   color: #2d2e40;
+  font-family: "Overpass SemiBold";
+}
+.nav__item .list a:active {
+  opacity: 0.5;
+  transition: transform 90s;
 }
 .show {
   display: block;
@@ -116,6 +125,7 @@ a {
   left: -1rem;
   height: 0px;
   overflow: hidden;
+  transition: clip-path 0.3s;
 }
 .tr {
   padding-bottom: 1.5rem;
@@ -222,6 +232,9 @@ header {
     right: -38rem;
     z-index: 1;
   }
+  .nav .nav__item {
+    margin-left: 1rem;
+  }
 
   .menu2 {
     display: flex;
@@ -256,6 +269,7 @@ header {
   .ul__list {
     position: relative;
     height: 0;
+    left: 5px;
   }
   .container {
     padding: 0 24px;
@@ -342,9 +356,6 @@ header {
   }
   .btn__login:hover {
     background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
-  }
-  .list__show {
-    transform: translateX(-0.5rem);
   }
   hr {
     height: 1px;

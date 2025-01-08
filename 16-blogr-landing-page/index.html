@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -40,7 +41,11 @@
             <li class="list">
               <div class="list__show">
                 <a href="#" class="list__show--productos">Product</a>
-                <img class="icon-row" src="images/flecha.svg" />
+                <picture>
+                  <source srcset="images/flecha.svg" media="(min-width: 1025px)" />
+                  <source srcset="images/row__mobile.svg" media="(min-width: 320px)" />
+                  <img class="icon-row" src="images/flecha.svg" alt="MDN" />
+                </picture>
               </div>
 
               <ul class="ul__list">
@@ -59,8 +64,12 @@
             <li class="list">
               <div class="list__show">
                 <a href="#" class="list__show--productos">Company</a>
-
-                <img class="icon-row" src="images/flecha.svg" alt="" />
+                <picture>
+                  <source srcset="images/flecha.svg" media="(min-width: 1025px)" />
+                  <source srcset="images/row__mobile.svg" media="(min-width: 320px)" />
+                  <img class="icon-row" src="images/flecha.svg" alt="MDN" />
+                </picture>
+                
               </div>
               <ul class="ul__list">
                 <li class="tl">
@@ -75,10 +84,13 @@
             </li>
 
             <li class="list">
-              <div class="list__show">
+              <div class="list__show ">
                 <a href="#" class="list__show--productos">Connect</a>
-
-                <img class="icon-row" src="images/flecha.svg" alt="" />
+                <picture>
+                  <source srcset="images/flecha.svg" media="(min-width: 1025px)" />
+                  <source srcset="images/row__mobile.svg" media="(min-width: 320px)" />
+                  <img class="icon-row" src="images/flecha.svg" alt="MDN" />
+                </picture>
               </div>
               <ul class="ul__list">
                 <li class="tl">

@@ -30,5 +30,6 @@ listelements.forEach((listelement) => {
     }
     menu.style.height = `${height}px`;
     menu.style.background = "white";
+    menu.style.opacity = "0.9";
   });
 });
