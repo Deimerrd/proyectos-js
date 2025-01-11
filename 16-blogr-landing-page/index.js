@@ -33,17 +33,17 @@ listelements.forEach((listelement) => {
     menu.style.height = `${height}px`;
     menu.style.background = "white";
 
-    if ($("#menu1").css("display") == "none") {
-      $("#menu2").css("visibility") == "hidden";
-      $("#menu3").css("visibility") == "hidden";
+    if ($("#menu1").css("display") == "block") {
+      $("#menu2").css("display") == "none";
+      $("#menu3").css("display") == "none";
     }
 
-    if ($("#menu2").css("display") == "none") {
-      $("#menu1").css("visibility") == "hidden";
-      $("#menu3").css("visibility") == "hidden";
-    } else if ($("#menu3").css("display") == "none") {
-      $("#menu1").css("visibility") == "hidden";
-      $("#menu2").css("visibility") == "hidden";
+    if ($("#menu2").css("display") == "block") {
+      $("#menu1").css("display") == "none";
+      $("#menu3").css("display") == "none";
+    } else if ($("#menu3").css("display") == "block") {
+      $("#menu1").css("display") == "none";
+      $("#menu2").css("display") == "none";
     }
   });
 });
