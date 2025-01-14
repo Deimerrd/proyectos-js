@@ -41,7 +41,8 @@ listelements.forEach((listelement) => {
     if ($("#menu2").css("display") == "block") {
       $("#menu1").css("display") == "none";
       $("#menu3").css("display") == "none";
-    } else if ($("#menu3").css("display") == "block") {
+    }
+    if ($("#menu3").css("display") == "block") {
       $("#menu1").css("display") == "none";
       $("#menu2").css("display") == "none";
     }

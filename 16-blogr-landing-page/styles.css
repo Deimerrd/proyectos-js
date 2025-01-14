@@ -1,5 +1,6 @@
 :root {
   --fon1: "Ubuntu";
+  --fon2: "Overpass";
 }
 
 * {
@@ -9,6 +10,8 @@
 }
 body {
   font-family: var(--fon1);
+  background: #fafafa;
+  overflow-x: hidden;
 }
 
 .container {
@@ -20,6 +23,9 @@ header {
   overflow: hidden;
   background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
   border-radius: 0px 0px 0px 100px;
+
+  z-index: -2;
+  height: 600px;
 }
 .header {
   position: relative;
@@ -73,7 +79,7 @@ li {
   border: none;
 }
 
-.list__show:active {
+.list__show:hover {
   text-decoration: underline;
   opacity: 100;
 }
@@ -212,9 +218,6 @@ hr {
   z-index: 1;
 }
 
-header {
-  z-index: -2;
-}
 .header__nav {
   z-index: 2;
 }
@@ -235,7 +238,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "Overpass";
+  font-family: var(--fon2);
   margin: auto;
   color: #fff;
   text-align: center;
@@ -268,10 +271,93 @@ h1 {
   border: none;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
+
+.btn_start {
+  border-radius: 28px;
+  background: #fff;
+  color: #ff505c;
+}
+.btn_start:hover {
+  color: #fff;
+  border-radius: 28px;
+  background: #ff7b86;
+}
+
 .btn_learn {
+  border-radius: 28px;
+  border: 1px solid #fff;
+  background: #ff7b86;
+}
+.btn_learn:hover {
   background: #fff;
   color: #ff7b86;
+}
+
+/*main*/
+.main {
+  overflow: hidden;
+  margin: auto;
+  max-width: 1440px;
+}
+.main__card--future {
+  display: flex;
+  padding-left: 160px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.main__card--future::before {
+  content: "";
+  position: absolute;
+  background-image: url("./images/illustration-editor-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 910px;
+  height: 880px;
+  right: -245px;
+  top: 42rem;
+}
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  margin-top: 150px;
+}
+.text__future {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 90px;
+}
+.title__future {
+  color: #1f3e5a;
+  text-align: center;
+}
+.title__state {
+  color: #fff;
+}
+
+.future__txt {
+  width: 540px;
+  font-family: var(--fon2);
+  font-style: normal;
+}
+.subtitle {
+  color: #1f3e5a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.paragraph {
+  color: #4c5862;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  margin-top: 1rem;
 }
 @media (max-width: 1084px) {
   .rectangle1 {
@@ -384,7 +470,7 @@ h1 {
   .nav__item .list {
     color: #1f3e5a;
     text-align: center;
-    font-family: "Overpass SemiBold";
+    font-family: var(--fon2);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -431,5 +517,9 @@ h1 {
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
+  }
+
+  h1 {
+    font-size: 36px;
   }
 }
