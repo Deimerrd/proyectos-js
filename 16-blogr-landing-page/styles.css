@@ -382,7 +382,7 @@ h1 {
   background-size: contain;
   width: 550px;
   height: 600px;
-  top: -5rem;
+  top: -3rem;
   left: 8.5rem;
   z-index: 2;
 }
@@ -401,15 +401,16 @@ h1 {
 }
 
 .figure__state {
-  width: 2000px;
+  width: 1200px;
   position: relative;
 }
 
 .img__future {
-  transform: translateY(-37rem);
-  z-index: -1;
-  margin-left: -16rem;
-  width: 75%;
+  transform: translateY(-25rem);
+  z-index: 1;
+  margin-left: -12.5rem;
+  width: 84%;
+  position: absolute;
 }
 
 /*main__card--simtool*/
