@@ -298,8 +298,6 @@ h1 {
 /*main*/
 .main {
   overflow: hidden;
-  margin: auto;
-  max-width: 1440px;
 }
 .main__card--future {
   display: flex;
@@ -307,6 +305,8 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  max-width: 1440px;
+  margin: auto;
 }
 .main__card--future::before {
   content: "";
@@ -314,8 +314,8 @@ h1 {
   background-image: url("./images/illustration-editor-desktop.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 910px;
-  height: 880px;
+  width: 870px;
+  height: 870px;
   right: -245px;
   top: 42rem;
 }
@@ -358,6 +358,79 @@ h1 {
   letter-spacing: 0.5px;
   font-style: normal;
   margin-top: 1rem;
+}
+
+/*articulo2*/
+.main__card--state {
+  border-radius: 0px 100px;
+  background: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+  height: 400px;
+  width: 100%;
+  margin-top: 262px;
+  overflow: hidden;
+}
+.state {
+  position: relative;
+  height: 500px;
+}
+
+.state::before {
+  content: "";
+  background-image: url("./images/illustration-phones.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 550px;
+  height: 600px;
+  top: -5rem;
+  left: 8.5rem;
+  z-index: 2;
+}
+
+.paragraph__state {
+  color: #fff;
+}
+.text__state {
+  display: flex;
+  height: 400px;
+}
+.txt__state {
+  width: 540px;
+  position: absolute;
+  left: 52.5%;
+}
+
+.figure__state {
+  width: 2000px;
+  position: relative;
+}
+
+.img__future {
+  transform: translateY(-37rem);
+  z-index: -1;
+  margin-left: -16rem;
+  width: 75%;
+}
+
+/*main__card--simtool*/
+.main__card--simtool {
+  margin-top: 4.125rem;
+  display: flex;
+}
+
+.img__simtool {
+  position: absolute;
+  left: -17rem;
+}
+
+.text__simtool {
+  width: 540px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 251px;
+  margin-left: 52.5%;
 }
 @media (max-width: 1084px) {
   .rectangle1 {
