@@ -349,6 +349,7 @@ h1 {
   font-size: 28px;
   font-weight: 600;
   line-height: 28px;
+  font-family: var(--fon2);
 }
 .paragraph {
   color: #4c5862;
@@ -432,6 +433,49 @@ h1 {
   gap: 4rem;
   margin-top: 180px;
   margin-left: 52.5%;
+}
+
+.footer {
+  border-radius: 0px 100px 0px 0px;
+  background: #24242c;
+  height: 359px;
+  width: 100%;
+  margin-top: 308px;
+}
+.footer__links {
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 165px;
+  margin: auto;
+  gap: 180px;
+}
+.ul__Product {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--fon1);
+  font-weight: 400;
+  width: 255px;
+  transform: translateX(-7rem);
+}
+.logo__footer {
+  transform: translateX(-8rem);
+}
+
+.ul__Product .li__product {
+  font-weight: 400;
+  opacity: 0.75;
+}
+.li__p {
+  margin-top: 21px;
+}
+.enlace__pr {
+  color: #fff;
+}
+.enlace__pr:hover {
+  text-decoration: underline;
 }
 @media (max-width: 1084px) {
   .rectangle1 {
