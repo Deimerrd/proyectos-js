@@ -352,7 +352,6 @@ h1 {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.5px;
-  font-style: normal;
   margin-top: 1rem;
 }
 
@@ -401,7 +400,7 @@ h1 {
   position: relative;
 }
 
-.img__future {
+.img__state {
   transform: translateY(-32rem);
   z-index: 1;
   margin-left: -12.5rem;
@@ -557,9 +556,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .state::before {
-    width: 380px;
-  }
   .rectangle1 {
     top: -330px;
     position: absolute;
@@ -718,15 +714,54 @@ h1 {
   }
   .main__card--future::before {
     background-image: url("./images/illustration-editor-mobile.svg");
-    background-size: 60%;
-    top: 52rem;
-    right: -5%;
+    background-size: 70%;
+    top: 35rem;
+    right: -50%;
+    left: -50%;
+    text-align: center;
+    background-position: center;
+    margin: auto;
   }
   .future__txt {
     text-align: center;
     margin: auto;
+    padding-left: 2rem;
   }
   .text__future {
     margin-top: 440px;
+  }
+  .subtitle {
+    width: 318px;
+    padding: 0 1rem;
+  }
+  .paragraph {
+    width: 318px;
+  }
+
+  /*state*/
+  .state::before {
+    width: 375px;
+    top: -11.8rem;
+  }
+  .main__card--state {
+    height: 625px;
+  }
+  .txt__state {
+    text-align: center;
+    top: 18%;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .figure__state {
+    top: 75%;
+    padding-left: 21.2%;
+    z-index: 0;
+  }
+  .img__state {
+    width: 600px;
   }
 }
