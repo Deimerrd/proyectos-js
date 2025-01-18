@@ -483,6 +483,7 @@ h1 {
   }
   .main__card--future::before {
     width: 750px;
+    top: 45rem;
   }
 }
 
@@ -493,6 +494,31 @@ h1 {
   }
   h1 {
     font-size: 48px;
+  }
+  .main__card--future::before {
+    width: 700px;
+    top: 50rem;
+  }
+  .future__txt {
+    padding-left: 3rem;
+  }
+  .txt__state {
+    width: 440px;
+  }
+  .state::before {
+    width: 500px;
+    left: 0;
+  }
+}
+@media (max-width: 990px) {
+  .future__txt {
+    width: 450px;
+  }
+
+  .main__card--future::before {
+    width: 650px;
+    right: -220px;
+    top: 55rem;
   }
 }
 
@@ -509,6 +535,24 @@ h1 {
   }
   .btn__login {
     font-size: 14px;
+  }
+
+  .future__txt {
+    width: 400px;
+  }
+
+  .main__card--future::before {
+    width: 600px;
+    right: -200px;
+    top: 60rem;
+  }
+
+  .txt__state {
+    width: 400px;
+  }
+  .state::before {
+    width: 400px;
+    left: 0;
   }
 }
 
@@ -676,7 +720,7 @@ h1 {
     background-image: url("./images/illustration-editor-mobile.svg");
     background-size: 60%;
     top: 52rem;
-    right: -150px;
+    right: -5%;
   }
   .future__txt {
     text-align: center;
