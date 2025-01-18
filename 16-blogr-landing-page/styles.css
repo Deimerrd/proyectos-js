@@ -748,7 +748,7 @@ h1 {
   }
   .txt__state {
     text-align: center;
-    top: 18%;
+    top: 20%;
     left: -50%;
     right: -50%;
     margin: auto;
@@ -758,10 +758,13 @@ h1 {
   }
   .figure__state {
     top: 75%;
-    padding-left: 21.2%;
+    padding-left: 21%;
     z-index: 0;
   }
   .img__state {
-    width: 600px;
+    width: 598px;
+  }
+  .paragraph__state {
+    margin-top: 2rem;
   }
 }
