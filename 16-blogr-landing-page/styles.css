@@ -566,8 +566,8 @@ h1 {
   }
 
   .main__card--future::before {
-    width: 600px;
-    right: -200px;
+    width: 65%;
+    right: -180px;
     top: 60rem;
   }
 
@@ -589,7 +589,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .rectangle1 {
     top: -330px;
     position: absolute;
@@ -774,8 +774,11 @@ h1 {
 
   /*state*/
   .state::before {
-    width: 375px;
     top: -11.8rem;
+    text-align: center;
+    left: -50%;
+    right: -50%;
+    margin: auto;
   }
   .main__card--state {
     height: 625px;
@@ -792,13 +795,29 @@ h1 {
   }
   .figure__state {
     top: 75%;
-    padding-left: 21%;
+    padding-right: 50%;
     z-index: 0;
+    text-align: center;
+    padding-left: 20%;
   }
   .img__state {
     width: 598px;
+    left: -50%;
+    right: -50%;
+    margin: auto;
   }
   .paragraph__state {
     margin-top: 2rem;
+  }
+  .img__simtool {
+    bottom: -165rem;
+    left: -25%;
+    width: 550px;
+  }
+
+  .main__card--simtool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
