@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,23 +10,55 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Project tracking intro component</title>
   </head>
   <body>
-    Product <br />
-    Features <br />
-    Pricing <br />
-    Login <br />
+    <div class="bg"></div>
+    <main>
+      <header class="header">
+        <div class="logo">
+          <img src="images/logo.svg" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li>&middot;</li>
+            <li><a href="#" class="lg">Login</a></li>
+          </ul>
+        </nav>
+        <button id="menu__button">
+          <img src="images/icon-hamburger.svg" alt="" class="open" />
+          <img src="images/icon-close.svg" alt="" class="close" />
+        </button>
+      </header>
+      <section class="showcase">
+        <article class="DASHBOARD">
+          <h2><span>NEW</span>MONOGRAPH DASHBOARD</h2>
+          <h1>
+            Powerful insights <br />
+            into your team
+          </h1>
+          <p>Project planning and time tracking for agile teams</p>
+          <div class="cta">
+            <button>Schedule a demo</button> <span>to see a preview</span>
+          </div>
+        </article>
+        <article class="devices">
+          <img src="images/illustration-devices.svg" />
+        </article>
+      </section>
+    </main>
 
-    New <br />
-    Monograph Dashboard <br />
-
-    Powerful insights into your team <br />
-    Project planning and time tracking for agile teams <br />
-
-    Schedule a demo <br />
-    to see a live preview <br />
+    <script src="index.js"></script>
   </body>
 </html>
