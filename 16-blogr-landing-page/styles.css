@@ -702,6 +702,9 @@ h1 {
     padding: 0 1.5rem;
     padding-bottom: 2rem;
     flex-direction: column;
+    position: fixed;
+    overflow-y: hidden;
+    right: 90px;
   }
   .ul__list .space {
     padding: 24px;
@@ -888,6 +891,16 @@ h1 {
   }
   .li__product {
     font-weight: 400;
+  }
+  .login {
+    margin: auto;
+    padding-top: 4rem;
+    transform: translateX(0);
+  }
+  .linea {
+    border: 1px solid #e8e4e4;
+    width: 100%;
+    transform: translatey(3rem);
   }
 }
 

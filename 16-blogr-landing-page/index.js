@@ -31,7 +31,6 @@ listelements.forEach((listelement) => {
       height = menu.scrollHeight;
     }
     menu.style.height = `${height}px`;
-    menu.style.background = "white";
 
     /* if ($("#menu1").css("display") == "block") {
       $("#menu2").css("display") == "none";
