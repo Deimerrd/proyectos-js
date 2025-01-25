@@ -652,11 +652,27 @@ h1 {
     position: relative;
     height: 0;
     left: 4px;
+    left: -55%;
+    width: 200%;
+    background: white;
   }
   .container {
     padding: 0 24px;
   }
 
+  .list__show--productos {
+    opacity: 100;
+  }
+  .list__show--productos:active {
+    opacity: 0.75;
+  }
+  .nav .nav__item li a {
+    font-weight: 600;
+  }
+
+  .ul__list li {
+    opacity: 0.75;
+  }
   .nav-link__logo {
     display: block;
     z-index: 1;
@@ -702,9 +718,6 @@ h1 {
     padding: 0 1.5rem;
     padding-bottom: 2rem;
     flex-direction: column;
-    position: fixed;
-    overflow-y: hidden;
-    right: 90px;
   }
   .ul__list .space {
     padding: 24px;

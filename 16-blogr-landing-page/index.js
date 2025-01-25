@@ -31,19 +31,5 @@ listelements.forEach((listelement) => {
       height = menu.scrollHeight;
     }
     menu.style.height = `${height}px`;
-
-    /* if ($("#menu1").css("display") == "block") {
-      $("#menu2").css("display") == "none";
-      $("#menu3").css("display") == "none";
-    }
-
-    if ($("#menu2").css("display") == "block") {
-      $("#menu1").css("display") == "none";
-      $("#menu3").css("display") == "none";
-    }
-    if ($("#menu3").css("display") == "block") {
-      $("#menu1").css("display") == "none";
-      $("#menu2").css("display") == "none";
-    }*/
   });
 });
