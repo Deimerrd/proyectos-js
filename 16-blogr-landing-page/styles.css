@@ -654,7 +654,8 @@ h1 {
     left: 4px;
     left: -55%;
     width: 200%;
-    background: white;
+    background: #2d2e401a;
+    box-shadow: none;
   }
   .container {
     padding: 0 24px;
@@ -672,6 +673,7 @@ h1 {
 
   .ul__list li {
     opacity: 0.75;
+    font-weight: 600;
   }
   .nav-link__logo {
     display: block;
@@ -718,6 +720,7 @@ h1 {
     padding: 0 1.5rem;
     padding-bottom: 2rem;
     flex-direction: column;
+    width: 90%;
   }
   .ul__list .space {
     padding: 24px;
