@@ -524,7 +524,7 @@ h1 p {
   }
   .state::before {
     width: 500px;
-    left: 0;
+    left: -2rem;
   }
 
   .text__simtool {
