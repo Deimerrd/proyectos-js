@@ -16,15 +16,23 @@ header {
   width: 100%;
   height: 800px;
 }
-nav {
-  padding-top: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.header__container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.row {
+  margin: auto;
+  display: block;
+  margin-top: 6.5rem;
+}
+
 .ul__nav {
   display: flex;
   gap: 2.625rem;
@@ -47,6 +55,14 @@ nav {
   letter-spacing: -0.107px;
   text-transform: uppercase;
 }
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
 .logo {
   width: 170px;
   height: 33px;
@@ -60,4 +76,40 @@ h1 {
   text-transform: uppercase;
   font-weight: 900;
   margin-top: 6.563rem;
+}
+
+nav.open {
+  top: 0;
+}
+@media (max-width: 1024px) {
+  .ul__nav {
+    display: none;
+  }
+  .btn {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-image: url("./images/mobile/image-header.jpg");
+    height: 580px;
+  }
+  .logo {
+    width: 124px;
+    height: 24px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .row {
+    margin-top: 3.5rem;
+  }
+
+  nav.open {
+    top: 6.25rem;
+  }
+  .close {
+    display: none;
+  }
 }
