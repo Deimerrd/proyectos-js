@@ -118,6 +118,16 @@ nav.open {
   nav.open {
     top: 9rem;
   }
+  .open {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 @media (max-width: 768px) {
   header {
