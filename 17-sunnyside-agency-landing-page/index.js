@@ -1,7 +1,7 @@
 const nadvar = document.querySelector("nav");
 const menuButton = document.getElementById("menu__button");
-const closeMenu = document.querySelector(".close");
-const openMenu = document.querySelector(".open");
+const closeMenu = document.querySelector(".btn__close");
+const openMenu = document.querySelector(".btn__open");
 
 menuButton.addEventListener("click", () => {
   if (nadvar.classList.contains("open")) {
