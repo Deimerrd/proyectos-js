@@ -221,13 +221,16 @@ samp {
 .article__gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
-  margin: auto;
+  justify-content: center;
+
   width: 100%;
+  margin: auto;
   max-width: 1440px;
   margin-top: 160px;
 }
 .gallery {
   width: 100%;
+  display: block;
 }
 
 footer {
@@ -310,6 +313,11 @@ footer {
   }
   .close {
     display: none;
+  }
+
+  .article__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
