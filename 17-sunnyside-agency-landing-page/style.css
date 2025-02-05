@@ -93,6 +93,7 @@ main {
   display: flex;
   align-items: center;
 }
+
 .text {
   padding-right: 106px;
   padding-left: 165px;
@@ -245,9 +246,21 @@ footer {
 
 .link {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+  list-style-type: none;
+  color: #458d7e;
+  font-family: var(--fon1);
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.129px;
 }
-.icon {
+.redes {
   margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 @media (max-width: 1024px) {
   .ul__nav {
@@ -318,6 +331,12 @@ footer {
   .article__gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .article {
+    flex-direction: column;
+  }
+  .transform {
+    flex-direction: column-reverse;
   }
 }
 
