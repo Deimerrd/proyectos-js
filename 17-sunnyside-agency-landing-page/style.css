@@ -322,7 +322,6 @@ footer {
 
   nav.open {
     top: 8rem;
-    left: 2.2rem;
   }
   .close {
     display: none;
@@ -337,21 +336,94 @@ footer {
   }
   .transform {
     flex-direction: column-reverse;
+    align-items: start;
+  }
+  .text {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .subtitle {
+    padding-right: 0;
+  }
+
+  .paragraph {
+    padding: 0 24px;
+  }
+
+  .row {
+    margin-top: 3.25rem;
+  }
+  .stand {
+    margin-top: 6rem;
+  }
+  hr {
+    margin: auto;
+    width: 120px;
+    position: relative;
+    left: 0.5rem;
+  }
+
+  .img--stand {
+    position: relative;
+    left: -1em;
+  }
+  .subtitle--stand {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .Graphic {
+    margin-top: 4rem;
+    position: relative;
+  }
+  .texto--graphic {
+    position: absolute;
+  }
+  .img__photographers {
+    display: block;
+    transform: translateY(-1rem);
+  }
+  .clients {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 60px;
+  }
+  .texto__client {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  strong {
+    color: #24303e;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.129px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 377px) {
   header {
     background-image: url("./images/mobile/image-header.jpg");
-    height: 580px;
+    height: 550px;
   }
 
   h1 {
     font-size: 40px;
     line-height: normal;
-    margin-top: 2rem;
+    margin-top: 5.5rem;
   }
   .nav {
     padding-right: 1rem;
+  }
+  .img__main {
+    height: 300px;
+    width: 110%;
+    object-fit: cover;
   }
 }
