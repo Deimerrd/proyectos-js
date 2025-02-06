@@ -374,9 +374,10 @@ footer {
     padding-right: 24px;
   }
   .Graphic {
-    margin-top: 4rem;
+    margin-top: 8rem;
     position: relative;
   }
+
   .texto--graphic {
     position: absolute;
   }
