@@ -55,6 +55,14 @@ nav .ul__nav {
   line-height: 25px;
   letter-spacing: -0.107px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.btn__li:hover {
+  color: #fff;
+  background-color: #90d1ff;
+}
+.learn {
+  cursor: pointer;
 }
 
 .btn {
@@ -132,6 +140,20 @@ hr {
   background: #fad400;
   border: 0;
   transform: translateY(2em);
+}
+.btn-hellow:hover {
+  hr {
+    opacity: 100;
+  }
+}
+
+.btn-pink:hover {
+  hr {
+    opacity: 100;
+  }
+}
+.link li:hover {
+  color: #fff;
 }
 .pink {
   background: #fe7766;
@@ -255,12 +277,16 @@ footer {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.129px;
+  cursor: pointer;
 }
 .redes {
   margin-top: 88px;
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+.red svg:hover path {
+  fill: #fff;
 }
 @media (max-width: 1333px) {
   .img__main {
@@ -278,8 +304,8 @@ footer {
   }
   .text2 {
     position: absolute;
-    top: 18rem;
-    left: 8rem;
+    top: 20rem;
+    left: 11rem;
   }
   .article__gallery {
     grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
@@ -389,6 +415,13 @@ footer {
     margin-top: 4.8rem;
   }
 
+  .img__main {
+    width: 100%;
+  }
+
+  .text2 {
+    top: 20rem;
+  }
   nav.open {
     top: 8rem;
   }
@@ -475,15 +508,18 @@ footer {
     line-height: normal;
     letter-spacing: -0.129px;
   }
-  .img__main {
-    width: 768px;
-  }
   .img--stand {
     left: 0;
   }
 }
 
-@media (max-width: 377px) {
+@media (max-width: 650px) {
+  .text2 {
+    top: 40rem;
+  }
+}
+
+@media (max-width: 478px) {
   header {
     background-image: url("./images/mobile/image-header.jpg");
     height: 550px;
@@ -501,5 +537,9 @@ footer {
     height: 300px;
     width: 110%;
     object-fit: cover;
+  }
+
+  .text2 {
+    top: 20rem;
   }
 }
