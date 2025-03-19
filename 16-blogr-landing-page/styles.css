@@ -10,7 +10,7 @@
 }
 body {
   font-family: var(--fon1);
-  background: #fafafa;
+  background: #fff;
   overflow-x: hidden;
 }
 
@@ -301,6 +301,7 @@ h1 p {
 /*main*/
 .main {
   overflow: hidden;
+  background-color: #fff;
 }
 .main__card--future {
   max-width: 1106px;
@@ -873,11 +874,11 @@ h1 p {
     margin-top: 2rem;
   }
   .img__simtool {
-    bottom: -160rem;
+    bottom: -158rem;
     left: -50%;
     right: -50%;
     margin: auto;
-    width: 550px;
+    width: 500px;
   }
 
   .main__card--simtool {
@@ -929,6 +930,7 @@ h1 p {
   }
   .logo__footer {
     transform: translateX(0);
+    width: 101px;
   }
   .li__product {
     font-weight: 400;
