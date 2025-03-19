@@ -539,11 +539,20 @@ footer {
   }
   .img__main {
     height: 300px;
-    width: 110%;
+    width: 100vw;
     object-fit: cover;
   }
 
   .text2 {
-    top: 20rem;
+    top: 22rem;
+    transform: translateX(-0.2rem);
+    font-family: "Fraunces 9pt Soft";
+  }
+  .txt {
+    margin-top: 27px;
+    transform: translateX(-1rem);
+  }
+  .h3 {
+    transform: translateX(-1rem);
   }
 }
