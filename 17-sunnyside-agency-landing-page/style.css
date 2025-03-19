@@ -555,4 +555,16 @@ footer {
   .h3 {
     transform: translateX(-1rem);
   }
+  .av1 {
+    transform: translateY(-2rem);
+  }
+  .cli2 {
+    margin-top: 1rem;
+  }
+  .pa1 {
+    transform: translateY(-1rem);
+  }
+  .cli3 {
+    margin-top: 1rem;
+  }
 }
