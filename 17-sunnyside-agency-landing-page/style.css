@@ -328,6 +328,10 @@ footer {
     flex-direction: column;
   }
 
+  .ul__nav .btn__li {
+    background: #fbd600;
+  }
+
   .op {
     position: absolute;
     top: 0;
