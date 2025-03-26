@@ -591,6 +591,16 @@ h1 p {
     width: 400px;
   }
 
+  .img__simtool {
+    position: relative;
+    top: 100px;
+    display: block;
+
+    left: 0%;
+    right: 0;
+    width: 500px;
+  }
+
   .main__card--future::before {
     width: 65%;
     right: -180px;
@@ -608,11 +618,6 @@ h1 p {
     width: 300px;
   }
 
-  .img__simtool {
-    left: -20%;
-    right: 0;
-    width: 600px;
-  }
   .ul__Product {
     transform: translateX(-17rem);
   }
@@ -873,13 +878,6 @@ h1 p {
   .paragraph__state {
     margin-top: 2rem;
   }
-  .img__simtool {
-    bottom: -158rem;
-    left: -50%;
-    right: -50%;
-    margin: auto;
-    width: 500px;
-  }
 
   .main__card--simtool {
     display: flex;
@@ -887,12 +885,12 @@ h1 p {
     align-items: center;
   }
   .text__simtool {
-    margin-top: 600px;
     margin-left: -50%;
     margin-right: -50%;
     text-align: center;
     width: 318px;
   }
+
   .txt__simtoll {
     color: #4c5862;
     text-align: center;
