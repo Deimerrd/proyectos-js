@@ -1,6 +1,7 @@
 $DarkNavy: #242742;
 $white: #fff;
 $font: "Roboto", sans-serif;
+$grey-25: rgba(25, 24, 43, 0.25);
 
 :root {
   margin: 0;
@@ -43,3 +44,42 @@ article {
   gap: 8.5px;
 }
 /*sass --watch sass:css*/
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.email_address {
+  border-radius: 8px;
+  border: 1px solid $grey-25;
+  height: 56px;
+  width: 298px;
+  padding-left: 24px;
+  margin-top: 4px;
+}
+
+.email {
+  margin-top: 24px;
+  width: 327px;
+  height: 62px;
+  border: none;
+  border-radius: 8px;
+  background: $DarkNavy;
+  color: $white;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 375px;
+}
