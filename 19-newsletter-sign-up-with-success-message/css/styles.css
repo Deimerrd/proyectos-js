@@ -143,5 +143,10 @@ h2 {
     padding: 0px 0px;
   }
 }
+@media (min-width: 1440px) {
+  body {
+    padding: 220px 256px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
