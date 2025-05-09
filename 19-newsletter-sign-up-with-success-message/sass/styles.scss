@@ -2,16 +2,17 @@ $DarkNavy: #242742;
 $white: #fff;
 $font: "Roboto", sans-serif;
 $grey-25: rgba(25, 24, 43, 0.25);
+$Pale-Navy: #36384d;
 
 :root {
   margin: 0;
   box-sizing: border-box;
 }
 body {
+  background-color: $white;
   font-family: $font;
   color: $DarkNavy;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   margin: auto;
@@ -20,6 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 h1 {
@@ -82,4 +84,67 @@ main {
   justify-content: center;
   margin: auto;
   max-width: 375px;
+}
+
+.icontwo .fa {
+  font-size: 64px;
+  height: 64px;
+}
+
+//otro formulario
+
+.cardmain {
+  padding: 149px 24px 40px 24px;
+}
+
+h2 {
+  color: $DarkNavy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.btn-config {
+  margin-top: 263px;
+  width: 100%;
+}
+
+@media (min-width: 928px) {
+  body {
+    background-color: $DarkNavy;
+  }
+  .container {
+    max-width: 928px;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 60px;
+    padding-right: 24px;
+    border-radius: 16px;
+    border: 0px solid #19182b;
+  }
+  main {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    width: none;
+    max-width: none;
+
+    padding-bottom: 0px;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 100%;
+  }
+  .content {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+  }
+}
+@media (min-width: 1110px) {
+  body {
+    padding: 0px 0px;
+  }
 }

@@ -23,89 +23,74 @@
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
-    <main>
-      <picture>
-        <source
-          media="(min-width:650px)"
-          srcset="assets/illustration-sign-up-desktop.svg"
-        />
-        <img
-          class="ilustre"
-          src="assets/illustration-sign-up-mobile.svg"
-          alt="Flowers"
-          style="width: auto"
-        />
-      </picture>
-
-      <article>
-        <h1>Stay updated!</h1>
-        <p class="paragrahp">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <div class="list">
-          <p class="p">
-            <span class="icono">
-              <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
-            ></span>
-            <span class="texto"
-              >Product discovery and building what matters</span
-            >
-          </p>
-          <p class="p">
-            <span class="icono">
-              <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
-            ></span>
-            <span class="texto">Measuring to ensure updates are a success</span>
-          </p>
-          <p class="p">
-            <span class="icono">
-              <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
-            ></span>
-            <span class="texto">And much more!</span>
-          </p>
-        </div>
-
-        <form>
-          <div class="input-group">
-            <label for="email_address">Email address</label>
-            <input
-              type="email"
-              name="email_address"
-              id="email_address"
-              class="email_address"
-              placeholder="email@company.com"
+    <div class="content">
+      <div class="container">
+        <main>
+          <picture>
+            <source
+              media="(min-width:928px)"
+              srcset="assets/illustration-sign-up-desktop.svg"
             />
-
-            <input
-              class="email"
-              type="submit"
-              value="Subscribe to monthly newsletter"
+            <img
+              class="ilustre"
+              src="assets/illustration-sign-up-mobile.svg"
+              alt="Flowers"
+              style="width: auto"
             />
-          </div>
-        </form>
-      </article>
-    </main>
+          </picture>
 
-    <!--
-     <br />
+          <article>
+            <h1>Stay updated!</h1>
+            <p class="paragrahp">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <div class="list">
+              <p class="p">
+                <span class="icono">
+                  <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
+                ></span>
+                <span class="texto"
+                  >Product discovery and building what matters</span
+                >
+              </p>
+              <p class="p">
+                <span class="icono">
+                  <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
+                ></span>
+                <span class="texto"
+                  >Measuring to ensure updates are a success</span
+                >
+              </p>
+              <p class="p">
+                <span class="icono">
+                  <i class="fa-solid fa-circle-check" style="color: #ff6155"></i
+                ></span>
+                <span class="texto">And much more!</span>
+              </p>
+            </div>
 
-     <br />
+            <form>
+              <div class="input-group">
+                <label for="email_address">Email address</label><br />
+                <input
+                  type="email"
+                  name="email_address"
+                  id="email_address"
+                  class="email_address"
+                  placeholder="email@company.com"
+                />
 
-    Product discovery and building what matters <br />
-    Measuring to ensure updates are a success <br />
-    And much more! <br />
-
-    Email address <br />
-    email@company.com <br />
-
-    Subscribe to monthly newsletter <br />
-
-    Thanks for subscribing! <br />
-
-    A confirmation email has been sent to ash@loremcompany.com. <br />
-    Please open it and click the button inside to confirm your subscription.
-    <br />
-
-    Dismiss message <br />-->
+                <input
+                  id="btn_email"
+                  class="email"
+                  type="submit"
+                  value="Subscribe to monthly newsletter"
+                />
+              </div>
+            </form>
+          </article>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
