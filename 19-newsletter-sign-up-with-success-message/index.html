@@ -70,27 +70,26 @@
             </div>
 
             <form>
-              <div class="input-group">
-                <label for="email_address">Email address</label><br />
-                <input
-                  type="email"
-                  name="email_address"
-                  id="email_address"
-                  class="email_address"
-                  placeholder="email@company.com"
-                />
+              <label for="email_address">Email address</label>
+              <span id="emailError"></span>
+              <br />
+              <input
+                type="email"
+                name="email_address"
+                id="email"
+                class="email_address"
+                placeholder="email@company.com"
+              />
 
-                <input
-                  id="btn_email"
-                  class="email"
-                  type="submit"
-                  value="Subscribe to monthly newsletter"
-                />
-              </div>
+              <button class="email" id="btn-email">
+                Subscribe to monthly newsletter
+              </button>
             </form>
           </article>
         </main>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
