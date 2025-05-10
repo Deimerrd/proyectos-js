@@ -29,7 +29,7 @@ h1 {
   font-size: 40px;
 }
 article {
-  padding: 0 24px;
+  padding: 0px 24px;
 }
 
 /* separamos iconos con texto*/
@@ -72,6 +72,7 @@ label {
   font-weight: 700;
   line-height: 150%;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -108,6 +109,28 @@ h2 {
   width: 100%;
 }
 
+@media (min-width: 504px) {
+  .contenttwo {
+    background-color: $white;
+    width: 504px;
+    border-radius: 36px;
+    box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin: auto;
+  }
+
+  .btn-config {
+    margin-top: 40px;
+  }
+
+  .cardmain {
+    padding: 48px 64px 64px 64px;
+  }
+  h2 {
+    font-size: 56px;
+  }
+}
+
 @media (min-width: 928px) {
   body {
     background-color: $DarkNavy;
@@ -142,12 +165,22 @@ h2 {
     height: 100vh;
     display: flex;
   }
+  article {
+    padding: 0;
+  }
+  .email {
+    width: 100%;
+  }
+  .email_address {
+    width: 94%;
+  }
 }
 @media (min-width: 1110px) {
   body {
     padding: 0px 0px;
   }
 }
+
 @media (min-width: 1440px) {
   body {
     padding: 220px 256px;
