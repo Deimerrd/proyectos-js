@@ -9,6 +9,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "sass": "^1.87.0"
+    "sass": "^1.88.0"
   }
 }
