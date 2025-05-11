@@ -4,7 +4,7 @@ document.getElementById("btn-email").addEventListener("click", function () {
 
   if (esCorreoValido(Email)) {
     // Redirige a la nueva página
-    self.location = "suscrito.html";
+    window.location.href = "suscrito.html";
   } else {
     errorSpan.innerHTML = "Valid email required"; // plain javascript
   }
