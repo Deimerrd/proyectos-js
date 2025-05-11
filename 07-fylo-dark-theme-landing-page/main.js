@@ -5,7 +5,7 @@ function validaremail() {
     /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
 
   if (email.match(expresion)) {
-    alert("La dirección de email " + email + " es correcta!.");
+    window.location.href = "hola.html";
 
     document.getElementById("email").style.borderColor = "#fff";
   } else {
