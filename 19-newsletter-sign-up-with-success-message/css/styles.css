@@ -84,6 +84,12 @@ main {
   height: 64px;
 }
 
+.email:hover {
+  border-radius: 8px;
+  background: var(--Gradient-1, linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
 .cardmain {
   padding: 149px 24px 40px 24px;
 }
