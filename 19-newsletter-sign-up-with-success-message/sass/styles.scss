@@ -106,6 +106,7 @@ h2 {
 }
 .error-email {
   font-size: 12px;
+  margin-left: 30%;
 }
 
 @media (min-width: 504px) {
@@ -121,6 +122,9 @@ h2 {
   .btn-config {
     margin-top: 40px;
   }
+  .error-email {
+    margin-left: 40%;
+  }
 
   .cardmain {
     padding: 48px 64px 64px 64px;
@@ -133,6 +137,9 @@ h2 {
 @media (min-width: 928px) {
   body {
     background-color: $DarkNavy;
+  }
+  .error-email {
+    margin-left: 50%;
   }
 
   h3 {
