@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Deimerrd/proyectos-js/issues"
   },
-  "homepage": "https://github.com/Deimerrd/proyectos-js#readme"
+  "homepage": "https://github.com/Deimerrd/proyectos-js#readme",
+  "dependencies": {
+    "sass": "^1.88.0"
+  }
 }
