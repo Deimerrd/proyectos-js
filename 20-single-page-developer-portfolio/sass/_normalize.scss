@@ -1,0 +1,21 @@
+@use "nav";
+@use "header";
+
+:root {
+  --black: #151515;
+  --green: #4ee1a0;
+  --dark-grey: #242424;
+  --grey: #d9d9d9;
+  --white: #fff;
+  --font: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--black);
+}
