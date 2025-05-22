@@ -126,11 +126,13 @@
     <section class="projects">
       <div class="projects__header">
         <h2 class="projects__title">Projects</h2>
-        <a href="#contact" class="projects__contact-btn">CONTACT ME</a>
+        <a href="#contact" class="projects__contact-btn"
+          ><span class="subra"> CONTACT ME </span></a
+        >
       </div>
 
       <div class="projects__list">
-        <article class="projects__item">
+        <article class="projects__item item1">
           <img
             src="assets/thumbnail-project-1-small.webp"
             alt="Design Portfolio"
@@ -139,12 +141,16 @@
           <h3 class="projects__name">DESIGN PORTFOLIO</h3>
           <p class="projects__tech">HTML <span>CSS</span></p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT </span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
 
-        <article class="projects__item">
+        <article class="projects__item item2">
           <img
             src="assets/thumbnail-project-2-small.webp"
             alt="E-learning Landing Page"
@@ -153,26 +159,16 @@
           <h3 class="projects__name">E-LEARNING LANDING PAGE</h3>
           <p class="projects__tech">HTML <span>CSS</span></p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
 
-        <article class="projects__item">
-          <img
-            src="assets/thumbnail-project-2-small.webp"
-            alt="E-learning Landing Page"
-            class="projects__image"
-          />
-          <h3 class="projects__name">E-LEARNING LANDING PAGE</h3>
-          <p class="projects__tech">HTML <span>CSS</span></p>
-          <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
-          </div>
-        </article>
-
-        <article class="projects__item">
+        <article class="projects__item item3">
           <img
             src="assets/thumbnail-project-3-small.webp"
             alt="TODO Web App"
@@ -183,12 +179,16 @@
             HTML <span>CSS</span> <span>JAVASCRIPT</span>
           </p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
 
-        <article class="projects__item">
+        <article class="projects__item item4">
           <img
             src="assets/thumbnail-project-4-small.webp"
             alt="Entertainment Web App"
@@ -199,13 +199,17 @@
             HTML <span>CSS</span> <span>JAVASCRIPT</span>
           </p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
         <!-- Más proyectos aquí -->
 
-        <article class="projects__item">
+        <article class="projects__item item5">
           <img
             src="assets/thumbnail-project-5-small.webp"
             alt="Memory Game"
@@ -216,12 +220,16 @@
             HTML <span>CSS</span> <span>JAVASCRIPT</span>
           </p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
 
-        <article class="projects__item">
+        <article class="projects__item item6">
           <img
             src="assets/thumbnail-project-6-small.webp"
             alt="Art Gallery Showcase"
@@ -232,45 +240,53 @@
             HTML <span>CSS</span> <span>JAVASCRIPT</span>
           </p>
           <div class="projects__links">
-            <a href="#" class="projects__link">VIEW PROJECT</a>
-            <a href="#" class="projects__link">VIEW CODE</a>
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
           </div>
         </article>
       </div>
     </section>
     <section class="contact">
-      <h2 class="contact__title">Contact</h2>
-      <p class="contact__description">
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
+      <div class="contact__datos">
+        <div class="contact__text-contacto">
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__description">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
 
-      <form class="contact__form">
-        <input
-          class="contact__input"
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="contact__input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          class="contact__input contact__input--textarea"
-          name="message"
-          placeholder="Message"
-          required
-        ></textarea>
-        <button class="contact__button" type="submit">
-          Send Message
-          <span class="contact__underline"></span>
-        </button>
-      </form>
+        <form class="contact__form">
+          <input
+            class="contact__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="contact__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            class="contact__input contact__input--textarea"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button class="contact__button" type="submit">
+            Send Message
+            <span class="contact__underline"></span>
+          </button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">

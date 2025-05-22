@@ -3,6 +3,17 @@
 .main {
   position: relative;
   bottom: 5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-rings.svg");
+    top: 33.8rem;
+    left: 50%;
+    right: 0;
+    height: 70%;
+    background-repeat: no-repeat;
+  }
 }
 
 .skills {
@@ -26,7 +37,6 @@
 }
 .subrayado {
   position: relative;
-
   display: inline-block;
 
   &::after {
@@ -39,5 +49,168 @@
     background-color: var(--green);
     z-index: 1;
     border-radius: 2px;
+  }
+}
+
+.projects {
+  @include mixfun.container;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+  }
+
+  &__contact-btn {
+    color: var(--white);
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-top: 41px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__name {
+    color: var(--white);
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+
+  &__tech {
+    color: var(--grey);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  &__links {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+}
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.contact {
+  background: var(--dark-grey);
+  margin-top: 60px;
+
+  &__datos {
+    @include mixfun.container;
+    padding-top: 60px;
+  }
+  &__text-contacto {
+    text-align: center;
+  }
+  &__title {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+  }
+  &__description {
+    margin-top: 20px;
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 26px;
+  }
+  &__form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0.8rem 0;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+  }
+  &__input::placeholder {
+    text-transform: uppercase;
+    color: var(--white);
+
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.222px;
+  }
+
+  &__input--textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  &__button {
+    color: var(--white);
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 1rem 0 0.3rem;
+    cursor: pointer;
+    align-self: flex-end;
   }
 }
