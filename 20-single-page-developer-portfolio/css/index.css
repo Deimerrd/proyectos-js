@@ -260,6 +260,8 @@ body {
 .contact {
   background: var(--dark-grey);
   margin-top: 60px;
+  position: relative;
+  padding-bottom: 47px;
 }
 .contact__datos {
   width: 90%;
@@ -294,7 +296,7 @@ body {
 .contact__input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 2px solid #666;
   padding: 0.8rem 0;
   color: #fff;
   font-size: 1rem;
@@ -306,16 +308,19 @@ body {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.222px;
+  opacity: 0.5;
 }
 .contact__input--textarea {
   resize: none;
   height: 100px;
 }
 .contact__button {
-  color: var(--white);
+  font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2.286px;
+  color: var(--white);
+  font-weight: 700;
   background: none;
   border: none;
   text-transform: uppercase;
@@ -323,6 +328,49 @@ body {
   padding: 1rem 0 0.3rem;
   cursor: pointer;
   align-self: flex-end;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/pattern-rings.svg");
+  transform: rotate(180deg);
+  top: 10.7rem;
+  left: 0%;
+  right: 55%;
+  height: 60%;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background: var(--dark-grey);
+}
+.footer__redes {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+  border-top: 1px solid white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__social {
+  display: inline-flex;
+  gap: 1.8rem;
+}
+.footer__brand {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.333px;
+}
+.footer__link img {
+  width: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

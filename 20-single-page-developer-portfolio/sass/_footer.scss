@@ -1,0 +1,30 @@
+@use "mixfun";
+
+.footer {
+  background: var(--dark-grey);
+
+  &__redes {
+    @include mixfun.container;
+    border-top: 1px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__social {
+    display: inline-flex;
+    gap: 1.8rem;
+  }
+  &__brand {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.333px;
+  }
+  &__link img {
+    width: 20px;
+  }
+}

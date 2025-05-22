@@ -54,7 +54,6 @@
 
 .projects {
   @include mixfun.container;
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -149,6 +148,8 @@
 .contact {
   background: var(--dark-grey);
   margin-top: 60px;
+  position: relative;
+  padding-bottom: 47px;
 
   &__datos {
     @include mixfun.container;
@@ -180,7 +181,7 @@
   &__input {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #666;
+    border-bottom: 2px solid #666;
     padding: 0.8rem 0;
     color: #fff;
     font-size: 1rem;
@@ -189,10 +190,10 @@
   &__input::placeholder {
     text-transform: uppercase;
     color: var(--white);
-
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.222px;
+    opacity: 0.5;
   }
 
   &__input--textarea {
@@ -201,10 +202,12 @@
   }
 
   &__button {
-    color: var(--white);
+    font-size: 16px;
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 2.286px;
+    color: var(--white);
+    font-weight: 700;
     background: none;
     border: none;
     text-transform: uppercase;
@@ -212,5 +215,17 @@
     padding: 1rem 0 0.3rem;
     cursor: pointer;
     align-self: flex-end;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-rings.svg");
+    transform: rotate(180deg);
+    top: 10.7rem;
+    left: 0%;
+    right: 55%;
+    height: 60%;
+    background-repeat: no-repeat;
   }
 }
