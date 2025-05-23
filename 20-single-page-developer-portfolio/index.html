@@ -81,7 +81,15 @@
 
         <div class="header__profile-info">
           <h1 class="header__profile-name">
-            Nice to meet you! I'm <span class="subrayado"> Adam Keyes.</span>
+            <span class="text-mobile">
+              Nice to meet you!<br />
+              I'm <span class="subrayado">Adam Keyes.</span>
+            </span>
+
+            <span class="text-tablet">
+              Nice to<br class="break-tablet" />
+             <span class="nowrap">meet you! I'm</span><br class="break-tablet" />
+             <span class="subrayado">Adam Keyes</span>.
           </h1>
           <p class="header__profile-title">
             Based in the UK, I'm a front-end developer passionate about building
@@ -282,33 +290,37 @@
             required
           ></textarea>
           <button class="contact__button" type="submit">
-            <span class="subra">Send Message</span>
+            Send Message
+            <span class="contact__underline"></span>
           </button>
         </form>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__redes">
-        <p class="footer__brand">adamkeyes</p>
-        <div class="footer__social">
+      <p class="footer__brand">adamkeyes</p>
+      <ul class="footer__social">
+        <li>
           <a href="#" class="footer__link"
             ><img src="assets/icon-github.svg" alt="GitHub"
           /></a>
-
+        </li>
+        <li>
           <a href="#" class="footer__link"
             ><img src="assets/icon-frontend-mentor.svg" alt="Frontend Mentor"
           /></a>
-
+        </li>
+        <li>
           <a href="#" class="footer__link"
             ><img src="assets/icon-linkedin.svg" alt="LinkedIn"
           /></a>
-
+        </li>
+        <li>
           <a href="#" class="footer__link"
             ><img src="assets/icon-twitter.svg" alt="Twitter"
           /></a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

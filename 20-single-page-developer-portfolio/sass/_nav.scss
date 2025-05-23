@@ -22,8 +22,16 @@
   &__social {
     display: flex;
     gap: 1.5rem;
+    z-index: 2;
   }
   &__social-icon {
     height: 20px;
+  }
+
+  @include mixfun.media {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

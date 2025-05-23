@@ -47,6 +47,12 @@
     letter-spacing: -1.136px;
   }
 
+  .text-mobile {
+    display: block;
+  }
+  .text-tablet {
+    display: none;
+  }
   &__profile-title {
     color: var(--grey);
     font-size: 16px;
@@ -62,12 +68,70 @@
     letter-spacing: 2.286px;
     margin-top: 24px;
   }
+
+  @include mixfun.media {
+    &__profile {
+      display: flex;
+      flex-direction: row-reverse;
+
+      align-items: flex-start;
+      margin-top: 2rem;
+      position: relative;
+    }
+    &__profile-photo {
+      width: 349.854px;
+      max-width: 100%;
+
+      position: relative;
+      left: 2rem;
+      bottom: 1.1rem;
+      z-index: 1;
+    }
+
+    &::after {
+      top: 28.3rem;
+      left: 90%;
+    }
+
+    &__profile-info {
+      text-align: left;
+      position: absolute;
+      top: 90px;
+      z-index: 3;
+      right: 2.5em;
+    }
+
+    &__profile-name {
+      font-size: 72px;
+      text-align: left;
+      line-height: 78px;
+      letter-spacing: -2.045px;
+    }
+    .text-mobile {
+      display: none;
+    }
+
+    .text-tablet {
+      display: block;
+    }
+
+    .nowrap {
+      white-space: nowrap; // 🔒 evita que "meet you! I'm" se parta mal
+    }
+
+    &__profile-title {
+      margin-top: 60px;
+    }
+    &__profile-contact {
+      margin-top: 34px;
+    }
+  }
 }
 
 .subra {
   text-decoration: underline;
   text-decoration-color: var(--green);
-  text-underline-offset: 8px; /* Cambia la distancia del subrayado al texto */
+  text-underline-offset: 8px;
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
 }
