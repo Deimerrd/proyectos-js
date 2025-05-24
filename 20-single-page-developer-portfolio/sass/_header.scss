@@ -153,15 +153,35 @@
   .header {
     &::before {
       right: 70%;
-      top: -5rem;
+      top: -11.7rem;
     }
 
-    &__text-laptop {
+    &__profile-name {
       font-size: 88px;
     }
 
     &__profile {
-      max-width: 1110px;
+      @include mixfun.container;
+      right: 3rem;
+      max-width: 1180px;
+      width: 100%;
+      bottom: 1rem;
+    }
+
+    &__profile-photo {
+      width: 445px;
+      max-width: 100%;
+    }
+    &__profile-info {
+      margin-top: 6.5rem;
+    }
+
+    &::after {
+      top: 35.3rem;
+      left: 53.5%;
+    }
+    &__profile-contact {
+      margin-top: 70px;
     }
   }
 }

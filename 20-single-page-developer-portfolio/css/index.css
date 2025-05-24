@@ -32,6 +32,7 @@
   .nav__container {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1080.49px;
   }
   .nav__logo {
     font-size: 32px;
@@ -90,9 +91,6 @@
   display: block;
 }
 .header .text-tablet {
-  display: none;
-}
-.header .text-laptop {
   display: none;
 }
 .header__profile-title {
@@ -159,9 +157,6 @@
   .header .text-laptop {
     display: none;
   }
-  .header .text-tablet {
-    display: block;
-  }
   .header .nowrap {
     white-space: nowrap;
   }
@@ -184,20 +179,35 @@
 @media (min-width: 1110px) {
   .header::before {
     right: 70%;
-    top: -5rem;
+    top: -11.7rem;
+  }
+  .header__profile-name {
+    font-size: 88px;
   }
   .header__profile {
+    width: 90%;
     max-width: 1110px;
-    margin: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+    right: 3rem;
+    max-width: 1180px;
+    width: 100%;
+    bottom: 1rem;
   }
-  .header .text-mobile {
-    display: none;
+  .header__profile-photo {
+    width: 445px;
+    max-width: 100%;
   }
-  .header .text-tablet {
-    display: none;
+  .header__profile-info {
+    margin-top: 6.5rem;
   }
-  .header .text-laptop {
-    display: block;
+  .header::after {
+    top: 35.3rem;
+    left: 53.5%;
+  }
+  .header__profile-contact {
+    margin-top: 70px;
   }
 }
 :root {
