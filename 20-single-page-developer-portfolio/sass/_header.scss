@@ -7,11 +7,13 @@
     content: "";
     position: absolute;
     background-image: url("../assets/pattern-rings.svg");
-    top: 8rem;
-    left: -98%;
-    right: 0;
+    top: -24%;
+    left: 0%;
+    right: 55%;
     height: 60%;
+
     background-repeat: no-repeat;
+    transform: rotate(180deg);
   }
 
   &__profile-photo {
@@ -53,6 +55,7 @@
   .text-tablet {
     display: none;
   }
+
   &__profile-title {
     color: var(--grey);
     font-size: 16px;
@@ -70,25 +73,18 @@
   }
 
   @include mixfun.media {
+    &::before {
+      right: 65%;
+    }
+
     &__profile {
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-start;
       margin-top: 2rem;
       position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../assets/pattern-rings.svg");
-        top: -24%;
-        left: 0;
-        right: 65%;
-        height: 60%;
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-      }
     }
+
     &__profile-photo {
       width: 349.854px;
       max-width: 91%;
@@ -128,13 +124,12 @@
     .text-mobile {
       display: none;
     }
-
-    .text-tablet {
-      display: block;
+    .text-laptop {
+      display: none;
     }
 
     .nowrap {
-      white-space: nowrap; // 🔒 evita que "meet you! I'm" se parta mal
+      white-space: nowrap;
     }
 
     &__profile-title {
@@ -152,4 +147,21 @@
   text-underline-offset: 8px;
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
+}
+
+@include mixfun.media-laptop {
+  .header {
+    &::before {
+      right: 70%;
+      top: -5rem;
+    }
+
+    &__text-laptop {
+      font-size: 88px;
+    }
+
+    &__profile {
+      max-width: 1110px;
+    }
+  }
 }

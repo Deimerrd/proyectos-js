@@ -1,6 +1,6 @@
 .nav {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 0;
@@ -46,11 +46,12 @@
   content: "";
   position: absolute;
   background-image: url("../assets/pattern-rings.svg");
-  top: 8rem;
-  left: -98%;
-  right: 0;
+  top: -24%;
+  left: 0%;
+  right: 55%;
   height: 60%;
   background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
 .header__profile-photo {
   width: 50%;
@@ -72,7 +73,7 @@
 }
 .header__profile-info {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
@@ -91,6 +92,9 @@
 .header .text-tablet {
   display: none;
 }
+.header .text-laptop {
+  display: none;
+}
 .header__profile-title {
   color: var(--grey);
   font-size: 16px;
@@ -107,23 +111,15 @@
   margin-top: 24px;
 }
 @media (min-width: 768px) {
+  .header::before {
+    right: 65%;
+  }
   .header__profile {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     margin-top: 2rem;
     position: relative;
-  }
-  .header__profile::before {
-    content: "";
-    position: absolute;
-    background-image: url("../assets/pattern-rings.svg");
-    top: -24%;
-    left: 0;
-    right: 65%;
-    height: 60%;
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
   }
   .header__profile-photo {
     width: 349.854px;
@@ -160,6 +156,9 @@
   .header .text-mobile {
     display: none;
   }
+  .header .text-laptop {
+    display: none;
+  }
   .header .text-tablet {
     display: block;
   }
@@ -182,6 +181,25 @@
   text-underline-offset: 15px;
 }
 
+@media (min-width: 1110px) {
+  .header::before {
+    right: 70%;
+    top: -5rem;
+  }
+  .header__profile {
+    max-width: 1110px;
+    margin: auto;
+  }
+  .header .text-mobile {
+    display: none;
+  }
+  .header .text-tablet {
+    display: none;
+  }
+  .header .text-laptop {
+    display: block;
+  }
+}
 :root {
   --black: #151515;
   --green: #4ee1a0;
@@ -207,13 +225,26 @@ body {
   position: relative;
   padding-bottom: 47px;
 }
+@media (min-width: 768px) {
+  .contact {
+    margin-top: 0;
+  }
+}
 .contact__datos {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
   padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .contact__datos {
+    width: 445px;
+  }
+  .contact__description {
+    font-size: 18px;
+  }
 }
 .contact__text-contacto {
   text-align: center;
@@ -284,6 +315,12 @@ body {
   height: 60%;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .contact::after {
+    right: 79%;
+    top: 14.7rem;
+  }
+}
 
 .main {
   position: relative;
@@ -308,7 +345,7 @@ body {
 
 .skills {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
@@ -331,10 +368,15 @@ body {
 
 .projects {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
+}
+@media (min-width: 768px) {
+  .projects {
+    padding: 0 0px;
+  }
 }
 .projects__image {
   width: 100%;
@@ -366,6 +408,13 @@ body {
   gap: 40px;
   grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
 }
+@media (min-width: 768px) {
+  .projects__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 .projects__name {
   color: var(--white);
   font-feature-settings: "liga" off, "clig" off;
@@ -393,7 +442,7 @@ body {
 @media (min-width: 768px) {
   .skills {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1110px;
     margin: 0 auto;
     overflow: hidden;
     padding: 40px 0;
@@ -467,7 +516,7 @@ body {
 }
 .footer__redes {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
@@ -478,6 +527,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .footer__redes {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 .footer__social {
   display: inline-flex;

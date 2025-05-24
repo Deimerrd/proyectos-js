@@ -4,11 +4,25 @@
   margin-top: 60px;
   position: relative;
   padding-bottom: 47px;
+  @include mixfun.media {
+    margin-top: 0;
+  }
 
   &__datos {
     @include mixfun.container;
     padding-top: 60px;
   }
+
+  @include mixfun.media {
+    &__datos {
+      width: 445px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+  }
+
   &__text-contacto {
     text-align: center;
   }
@@ -82,6 +96,12 @@
     height: 60%;
     background-repeat: no-repeat;
   }
+  @include mixfun.media {
+    &::after {
+      right: 79%;
+      top: 14.7rem;
+    }
+  }
 }
 
 .main {
@@ -129,6 +149,10 @@
 .projects {
   @include mixfun.container;
 
+  @include mixfun.media {
+    padding: 0 0px;
+  }
+
   &__image {
     width: 100%;
   }
@@ -168,6 +192,13 @@
       "item4"
       "item5"
       "item6";
+  }
+  @include mixfun.media {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 
   &__name {
