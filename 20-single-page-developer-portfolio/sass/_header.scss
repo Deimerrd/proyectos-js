@@ -55,6 +55,9 @@
   .text-tablet {
     display: none;
   }
+  .clone-title {
+    display: none;
+  }
 
   &__profile-title {
     color: var(--grey);
@@ -127,7 +130,9 @@
     .text-laptop {
       display: none;
     }
-
+    .text-tablet {
+      display: block;
+    }
     .nowrap {
       white-space: nowrap;
     }
@@ -182,6 +187,16 @@
     }
     &__profile-contact {
       margin-top: 70px;
+    }
+
+    .text-tablet {
+      display: none;
+    }
+    .text-mobile {
+      display: none;
+    }
+    .clone-title {
+      display: block;
     }
   }
 }

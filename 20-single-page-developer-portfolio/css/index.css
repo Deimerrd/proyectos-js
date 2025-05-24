@@ -93,6 +93,9 @@
 .header .text-tablet {
   display: none;
 }
+.header .clone-title {
+  display: none;
+}
 .header__profile-title {
   color: var(--grey);
   font-size: 16px;
@@ -157,6 +160,9 @@
   .header .text-laptop {
     display: none;
   }
+  .header .text-tablet {
+    display: block;
+  }
   .header .nowrap {
     white-space: nowrap;
   }
@@ -208,6 +214,15 @@
   }
   .header__profile-contact {
     margin-top: 70px;
+  }
+  .header .text-tablet {
+    display: none;
+  }
+  .header .text-mobile {
+    display: none;
+  }
+  .header .clone-title {
+    display: block;
   }
 }
 :root {
@@ -521,6 +536,15 @@ body {
   }
 }
 
+@media (min-width: 1110px) {
+  .main::after {
+    top: 13rem;
+    left: 78%;
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .footer {
   background: var(--dark-grey);
 }

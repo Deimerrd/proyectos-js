@@ -307,3 +307,15 @@
     }
   }
 }
+
+@include mixfun.media-laptop {
+  .main {
+    &::after {
+      top: 13rem;
+      left: 78%;
+    }
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
