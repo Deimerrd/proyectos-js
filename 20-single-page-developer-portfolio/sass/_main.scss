@@ -83,6 +83,10 @@
     padding: 1rem 0 0.3rem;
     cursor: pointer;
     align-self: flex-end;
+
+    &:hover {
+      color: var(--green);
+    }
   }
 
   &::after {
@@ -148,7 +152,6 @@
 
 .projects {
   @include mixfun.container;
-
   @include mixfun.media {
     padding: 0 0px;
   }
@@ -317,5 +320,31 @@
   }
   .skills {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contact {
+    &__datos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1110px;
+    }
+    &__text-contacto {
+      text-align: left;
+      width: 445px;
+    }
+
+    &__form {
+      width: 445px;
+    }
+    &__title {
+      font-size: 88px;
+    }
+    &__description {
+      margin-top: 2.25rem;
+    }
+    &::after {
+      top: 10rem;
+    }
   }
 }

@@ -73,6 +73,11 @@
     line-height: 26px;
     letter-spacing: 2.286px;
     margin-top: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--green);
+    }
   }
 
   @include mixfun.media {

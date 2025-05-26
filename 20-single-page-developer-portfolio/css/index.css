@@ -110,6 +110,10 @@
   line-height: 26px;
   letter-spacing: 2.286px;
   margin-top: 24px;
+  cursor: pointer;
+}
+.header__profile-contact:hover {
+  color: var(--green);
 }
 @media (min-width: 768px) {
   .header::before {
@@ -329,6 +333,9 @@ body {
   cursor: pointer;
   align-self: flex-end;
 }
+.contact__button:hover {
+  color: var(--green);
+}
 .contact::after {
   content: "";
   position: absolute;
@@ -543,6 +550,29 @@ body {
   }
   .skills {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+  }
+  .contact__text-contacto {
+    text-align: left;
+    width: 445px;
+  }
+  .contact__form {
+    width: 445px;
+  }
+  .contact__title {
+    font-size: 88px;
+  }
+  .contact__description {
+    margin-top: 2.25rem;
+  }
+  .contact::after {
+    top: 10rem;
   }
 }
 .footer {
