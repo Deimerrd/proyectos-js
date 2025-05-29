@@ -248,6 +248,29 @@ body {
   background-color: var(--black);
 }
 
+.contact__input-wrapper {
+  position: relative;
+}
+
+.contact__error-icon {
+  display: none;
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+}
+
+.contact__error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.input-error {
+  border-bottom: 2px solid red !important;
+}
+
 .contact {
   background: var(--dark-grey);
   margin-top: 60px;
@@ -274,6 +297,26 @@ body {
   .contact__description {
     font-size: 18px;
   }
+}
+.contact .contact__input-wrapper {
+  position: relative;
+}
+.contact .contact__error-icon {
+  display: none;
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+.contact .contact__error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+.contact .input-error {
+  border-bottom: 2px solid red !important;
 }
 .contact__text-contacto {
   text-align: center;
@@ -373,6 +416,10 @@ body {
     top: 23rem;
     left: 76%;
   }
+}
+
+.projects__figure-capalink {
+  display: none;
 }
 
 .skills {
@@ -573,6 +620,74 @@ body {
   }
   .contact::after {
     top: 10rem;
+  }
+  .projects__link {
+    display: none;
+  }
+  .projects__figure {
+    position: relative;
+  }
+  .projects__figure::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  .projects__figure:hover::before {
+    opacity: 1;
+  }
+  .projects__figure:hover .projects__figure__figure-capa {
+    opacity: 1;
+  }
+  .projects__image {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+  .projects__figure-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    opacity: 0 !important;
+  }
+  .projects__figure:hover .projects__figure-capa {
+    opacity: 1 !important;
+  }
+  .projects__content {
+    z-index: 3;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .projects__figure-capalink {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 5;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: block;
+  }
+  .projects__figure-capalink:hover {
+    color: var(--green);
+    transform: scale(1.05);
   }
 }
 .footer {
