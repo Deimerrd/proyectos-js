@@ -327,6 +327,8 @@
         </div>
 
         <form class="contact__form">
+
+
   <input
     class="contact__input"
     type="text"
@@ -335,17 +337,17 @@
     required
   />
 
-  <div class="contact__input-wrapper">
-    <input
-      class="contact__input"
-      type="email"
-      name="email"
-      placeholder="Email"
-      required
-    />
-    <span class="contact__error-icon">⚠️</span>
-    <p class="contact__error-message"></p>
-  </div>
+
+  <input
+    type="email"
+    id="email"
+    class="contact__input"
+    placeholder="Email"
+    aria-describedby="email-error"
+  />
+  <span class="contact__error-icon" aria-hidden="true"><img src="er.svg" alt=""></span>
+  <div id="email-error" class="contact__error"></div>
+
 
   <textarea
     class="contact__input contact__input--textarea"

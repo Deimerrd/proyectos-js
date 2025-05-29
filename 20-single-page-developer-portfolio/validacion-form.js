@@ -1,29 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
+<script>
   const form = document.querySelector(".contact__form");
-  const emailWrapper = form.querySelector(".contact__input-wrapper");
-  const emailInput = emailWrapper.querySelector("input[type='email']");
-  const errorMessage = emailWrapper.querySelector(".contact__error-message");
-  const errorIcon = emailWrapper.querySelector(".contact__error-icon");
+  const emailInput = form.querySelector('input[name="email"]');
+  const errorIcon = form.querySelector(".contact__error-icon");
+  const errorMessage = form.querySelector(".contact__error-message");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Evita que se envíe si hay error
+  form.addEventListener("submit", function (e) {
+    const emailValue = emailInput.value;
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
 
-    const emailValue = emailInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(emailValue)) {
-      // ❌ Email inválido
-      emailInput.classList.add("input-error");
-      errorMessage.textContent = "Sorry, invalid format here";
+    if (!emailValid) {
+      e.preventDefault(); // Detiene el envío
       errorIcon.style.display = "inline";
+      errorMessage.textContent = "Please enter a valid email address";
+      emailInput.classList.add("contact__input-error");
     } else {
-      // ✅ Email válido
-      emailInput.classList.remove("input-error");
-      errorMessage.textContent = "";
       errorIcon.style.display = "none";
-
-      // Aquí podrías enviar el formulario si todo está bien
-      // form.submit(); // si lo necesitas enviar realmente
+      errorMessage.textContent = "";
+      emailInput.classList.remove("contact__input-error");
     }
   });
-});
+</script>

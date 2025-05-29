@@ -248,29 +248,6 @@ body {
   background-color: var(--black);
 }
 
-.contact__input-wrapper {
-  position: relative;
-}
-
-.contact__error-icon {
-  display: none;
-  color: red;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.2rem;
-}
-
-.contact__error-message {
-  color: red;
-  font-size: 0.8rem;
-  margin-top: 4px;
-}
-
-.input-error {
-  border-bottom: 2px solid red !important;
-}
-
 .contact {
   background: var(--dark-grey);
   margin-top: 60px;
@@ -281,6 +258,25 @@ body {
   .contact {
     margin-top: 0;
   }
+}
+.contact .contact__input-wrapper {
+  position: relative;
+}
+.contact .contact__error-icon {
+  display: none;
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+}
+.contact__error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+.contact__input-error {
+  border-bottom: 2px solid red !important;
 }
 .contact__datos {
   width: 90%;
