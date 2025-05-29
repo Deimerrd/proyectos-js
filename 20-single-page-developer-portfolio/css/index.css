@@ -235,6 +235,7 @@
   --dark-grey: #242424;
   --grey: #d9d9d9;
   --white: #fff;
+  --red: #ff6f5b;
   --font: "Space Grotesk", sans-serif;
 }
 
@@ -259,24 +260,9 @@ body {
     margin-top: 0;
   }
 }
-.contact .contact__input-wrapper {
+.contact__file {
   position: relative;
-}
-.contact .contact__error-icon {
-  display: none;
-  color: red;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.2rem;
-}
-.contact__error-message {
-  color: red;
-  font-size: 0.8rem;
-  margin-top: 4px;
-}
-.contact__input-error {
-  border-bottom: 2px solid red !important;
+  width: 100%;
 }
 .contact__datos {
   width: 90%;
@@ -293,26 +279,6 @@ body {
   .contact__description {
     font-size: 18px;
   }
-}
-.contact .contact__input-wrapper {
-  position: relative;
-}
-.contact .contact__error-icon {
-  display: none;
-  color: red;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-}
-.contact .contact__error-message {
-  color: red;
-  font-size: 0.8rem;
-  margin-top: 4px;
-}
-.contact .input-error {
-  border-bottom: 2px solid red !important;
 }
 .contact__text-contacto {
   text-align: center;
@@ -336,14 +302,54 @@ body {
   flex-direction: column;
   gap: 1.2rem;
 }
+.contact__form-container {
+  position: relative;
+  width: 100%;
+  max-width: 445px;
+}
+.contact__field {
+  position: relative;
+  width: 100%;
+}
 .contact__input {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #666;
   padding: 0.8rem 0;
   color: #fff;
   font-size: 1rem;
+  box-sizing: border-box;
   outline: none;
+  padding: 8px 32px 8px 8px;
+  width: 99%;
+  max-width: 500px;
+  border-bottom: 1px solid #fff;
+}
+.contact__input--error {
+  border-bottom: 1px solid #ff6f5b;
+}
+.contact__input--valid {
+  border-bottom: 1px solid green;
+}
+.contact__error-icon {
+  position: absolute;
+  right: 0.5rem;
+  display: none;
+  pointer-events: none;
+}
+.contact__error {
+  position: relative;
+  left: 56%;
+  top: 5px;
+  font-size: 12px;
+  color: #ff6f5b;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.167px;
+}
+@media (min-width: 768px) {
+  .contact__error {
+    left: 66%;
+  }
 }
 .contact__input::placeholder {
   text-transform: uppercase;

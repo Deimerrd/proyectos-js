@@ -326,41 +326,60 @@
           </p>
         </div>
 
+        <div class="contact__form-container">
+
         <form class="contact__form">
 
-
+<div class="contact__form-file">
   <input
     class="contact__input"
     type="text"
     name="name"
-    placeholder="Name"
+  id="name"
     required
+    placeholder="Name"
+    aria-describedby="name-error"
+
+
   />
+  <span id="name-icon" class="contact__error-icon" aria-hidden="true"><img src="er.svg" alt=""></span>
+  <span id="name-error" class="contact__error"></span>
+</div>
 
-
+  <div class="contact__form-file">
   <input
     type="email"
     id="email"
     class="contact__input"
     placeholder="Email"
     aria-describedby="email-error"
-  />
-  <span class="contact__error-icon" aria-hidden="true"><img src="er.svg" alt=""></span>
-  <div id="email-error" class="contact__error"></div>
 
+  />  <span id="email-icon" class="contact__error-icon" aria-hidden="true"><img src="er.svg" alt=""></span>
+  <span id="email-error" class="contact__error"></span>
+</div>
 
+<div class="contact__form-file">
   <textarea
     class="contact__input contact__input--textarea"
     name="message"
     placeholder="Message"
     required
+            id="message"
+
+            aria-describedby="message-error"
+
+    
   ></textarea>
 
+
+  <span id="message-icon" class="contact__error-icon" aria-hidden="true"><img src="er.svg" alt=""></span>
+  <span id="message-error" class="contact__error"></span>
+</div>
   <button class="contact__button" type="submit">
     <span class="subra">Send Message</span>
   </button>
-</form>
-      </div>
+      </form>
+ </div>
     </section>
 
     <footer class="footer">

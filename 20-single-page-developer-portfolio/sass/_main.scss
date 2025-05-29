@@ -8,7 +8,10 @@
   @include mixfun.media {
     margin-top: 0;
   }
-
+  &__file {
+    position: relative;
+    width: 100%;
+  }
   &__datos {
     @include mixfun.container;
     padding-top: 60px;
@@ -46,16 +49,61 @@
     flex-direction: column;
     gap: 1.2rem;
   }
+  &__form-container {
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+  }
 
+  &__field {
+    position: relative;
+    width: 100%;
+  }
   &__input {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #666;
     padding: 0.8rem 0;
     color: #fff;
     font-size: 1rem;
+    box-sizing: border-box;
     outline: none;
+    padding: 8px 32px 8px 8px;
+    width: 99%;
+    max-width: 500px;
+    border-bottom: 1px solid #fff;
+
+    &--error {
+      border-bottom: 1px solid #ff6f5b;
+    }
+
+    &--valid {
+      border-bottom: 1px solid green;
+    }
   }
+
+  &__error-icon {
+    position: absolute;
+    right: 0.5rem;
+    display: none;
+    pointer-events: none;
+  }
+  &__error {
+    position: relative;
+    left: 56%;
+    top: 5px;
+    font-size: 12px;
+    color: #ff6f5b;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.167px;
+  }
+
+  @include mixfun.media {
+    &__error {
+      left: 66%;
+    }
+  }
+
   &__input::placeholder {
     text-transform: uppercase;
     color: var(--white);
