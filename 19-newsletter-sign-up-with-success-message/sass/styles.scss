@@ -119,11 +119,9 @@ h2 {
 @media (min-width: 504px) {
   .contenttwo {
     background-color: $white;
-    width: 504px;
+    max-width: 504px;
     border-radius: 36px;
     box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
-    display: flex;
-    margin: auto;
   }
 
   .btn-config {
@@ -189,12 +187,22 @@ h2 {
 }
 @media (min-width: 1110px) {
   body {
-    padding: 0px 0px;
+    min-height: 100vh;
   }
-}
+  .content {
+    width: 928px;
+  }
+  .card1 {
+    transform: translateY(-2.7rem);
+  }
+  .art-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media (min-width: 1440px) {
-  body {
-    padding: 220px 256px;
+  .cardmain {
+    padding: 48px 64px 64px 64px;
   }
 }
