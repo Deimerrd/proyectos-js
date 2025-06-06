@@ -86,7 +86,10 @@ main {
 
 .email:hover {
   border-radius: 8px;
-  background: var(--Gradient-1, linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%));
+  background: var(
+    --Gradient-1,
+    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
+  );
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
 }
 
@@ -129,6 +132,12 @@ h2 {
   }
   h2 {
     font-size: 56px;
+  }
+  .art-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 928px) {
