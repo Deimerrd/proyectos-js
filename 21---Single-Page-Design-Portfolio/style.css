@@ -208,11 +208,47 @@ body {
   .header__Photography {
     width: 333px;
   }
+  .header__article {
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(3, auto); /* 3 filas */
+    gap: 1rem;
+  }
+
+  .header__design {
+    grid-row: span 2;
+    grid-column: 1 / 2;
+  }
+
+  .header__ux {
+    grid-column: 2 /3;
+    grid-row: 1/2;
+  }
+
+  .header__apps {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 155px;
+  }
+
+  .header__ilustration {
+    grid-column: 2/ 4;
+    grid-row: 2/3;
+  }
+  .header__Photography {
+    grid-column: 1/ 2;
+    grid-row: 3/4;
+  }
+
+  .header__motion {
+    grid-column: 2/ 4;
+    grid-row: 3/4;
+  }
 }
 
 @media (min-width: 1110px) {
   .content {
-    max-width: 1110px;
+    max-width: 1200px;
     margin: auto;
   }
 
@@ -221,22 +257,55 @@ body {
   .header {
     margin-top: 4.125rem;
   }
+
+  .header__parrafo {
+    padding: 0 10rem;
+  }
   .header__title {
     font-size: 56px;
     font-feature-settings: "liga" off, "clig" off;
   }
 
-  .header__parrafo {
-    padding: 0 10rem;
+  .header__article {
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
+    grid-template-rows: 182px 158px; /* Primera fila 182px, segunda 158px */
+    gap: 24px;
+  }
+
+  .section-card {
+    height: 100%;
   }
   .header__design {
     width: 354px;
+    grid-column: 1 / 2;
+    grid-row: span 2;
   }
+
   .header__ux {
+    width: 164px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .header__apps {
+    grid-column: 3;
+    grid-row: 1;
     width: 164px;
   }
 
+  .header__ilustration {
+    grid-column: 2/ 4;
+    grid-row: 2/3;
+    width: 354px;
+  }
   .header__Photography {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    width: 354px;
+  }
+  .header__motion {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
     width: 354px;
   }
 }
