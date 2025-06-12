@@ -80,17 +80,28 @@
 
     <script src="main.js"></script>
     <script>
-      // Obtener el correo almacenado
-      const email = localStorage.getItem("emailSuscrito");
-      const emailElement = document.getElementById("email-suscrito");
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtener el correo almacenado
+        const email = localStorage.getItem("emailSuscrito");
+        const emailElement = document.getElementById("email-suscrito");
 
-      if (email) {
-        emailElement.textContent = email;
-        // Limpia el localStorage si no necesitas conservarlo
-        localStorage.removeItem("emailSuscrito");
-      } else {
-        emailElement.textContent = "correo no encontrado";
-      }
+        if (email) {
+          emailElement.textContent = email;
+          // Limpia el localStorage si no necesitas conservarlo
+          localStorage.removeItem("emailSuscrito");
+        } else {
+          emailElement.textContent = "correo no encontrado";
+        }
+
+        // Agregar evento al botón para redirigir a index.html
+        const dismissBtn = document.getElementById("btn_dismit");
+        if (dismissBtn) {
+          dismissBtn.addEventListener("click", function (e) {
+            e.preventDefault(); // Detiene el envío del formulario si lo hay
+            window.location.href = "index.html"; // Redirige a la página principal
+          });
+        }
+      });
     </script>
   </body>
 </html>
