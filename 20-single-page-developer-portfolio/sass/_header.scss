@@ -1,0 +1,207 @@
+@use "mixfun";
+.header {
+  position: relative;
+  bottom: 7rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-rings.svg");
+    top: -24%;
+    left: 0%;
+    right: 55%;
+    height: 60%;
+
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+
+  &__profile-photo {
+    width: 50%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    filter: contrast(80%) brightness(120%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-circle.svg");
+    top: 17.7rem;
+    left: 85%;
+    right: 0;
+    height: 60%;
+    background-repeat: no-repeat;
+  }
+
+  &__profile-info {
+    @include mixfun.container;
+    text-align: center;
+  }
+
+  &__profile-name {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+  }
+
+  .text-mobile {
+    display: block;
+  }
+  .text-tablet {
+    display: none;
+  }
+  .clone-title {
+    display: none;
+  }
+
+  &__profile-title {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 1.5rem;
+  }
+  &__profile-contact {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    margin-top: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+
+  @include mixfun.media {
+    &::before {
+      right: 65%;
+    }
+
+    &__profile {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      margin-top: 2rem;
+      position: relative;
+    }
+
+    &__profile-photo {
+      width: 349.854px;
+      max-width: 91%;
+      position: relative;
+      left: 1.1rem;
+      bottom: 0rem;
+      top: 0.5rem;
+      z-index: 1;
+    }
+
+    &::after {
+      top: 29.3rem;
+      left: 90%;
+      z-index: 4;
+    }
+
+    &__profile-info {
+      text-align: left;
+      position: absolute;
+      top: 105px;
+      z-index: 3;
+      right: 2.5em;
+    }
+
+    &__profile-name {
+      font-size: 72px;
+      text-align: left;
+      line-height: 78px;
+      letter-spacing: -2.045px;
+    }
+
+    &__profile-title {
+      width: 450px;
+      line-height: 28px;
+      font-size: 18px;
+    }
+    .text-mobile {
+      display: none;
+    }
+    .text-laptop {
+      display: none;
+    }
+    .text-tablet {
+      display: block;
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    &__profile-title {
+      margin-top: 60px;
+    }
+    &__profile-contact {
+      margin-top: 34px;
+    }
+  }
+}
+
+.subra {
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+}
+
+@include mixfun.media-laptop {
+  .header {
+    &::before {
+      right: 70%;
+      top: -11.7rem;
+    }
+
+    &__profile-name {
+      font-size: 88px;
+    }
+
+    &__profile {
+      @include mixfun.container;
+      right: 3rem;
+      max-width: 1180px;
+      width: 100%;
+      bottom: 1rem;
+    }
+
+    &__profile-photo {
+      width: 445px;
+      max-width: 100%;
+    }
+    &__profile-info {
+      margin-top: 6.5rem;
+    }
+
+    &::after {
+      top: 35.3rem;
+      left: 53.5%;
+    }
+    &__profile-contact {
+      margin-top: 70px;
+    }
+
+    .text-tablet {
+      display: none;
+    }
+    .text-mobile {
+      display: none;
+    }
+    .clone-title {
+      display: block;
+    }
+  }
+}

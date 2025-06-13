@@ -1,0 +1,41 @@
+@use "mixfun";
+
+.nav {
+  @include mixfun.container(20px 0);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.333px;
+    text-decoration: none;
+  }
+  &__social {
+    display: flex;
+    gap: 1.5rem;
+    z-index: 2;
+  }
+  &__social-icon {
+    height: 20px;
+  }
+
+  @include mixfun.media {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1080.49px;
+    }
+    &__logo {
+      font-size: 32px;
+    }
+  }
+}

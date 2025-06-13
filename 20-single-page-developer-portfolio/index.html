@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,83 +10,449 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Single-page developer portfolio</title>
   </head>
   <body>
-    adamkeyes <br />
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="index.html" class="nav__logo">adamkeyes</a>
+        <div class="nav__social">
+          <a href="#" class="nav__social-link"
+            ><img
+              src="assets/icon-github.svg"
+              class="nav__social-icon"
+              alt="git"
+          /></a>
 
-    Nice to meet you! I'm Adam Keyes. <br />
+          <a href="#" class="nav__social-link"
+            ><img
+              src="assets/icon-frontend-mentor.svg"
+              class="nav__social-icon"
+              alt="git"
+          /></a>
 
-    Based in the UK, I'm a front-end developer passionate about building
-    accessible web apps that users love. <br />
+          <a href="#" class="nav__social-link"
+            ><img
+              src="assets/icon-linkedin.svg"
+              class="nav__social-icon"
+              alt="git"
+          /></a>
 
-    Contact me <br />
+          <a href="#" class="nav__social-link"
+            ><img
+              src="assets/icon-twitter.svg"
+              class="nav__social-icon"
+              alt="git"
+          /></a>
+        </div>
+      </div>
+    </nav>
 
-    HTML <br />
-    4 Years Experience <br />
+    <header class="header">
+      <div class="header__profile">
+        <picture class="header__profile-picture">
+          <source
+            srcset="assets/image-profile-desktop.webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="assets/image-profile-tablet.webp"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="assets/image-profile-mobile.webp"
+            alt="Foto de perfil"
+            class="header__profile-photo"
+          />
+        </picture>
 
-    CSS <br />
-    4 Years Experience <br />
+        <div class="header__profile-info">
+          <h1 class="header__profile-name">
+            <span class="text-mobile">
+              Nice to meet you!<br />
+              I'm <span class="subrayado">Adam Keyes.</span>
+            </span>
+            <span class="text-tablet">
+              Nice to<br class="break-tablet" />
+              <span class="nowrap">meet you! I'm</span
+              ><br class="break-tablet" />
+              <span class="subrayado">Adam Keyes</span>.
+            </span>
+          </h1>
+          <h2 class="header__profile-name clone-title">
+            Nice to meet you! <br />
+            I'm <span class="subrayado">Adam Keyes</span>.
+          </h2>
 
-    JavaScript <br />
-    4 Years Experience <br />
+          <p class="header__profile-title">
+            Based in the UK, I'm a front-end developer <br />
+            passionate about building accessible web apps that users love.
+          </p>
+          <p class="header__profile-contact">
+            <span class="subra"> CONTACT ME</span>
+          </p>
+        </div>
+      </div>
+    </header>
 
-    Accessibility <br />
-    4 Years Experience <br />
+    <main class="main">
+      <section class="skills">
+        <div class="skills__item skills__sk1">
+          <h3 class="skills__title">HTML</h3>
+          <p class="skills__years">4 Years Experience</p>
+        </div>
+        <div class="skills__item sk2">
+          <h3 class="skills__title">CSS</h3>
+          <p class="skills__years">4 Years Experience</p>
+        </div>
+        <div class="skills__item sk3">
+          <h3 class="skills__title">JavaScript</h3>
+          <p class="skills__years">4 Years Experience</p>
+        </div>
+        <div class="skills__item sk4">
+          <h3 class="skills__title">Accessibility</h3>
+          <p class="skills__years">4 Years Experience</p>
+        </div>
+        <div class="skills__item sk5">
+          <h3 class="skills__title">React</h3>
+          <p class="skills__years">3 Years Experience</p>
+        </div>
+        <div class="skills__item sk6">
+          <h3 class="skills__title">Sass</h3>
+          <p class="skills__years">3 Years Experience</p>
+        </div>
+      </section>
+    </main>
 
-    React <br />
-    3 Years Experience <br />
+    <section class="projects">
+      <div class="projects__header">
+        <h2 class="projects__title">Projects</h2>
+        <a href="#contact" class="projects__contact-btn"
+          ><span class="subra"> CONTACT ME </span></a
+        >
+      </div>
 
-    Sass <br />
-    3 Years Experience <br />
+      <div class="projects__list">
+        <article class="projects__item item1">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-1-small.webp"
+              alt="Design Portfolio"
+              class="projects__image"
+            />
 
-    Projects <br />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">DESIGN PORTFOLIO</h3>
+          <p class="projects__tech">HTML <span>CSS</span></p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT </span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
 
-    Contact me <br />
+        <article class="projects__item item2">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-2-small.webp"
+              alt="E-learning Landing Page"
+              class="projects__image"
+            />
 
-    Design portfolio <br />
-    HTML CSS <br />
-    View project <br />
-    View code <br />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">E-LEARNING LANDING PAGE</h3>
+          <p class="projects__tech">HTML <span>CSS</span></p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
 
-    E-learning landing page <br />
-    HTML CSS <br />
-    View project <br />
-    View code <br />
+        <article class="projects__item item3">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-3-small.webp"
+              alt="TODO Web App"
+              class="projects__image"
+            />
 
-    Todo web app <br />
-    HTML CSS JavaScript <br />
-    View project <br />
-    View code <br />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">TODO WEB APP</h3>
+          <p class="projects__tech">
+            HTML <span>CSS</span> <span>JAVASCRIPT</span>
+          </p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
 
-    Entertainment web app <br />
-    HTML CSS JavaScript <br />
-    View project <br />
-    View code <br />
+        <article class="projects__item item4">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-4-small.webp"
+              alt="Entertainment Web App"
+              class="projects__image"
+            />
 
-    Memory Game <br />
-    HTML CSS JavaScript <br />
-    View project <br />
-    View code <br />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">ENTERTAINMENT WEB APP</h3>
+          <p class="projects__tech">
+            HTML <span>CSS</span> <span>JAVASCRIPT</span>
+          </p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
+        <!-- Más proyectos aquí -->
 
-    Art gallery showcase <br />
-    HTML CSS JavaScript <br />
-    View project <br />
-    View code <br />
+        <article class="projects__item item5">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-5-small.webp"
+              alt="Memory Game"
+              class="projects__image"
+            />
 
-    Contact <br />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">MEMORY GAME</h3>
+          <p class="projects__tech">
+            HTML <span>CSS</span> <span>JAVASCRIPT</span>
+          </p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
 
-    I would love to hear about your project and how I could help. Please fill in
-    the form, and I’ll get back to you as soon as possible. <br />
+        <article class="projects__item item6">
+          <figure class="projects__figure">
+            <img
+              src="assets/thumbnail-project-6-small.webp"
+              alt="Art Gallery Showcase"
+              class="projects__image"
+            />
+            <figcaption class="projects__figure-capa">
+              <div class="projects__content">
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW PROJECT</span></a
+                >
+                <a href="#" class="projects__figure-capalink" target="_blank">
+                  <span class="subra"> VIEW CODE</span></a
+                >
+              </div>
+            </figcaption>
+          </figure>
+          <h3 class="projects__name">ART GALLERY SHOWCASE</h3>
+          <p class="projects__tech">
+            HTML <span>CSS</span> <span>JAVASCRIPT</span>
+          </p>
+          <div class="projects__links">
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW PROJECT</span></a
+            >
+            <a href="#" class="projects__link"
+              ><span class="subra"> VIEW CODE</span></a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__datos">
+        <div class="contact__text-contacto">
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__description">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
 
-    Name <br />
-    Email <br />
-    Message <br />
+        <div class="contact__form-container">
+          <form class="contact__form" novalidate>
+            <div class="contact__form-file">
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Name"
+                aria-describedby="name-error"
+              />
+              <span
+                id="name-icon"
+                class="contact__error-icon"
+                aria-hidden="true"
+              >
+                <img src="er.svg" alt="Error icon" />
+              </span>
+              <span id="name-error" class="contact__error"></span>
+            </div>
 
-    Send message <br />
+            <div class="contact__form-file">
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+                aria-describedby="email-error"
+              />
+              <span
+                id="email-icon"
+                class="contact__error-icon"
+                aria-hidden="true"
+              >
+                <img src="er.svg" alt="Error icon" />
+              </span>
+              <span id="email-error" class="contact__error"></span>
+            </div>
 
-    adamkeyes <br />
+            <div class="contact__form-file">
+              <textarea
+                class="contact__input contact__input--textarea"
+                name="message"
+                id="message"
+                required
+                placeholder="Message"
+                aria-describedby="message-error"
+              ></textarea>
+              <span
+                id="message-icon"
+                class="contact__error-icon"
+                aria-hidden="true"
+              >
+                <img src="er.svg" alt="Error icon" />
+              </span>
+              <span id="message-error" class="contact__error"></span>
+            </div>
+
+            <button class="contact__button" type="submit">
+              <span class="subra">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__redes">
+        <p class="footer__brand">adamkeyes</p>
+        <div class="footer__social">
+          <a href="#" class="footer__link icon1"
+            ><div
+              class="icon-container"
+              data-src="assets/icon-github.svg"
+            ></div>
+          </a>
+
+          <a href="#" class="footer__link icon2"
+            ><div
+              class="icon-container"
+              data-src="assets/icon-frontend-mentor.svg"
+            ></div
+          ></a>
+
+          <a href="#" class="footer__link icon3"
+            ><div
+              class="icon-container"
+              data-src="assets/icon-linkedin.svg"
+            ></div
+          ></a>
+
+          <a href="#" class="footer__link icon4"
+            ><div
+              class="icon-container"
+              data-src="assets/icon-twitter.svg"
+            ></div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="validacion-form.js"></script>
   </body>
 </html>

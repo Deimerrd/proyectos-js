@@ -1,0 +1,484 @@
+@use "mixfun";
+
+.contact {
+  background: var(--dark-grey);
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 47px;
+  @include mixfun.media {
+    margin-top: 0;
+  }
+  &__file {
+    position: relative;
+    width: 100%;
+  }
+  &__datos {
+    @include mixfun.container;
+    padding-top: 60px;
+  }
+
+  @include mixfun.media {
+    &__datos {
+      width: 445px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+  }
+
+  &__text-contacto {
+    text-align: center;
+  }
+  &__title {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+  }
+  &__description {
+    margin-top: 20px;
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 26px;
+  }
+  &__form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  &__form-container {
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+  }
+
+  &__field {
+    position: relative;
+    width: 100%;
+  }
+  &__input {
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem 0;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    padding: 8px 32px 8px 8px;
+    width: 99%;
+    max-width: 500px;
+    border-bottom: 1px solid #fff;
+
+    &--error {
+      border-bottom: 1px solid #ff6f5b;
+    }
+
+    &--valid {
+      border-bottom: 1px solid green;
+    }
+  }
+
+  &__error-icon {
+    position: absolute;
+    right: 0.5rem;
+    display: none;
+    pointer-events: none;
+  }
+  &__error {
+    position: relative;
+    left: 56%;
+    top: 5px;
+    font-size: 12px;
+    color: #ff6f5b;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.167px;
+  }
+
+  @include mixfun.media {
+    &__error {
+      left: 66%;
+    }
+  }
+
+  &__input::placeholder {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.222px;
+    opacity: 0.5;
+  }
+
+  &__input--textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  &__button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    color: var(--white);
+    font-weight: 700;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 1rem 0 0.3rem;
+    cursor: pointer;
+    align-self: flex-end;
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-rings.svg");
+    transform: rotate(180deg);
+    top: 10.7rem;
+    left: 0%;
+    right: 55%;
+    height: 60%;
+    background-repeat: no-repeat;
+  }
+
+  @include mixfun.media {
+    &::after {
+      right: 79%;
+      top: 14.7rem;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  bottom: 5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/pattern-rings.svg");
+    top: 33.8rem;
+    left: 50%;
+    right: 0;
+    height: 70%;
+    background-repeat: no-repeat;
+  }
+  @include mixfun.media {
+    &::after {
+      top: 23rem;
+      left: 76%;
+    }
+  }
+}
+
+.projects {
+  &__figure-capalink {
+    display: none;
+  }
+}
+.skills {
+  @include mixfun.container;
+  border-top: 2px solid white;
+  text-align: center;
+  color: var(--white);
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__title {
+    font-size: 32px;
+  }
+  &__years {
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+
+.projects {
+  @include mixfun.container;
+  @include mixfun.media {
+    padding: 0 0px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+  }
+
+  &__contact-btn {
+    color: var(--white);
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-top: 41px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+  }
+  @include mixfun.media {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  &__name {
+    color: var(--white);
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+
+  &__tech {
+    color: var(--grey);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  &__links {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@include mixfun.media {
+  .skills {
+    @include mixfun.container;
+    border-top: 1px solid white;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    margin-top: 30px;
+
+    &__title {
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+    &__years {
+      font-size: 18px;
+      margin-top: 14px;
+    }
+  }
+}
+
+.subrayado {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 100%;
+    height: 0.25rem;
+    background-color: var(--green);
+    z-index: 1;
+    border-radius: 2px;
+  }
+
+  .item1 {
+    grid-area: item1;
+  }
+
+  .item2 {
+    grid-area: item2;
+  }
+
+  .item3 {
+    grid-area: item3;
+  }
+
+  .item4 {
+    grid-area: item4;
+  }
+
+  .item5 {
+    grid-area: item5;
+  }
+
+  .item6 {
+    grid-area: item6;
+  }
+
+  @include mixfun.media {
+    &::after {
+      height: 6px;
+      top: 1.02em;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      &__sk1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+      }
+    }
+  }
+}
+
+@include mixfun.media-laptop {
+  .main {
+    &::after {
+      top: 13rem;
+      left: 78%;
+    }
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact {
+    &__datos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1110px;
+    }
+    &__text-contacto {
+      text-align: left;
+      width: 445px;
+    }
+
+    &__form {
+      width: 445px;
+    }
+    &__title {
+      font-size: 88px;
+    }
+    &__description {
+      margin-top: 2.25rem;
+    }
+    &::after {
+      top: 10rem;
+    }
+  }
+  .projects {
+    &__link {
+      display: none;
+    }
+
+    &__figure {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover &__figure-capa {
+        opacity: 1;
+      }
+    }
+    &__image {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 0;
+    }
+
+    &__figure-capa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: white;
+      opacity: 0 !important;
+    }
+
+    &__figure:hover &__figure-capa {
+      opacity: 1 !important;
+    }
+
+    &__content {
+      z-index: 3;
+      color: white;
+      font-weight: bold;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__figure-capalink {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      z-index: 5;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      display: block;
+
+      &:hover {
+        color: var(--green);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
