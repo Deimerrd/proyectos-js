@@ -17,9 +17,3 @@
     @content;
   }
 }
-
-@function pixeles-rem($pixeles) {
-  $resultado: math.div($pixeles, 16) * 1rem;
-
-  @return $resultado;
-}

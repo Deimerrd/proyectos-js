@@ -84,6 +84,15 @@ main {
   height: 64px;
 }
 
+.email:hover {
+  border-radius: 8px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
+  );
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
 .cardmain {
   padding: 149px 24px 40px 24px;
 }
@@ -108,11 +117,9 @@ h2 {
 @media (min-width: 504px) {
   .contenttwo {
     background-color: #fff;
-    width: 504px;
+    max-width: 504px;
     border-radius: 36px;
     box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
-    display: flex;
-    margin: auto;
   }
   .btn-config {
     margin-top: 40px;
@@ -125,6 +132,12 @@ h2 {
   }
   h2 {
     font-size: 56px;
+  }
+  .art-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 928px) {
@@ -174,12 +187,22 @@ h2 {
 }
 @media (min-width: 1110px) {
   body {
-    padding: 0px 0px;
+    min-height: 100vh;
   }
-}
-@media (min-width: 1440px) {
-  body {
-    padding: 220px 256px;
+  .content {
+    width: 928px;
+  }
+  .card1 {
+    transform: translateY(-2.7rem);
+  }
+  .art-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardmain {
+    padding: 48px 64px 64px 64px;
   }
 }
 
