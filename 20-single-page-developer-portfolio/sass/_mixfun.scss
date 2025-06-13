@@ -1,0 +1,19 @@
+@mixin container($padding: 40px 0) {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: $padding;
+}
+
+@mixin media {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (min-width: 1110px) {
+    @content;
+  }
+}
