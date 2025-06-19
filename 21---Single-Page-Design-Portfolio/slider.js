@@ -3,7 +3,7 @@ const btnLeft = document.querySelector(".slider-btn:first-child");
 const btnRight = document.querySelector(".slider-btn:last-child");
 
 let currentPosition = 0;
-const slideDistance = 525;
+const slideDistance = 260;
 
 function updateSlider() {
   slider.style.transform = `translateX(-${currentPosition}px)`;
