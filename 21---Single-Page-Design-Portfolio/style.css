@@ -240,10 +240,16 @@ body {
 
 .slider img {
   width: 275px;
-  height: 204px;
+  height: 190px;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 8px;
+  object-position: 20% 45%;
+
+  top: -2rem;
+}
+.batma3 {
+  object-position: 20% 35% !important;
 }
 
 .article__slider {
@@ -390,6 +396,18 @@ body {
   }
   .article {
     margin-top: 120px;
+  }
+
+  /*slider*/
+  .slider {
+    gap: 30px;
+  }
+
+  .slider img {
+    width: 540px;
+    height: 360px;
+    object-fit: cover;
+    object-position: 20% 48%;
   }
 }
 
