@@ -217,12 +217,12 @@ body {
 /* article */
 .article {
   max-width: 100%;
+  margin-top: 108px;
 }
 
 .article h4 {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 20px;
 }
 
 .article__slider {
@@ -230,6 +230,7 @@ body {
   overflow: hidden;
   max-width: 100%;
   margin: auto;
+  margin-top: 30px;
 }
 
 .slider {
@@ -245,11 +246,14 @@ body {
   flex-shrink: 0;
   border-radius: 8px;
   object-position: 20% 45%;
-
   top: -2rem;
 }
-.batma3 {
+.bitman2 {
   object-position: 20% 35% !important;
+}
+
+.bitman4 {
+  object-position: 20% 20% !important;
 }
 
 .article__slider {
@@ -291,6 +295,11 @@ body {
   font-size: 20px;
   color: white;
 }
+.slider-btn:active {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
 @media (min-width: 768px) {
   .content {
     padding: 0 39px;
@@ -409,14 +418,20 @@ body {
     object-fit: cover;
     object-position: 20% 48%;
   }
+  .article__slider {
+    margin-top: 56px;
+  }
 }
 
 @media (min-width: 1110px) {
   .content {
     max-width: 1110px;
     margin: auto;
+    padding: 0 0;
   }
-
+  .nav {
+    margin-top: 52px;
+  }
   /*header*/
 
   .header {
@@ -500,5 +515,10 @@ body {
   }
   .section__paragraph {
     width: 540px;
+  }
+
+  /*article-slider*/
+  .article {
+    margin-top: 88px;
   }
 }
