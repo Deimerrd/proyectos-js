@@ -18,6 +18,7 @@
 }
 body {
   font-family: var(--font);
+  padding-bottom: 34px;
 }
 
 .content {
@@ -299,7 +300,56 @@ body {
   background-color: #007bff; /* Azul */
   color: white;
 }
+/*footer*/
+.footer {
+  margin-top: 100px;
+}
+.footer__text {
+  padding: 49px 24px;
+  border-radius: 10px;
+  background: var(--Black);
+  color: var(--Light-Cream);
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
+.footer__text h5 {
+  font-size: 26px;
+  font-weight: 700;
+}
+.footer__text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.footer__text a {
+  border-radius: 28px;
+  background: var(--Light-Red);
+  color: #fff7f0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  width: 176px;
+  display: inline-block;
+  margin: auto;
+  padding: 8px 0;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.footer__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 @media (min-width: 768px) {
   .content {
     padding: 0 39px;
@@ -421,6 +471,31 @@ body {
   .article__slider {
     margin-top: 56px;
   }
+
+  /*footer*/
+  .footer__text h5 {
+    font-size: 32px;
+  }
+  .footer__text p {
+    width: 540px;
+    margin: auto;
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .footer__text a {
+    font-size: 16px;
+    width: 228px;
+    padding: 14px 0;
+  }
+  .footer__nav {
+    margin-top: 56px;
+  }
+  .nav__btn {
+    padding: 14px 45px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -520,5 +595,21 @@ body {
   /*article-slider*/
   .article {
     margin-top: 88px;
+  }
+  .article__slider {
+    max-width: 1440px;
+  }
+
+  /*footer*/
+  .footer {
+    margin-top: 120px;
+  }
+  .footer__text {
+    flex-direction: row;
+    text-align: left;
+    padding-left: 65px;
+  }
+  .footer__text a {
+    padding: 14px 45px;
   }
 }
