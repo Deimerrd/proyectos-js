@@ -339,6 +339,10 @@ body {
   margin: auto;
   padding: 8px 0;
 }
+.footer__text a:hover {
+  background: var(--Summer-Yellow);
+}
+
 .footer__nav {
   display: flex;
   justify-content: space-between;
