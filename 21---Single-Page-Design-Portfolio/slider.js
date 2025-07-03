@@ -1,61 +1,73 @@
 const slider = document.querySelector(".slider");
-const btnLeft = document.querySelector(".slider-btn:first-child");
-const btnRight = document.querySelector(".slider-btn:last-child");
+const btnLeft = document.querySelector(".slider-btn.left");
+const btnRight = document.querySelector(".slider-btn.right");
+let images = slider.querySelectorAll("img");
 
-let currentPosition = 0;
-let slideDistance;
+let currentIndex = 1;
+let slideDistance = 275;
+const gap = 10; // mismo gap que en CSS
 
-// Función que actualiza slideDistance según el ancho de pantalla
+// Clonar primera y última imagen
+const firstClone = images[0].cloneNode(true);
+const lastClone = images[images.length - 1].cloneNode(true);
+
+slider.appendChild(firstClone);
+slider.insertBefore(lastClone, images[0]);
+
+// Actualizar lista de imágenes (con clones incluidos)
+images = slider.querySelectorAll("img");
+
 function updateSlideDistance() {
   const width = window.innerWidth;
-
   if (width >= 1024) {
-    slideDistance = 700; // Desktop
+    slideDistance = 600;
   } else if (width >= 768) {
-    slideDistance = 510; // Tablet
+    slideDistance = 558;
   } else {
-    slideDistance = 263; // Mobile
+    slideDistance = 272;
   }
 }
 
-// Ejecutar al cargar
+function updateSlider(animate = true) {
+  const offset = currentIndex * (slideDistance + gap);
+  slider.style.transition = animate ? "transform 0.4s ease-in-out" : "none";
+  slider.style.transform = `translateX(-${offset}px)`;
+}
+
+function handleTransitionEnd() {
+  // Si estás en el clon del final → vuelve al primero real
+  if (images[currentIndex].classList.contains("bitma1")) {
+    currentIndex = 1;
+    updateSlider(false);
+  }
+
+  // Si estás en el clon del inicio → vuelve al último real
+  if (images[currentIndex].classList.contains("bitma5")) {
+    currentIndex = images.length - 2;
+    updateSlider(false);
+  }
+}
+
+// Inicialización
 updateSlideDistance();
+updateSlider(false);
 
-// Función que mueve el slider
-function updateSlider() {
-  slider.style.transform = `translateX(-${currentPosition}px)`;
-}
-
-// Botón derecha
+// Event listeners
 btnRight.addEventListener("click", () => {
-  const maxScroll = slider.scrollWidth - slider.parentElement.offsetWidth;
-
-  if (currentPosition + slideDistance <= maxScroll) {
-    currentPosition += slideDistance;
-    updateSlider();
-  } else {
-    currentPosition = maxScroll;
-    updateSlider();
-  }
+  if (currentIndex >= images.length - 1) return;
+  currentIndex++;
+  updateSlider(true);
 });
 
-// Botón izquierda
 btnLeft.addEventListener("click", () => {
-  if (currentPosition - slideDistance >= 0) {
-    currentPosition -= slideDistance;
-  } else {
-    currentPosition = 0;
-  }
-  updateSlider();
+  if (currentIndex <= 0) return;
+  currentIndex--;
+  updateSlider(true);
 });
 
-// Escuchar cambio de tamaño y actualizar slideDistance
+slider.addEventListener("transitionend", handleTransitionEnd);
+
 window.addEventListener("resize", () => {
   updateSlideDistance();
-
-  const maxScroll = slider.scrollWidth - slider.parentElement.offsetWidth;
-  if (currentPosition > maxScroll) {
-    currentPosition = maxScroll;
-    updateSlider();
-  }
+  updateSlider(false);
 });

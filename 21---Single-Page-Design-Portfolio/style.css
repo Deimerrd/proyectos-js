@@ -226,6 +226,8 @@ body {
   font-size: 24px;
 }
 
+/*slider */
+
 .article__slider {
   position: relative;
   overflow: hidden;
@@ -249,13 +251,6 @@ body {
   object-position: 20% 45%;
   top: -2rem;
 }
-.bitman2 {
-  object-position: 20% 35% !important;
-}
-
-.bitman4 {
-  object-position: 20% 20% !important;
-}
 
 .article__slider {
   overflow: hidden;
@@ -264,24 +259,14 @@ body {
 .slider {
   display: flex;
   gap: 10px;
+  padding: 0 40px;
   transition: transform 0.4s ease-in-out;
   transform: translateX(0); /* 👈 Asegura que inicia sin desplazamiento */
 }
 
-/*controles*/
-
-/* NUEVO: flechas debajo */
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 56px; /* Esto baja las flechas debajo de las imágenes */
-}
-
 .slider-btn {
-  width: 56px;
-  height: 56px;
+  width: 46px;
+  height: 46px;
   background-color: black;
   border: none;
   border-radius: 50%;
@@ -296,10 +281,28 @@ body {
   font-size: 20px;
   color: white;
 }
-.slider-btn:active {
+.slider-btn:hover {
   background-color: #007bff; /* Azul */
   color: white;
 }
+
+/*controles*/
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 56px; /* Esto baja las flechas debajo de las imágenes */
+}
+
+.bitman2 {
+  object-position: 20% 35% !important;
+}
+
+.bitman4 {
+  object-position: 20% 20% !important;
+}
+
 /*footer*/
 .footer {
   margin-top: 100px;
@@ -464,13 +467,23 @@ body {
   /*slider*/
   .slider {
     gap: 30px;
+    padding: 0 100px;
   }
 
+  .slider-btn {
+    width: 56px;
+    height: 56px;
+  }
   .slider img {
     width: 540px;
     height: 360px;
     object-fit: cover;
     object-position: 20% 48%;
+    overflow: hidden;
+  }
+
+  .bitman2 {
+    object-position: 20% 180%;
   }
   .article__slider {
     margin-top: 56px;
@@ -597,13 +610,41 @@ body {
   }
 
   /*article-slider*/
-  .article {
-    margin-top: 88px;
-  }
+
   .article__slider {
-    max-width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
   }
 
+  .slider-wrapper {
+    max-width: 540px;
+    margin: auto; /* 👈 centra en desktop */
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .slider img {
+    width: 540px; /* tamaño exacto */
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+  }
   /*footer*/
   .footer {
     margin-top: 120px;
@@ -615,5 +656,8 @@ body {
   }
   .footer__text a {
     padding: 14px 45px;
+  }
+  .elemeto {
+    transform: translateX(0);
   }
 }
