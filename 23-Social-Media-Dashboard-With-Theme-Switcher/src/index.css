@@ -1,68 +1,128 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* MODO OSCURO */
+body.dark {
+  background: #1d1f29;
 }
 
-body {
-  margin: 0;
+/*MODO CLARO */
+body.light {
+  background: #fff;
+}
+
+.navbar {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  text-align: left;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: #1d1f29;
+  font-size: 24px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* MODO OSCURO */
+body.dark h1 {
+  color: #fff;
+}
+
+.titulo p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #63687d;
+  transform: translatey(-1rem);
+}
+
+body.dark .titulo p {
+  color: #8c98c6;
+}
+
+.navbar .divider {
+  width: 326px;
+  height: 2px;
+  background-color: #333a55;
+}
+.toggle {
+  margin-top: 19px;
+}
+
+.toggle span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #63687d;
+}
+
+body.dark .toggle span {
+  color: #8c98c6;
+}
+.navbar .divider {
+  background: #848bab;
+}
+
+body.dark .navbar .divider {
+  background: #848bab;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  display: inline-block;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  inset: 0;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-radius: 20px;
+  transition: 0.3s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.slider {
+  background: #aeb3cb;
+}
+
+/* Fondo del toggle en dark */
+body.dark .slider {
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+body.dark h1 {
+  color: #fff;
+}
+
+/* La bolita se mueve AL DERECHA solo cuando NO está activado */
+input:not(:checked) + .slider::before {
+  transform: translateX(24px);
 }
